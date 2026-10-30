@@ -1,0 +1,355 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : tool_life_monitor_top
+Version: W-2024.09-SP5-3
+Date   : Fri Sep 25 17:56:18 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+  Startpoint: threshold_data[9]
+              (input port clocked by CLK)
+  Endpoint: u_threshold_bank/threshold_reg[0][9]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  threshold_data[9] (in)                                  0.00       1.00 f
+  u_threshold_bank/threshold_reg[0][9]/D (fdef2a3)        0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_threshold_bank/threshold_reg[0][9]/CLK (fdef2a3)      0.00       0.20 r
+  library hold time                                       0.24       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: threshold_data[8]
+              (input port clocked by CLK)
+  Endpoint: u_threshold_bank/threshold_reg[0][8]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  threshold_data[8] (in)                                  0.00       1.00 f
+  u_threshold_bank/threshold_reg[0][8]/D (fdef2a3)        0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_threshold_bank/threshold_reg[0][8]/CLK (fdef2a3)      0.00       0.20 r
+  library hold time                                       0.24       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: threshold_data[7]
+              (input port clocked by CLK)
+  Endpoint: u_threshold_bank/threshold_reg[0][7]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  threshold_data[7] (in)                                  0.00       1.00 f
+  u_threshold_bank/threshold_reg[0][7]/D (fdef2a3)        0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_threshold_bank/threshold_reg[0][7]/CLK (fdef2a3)      0.00       0.20 r
+  library hold time                                       0.24       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: threshold_data[6]
+              (input port clocked by CLK)
+  Endpoint: u_threshold_bank/threshold_reg[0][6]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  threshold_data[6] (in)                                  0.00       1.00 f
+  u_threshold_bank/threshold_reg[0][6]/D (fdef2a3)        0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_threshold_bank/threshold_reg[0][6]/CLK (fdef2a3)      0.00       0.20 r
+  library hold time                                       0.24       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: threshold_data[5]
+              (input port clocked by CLK)
+  Endpoint: u_threshold_bank/threshold_reg[0][5]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  threshold_data[5] (in)                                  0.00       1.00 f
+  u_threshold_bank/threshold_reg[0][5]/D (fdef2a3)        0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_threshold_bank/threshold_reg[0][5]/CLK (fdef2a3)      0.00       0.20 r
+  library hold time                                       0.24       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: threshold_data[4]
+              (input port clocked by CLK)
+  Endpoint: u_threshold_bank/threshold_reg[0][4]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  threshold_data[4] (in)                                  0.00       1.00 f
+  u_threshold_bank/threshold_reg[0][4]/D (fdef2a3)        0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_threshold_bank/threshold_reg[0][4]/CLK (fdef2a3)      0.00       0.20 r
+  library hold time                                       0.24       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: threshold_data[3]
+              (input port clocked by CLK)
+  Endpoint: u_threshold_bank/threshold_reg[0][3]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  threshold_data[3] (in)                                  0.00       1.00 f
+  u_threshold_bank/threshold_reg[0][3]/D (fdef2a3)        0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_threshold_bank/threshold_reg[0][3]/CLK (fdef2a3)      0.00       0.20 r
+  library hold time                                       0.24       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: threshold_data[2]
+              (input port clocked by CLK)
+  Endpoint: u_threshold_bank/threshold_reg[0][2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  threshold_data[2] (in)                                  0.00       1.00 f
+  u_threshold_bank/threshold_reg[0][2]/D (fdef2a3)        0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_threshold_bank/threshold_reg[0][2]/CLK (fdef2a3)      0.00       0.20 r
+  library hold time                                       0.24       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: threshold_data[1]
+              (input port clocked by CLK)
+  Endpoint: u_threshold_bank/threshold_reg[0][1]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  threshold_data[1] (in)                                  0.00       1.00 f
+  u_threshold_bank/threshold_reg[0][1]/D (fdef2a3)        0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_threshold_bank/threshold_reg[0][1]/CLK (fdef2a3)      0.00       0.20 r
+  library hold time                                       0.24       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: threshold_data[0]
+              (input port clocked by CLK)
+  Endpoint: u_threshold_bank/threshold_reg[0][0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     5KGATES               ssc_core
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  threshold_data[0] (in)                                  0.00       1.00 f
+  u_threshold_bank/threshold_reg[0][0]/D (fdef2a3)        0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_threshold_bank/threshold_reg[0][0]/CLK (fdef2a3)      0.00       0.20 r
+  library hold time                                       0.24       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+1

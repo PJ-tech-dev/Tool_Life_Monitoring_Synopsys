@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : tool_life_monitor_top
+Version: W-2024.09-SP5-3
+Date   : Fri Sep 25 17:56:18 2026
+****************************************
+
+
+Library(s) Used:
+
+    ssc_core (File: /home/prem5111/synopsys/dcs/syn/W-2024.09-SP5-3/doc/syn/dv_tutorial/risc_design/libs/core_typ.db)
+
+Information: The cells in your design are not characterized for internal power. (PWR-229)
+
+Operating Conditions: nom_pvt   Library: ssc_core
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+tool_life_monitor_top  5KGATES           ssc_core
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = Unitless
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   0.0000 mW    (0%)
+  Net Switching Power  = 445.9591 uW  (100%)
+                         ---------
+Total Dynamic Power    = 445.9591 uW  (100%)
+
+Cell Leakage Power     =   0.0000 
+
+Error: Either dynamic power or leakage power, in the library, is unitless. Unable to display complete power group summary. (PWR-799)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000               NA   (     N/A)
+memory             0.0000            0.0000            0.0000               NA   (     N/A)
+black_box          0.0000            0.0000            0.0000               NA   (     N/A)
+clock_network      0.0000            0.0000            0.0000               NA   (     N/A)  i
+register           0.0000        6.8906e-02            0.0000               NA   (     N/A)
+sequential         0.0000            0.0000            0.0000               NA   (     N/A)
+combinational      0.0000            0.3771            0.0000               NA   (     N/A)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 mW         0.4460 mW         0.0000               NA        
+1

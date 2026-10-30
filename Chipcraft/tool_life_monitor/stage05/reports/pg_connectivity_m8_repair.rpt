@@ -1,0 +1,39 @@
+Information: The command 'check_pg_connectivity' cleared the undo history. (UNDO-016)
+Checking secondary net through power switch is enabled. 
+Secondary net will be checked together from primary net. They will be treated as the same net
+Primary Net : VDD    Secondary Net:
+Primary Net : VSS    Secondary Net:
+Loading cell instances...
+Number of Standard Cells: 825
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 80
+Number of VDD Vias: 64
+Number of VDD Terminals: 0
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 40
+  Number of floating vias: 0
+  Number of floating std cells: 825
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VSS Wires: 86
+Number of VSS Vias: 81
+Number of VSS Terminals: 0
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 40
+  Number of floating vias: 0
+  Number of floating std cells: 825
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 0 seconds.
+{PATH_11_0 PATH_11_1 PATH_11_2 PATH_11_3 PATH_11_4 PATH_11_5 PATH_11_6 PATH_11_7 PATH_11_8 PATH_11_9 PATH_11_10 PATH_11_11 PATH_11_12 PATH_11_13 PATH_11_14 PATH_11_15 PATH_11_16 PATH_11_17 PATH_11_18 PATH_11_19 PATH_11_20 PATH_11_21 PATH_11_22 PATH_11_23 PATH_11_24 PATH_11_25 PATH_11_26 PATH_11_27 PATH_11_28 PATH_11_29 PATH_11_30 PATH_11_31 PATH_11_32 PATH_11_33 PATH_11_34 PATH_11_35 PATH_11_36 PATH_11_37 PATH_11_38 PATH_11_39 PATH_11_40 PATH_11_41 PATH_11_42 PATH_11_43 PATH_11_44 PATH_11_45 PATH_11_46 PATH_11_47 PATH_11_48 PATH_11_49 PATH_11_50 PATH_11_51 PATH_11_52 PATH_11_53 PATH_11_54 PATH_11_55 PATH_11_56 PATH_11_57 PATH_11_58 PATH_11_59 PATH_11_60 PATH_11_61 PATH_11_62 PATH_11_63 PATH_11_64 PATH_11_65 PATH_11_66 PATH_11_67 PATH_11_68 PATH_11_69 PATH_11_70 PATH_11_71 PATH_11_72 PATH_11_73 PATH_11_74 PATH_11_75 PATH_11_76 PATH_11_77 PATH_11_78 PATH_11_79}

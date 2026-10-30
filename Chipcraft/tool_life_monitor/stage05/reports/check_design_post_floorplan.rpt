@@ -1,0 +1,104 @@
+****************************************
+ Report : check_design
+ Options: { dp_floorplan_rules }
+ Design : tool_life_monitor_top
+ Version: X-2025.06-SP1
+ Date   : Sat Sep 26 03:55:39 2026
+****************************************
+
+Running atomic-check 'dp_floorplan_rules'
+Start checking FinFet grid rule ...
+Warning: Design 'tool_life_monitor_top' does not have FinFET grid. (DPCHK-008)
+End checking FinFet grid rule
+
+Start checking macro spacing rule ...
+****************************************
+Report : report_placement
+Design : tool_life_monitor_top
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 03:55:39 2026
+****************************************
+  ==================
+  Note: Including violations of fixed cells or between fixed pairs of cells. 
+        To ignore violations of / between fixed cells, enable -ignore_fixed. 
+  ==================
+
+  Macro spacing rule violation report
+  =======================================
+  ---------------------------------------
+  Total macro spacing rule violations: 0
+
+Information: Default error view tool_life_monitor_top_dpplace.err is created in GUI error browser. (DPP-054)
+End checking macro spacing rule
+
+Start checking segment parity rule ...
+Warning: Cannot get technology node for current design, segment parity will not be checked.
+End checking segment parity rule
+
+1
+
+  *** EMS Message summary ***
+  Total 0 EMS messages : 0 errors, 0 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+     DPCHK-008   Warn          1 Design '%s' does not have FinFET grid.
+       DPP-054   Info          1 Default error view %s is created in GUI error browser.
+  ----------------------------------------------------------------------------------------------------
+  Total 2 non-EMS messages : 0 errors, 1 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+****************************************
+ Report : check_design
+ Options: { dp_floorplan_rules }
+ Design : tool_life_monitor_top
+ Version: X-2025.06-SP1
+ Date   : Sat Sep 26 03:59:14 2026
+****************************************
+
+Running atomic-check 'dp_floorplan_rules'
+Start checking FinFet grid rule ...
+Warning: Design 'tool_life_monitor_top' does not have FinFET grid. (DPCHK-008)
+End checking FinFet grid rule
+
+Start checking macro spacing rule ...
+****************************************
+Report : report_placement
+Design : tool_life_monitor_top
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 03:59:14 2026
+****************************************
+  ==================
+  Note: Including violations of fixed cells or between fixed pairs of cells. 
+        To ignore violations of / between fixed cells, enable -ignore_fixed. 
+  ==================
+
+  Macro spacing rule violation report
+  =======================================
+  ---------------------------------------
+  Total macro spacing rule violations: 0
+
+Information: Default error view tool_life_monitor_top_dpplace.err is created in GUI error browser. (DPP-054)
+End checking macro spacing rule
+
+Start checking segment parity rule ...
+Warning: Cannot get technology node for current design, segment parity will not be checked.
+End checking segment parity rule
+
+1
+
+  *** EMS Message summary ***
+  Total 0 EMS messages : 0 errors, 0 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+     DPCHK-008   Warn          1 Design '%s' does not have FinFET grid.
+       DPP-054   Info          1 Default error view %s is created in GUI error browser.
+  ----------------------------------------------------------------------------------------------------
+  Total 2 non-EMS messages : 0 errors, 1 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------

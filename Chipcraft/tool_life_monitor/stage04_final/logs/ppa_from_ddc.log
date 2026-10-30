@@ -1,0 +1,395 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version W-2024.09-SP5-3 for linux64 - Jul 31, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/prem5111/.synopsys_dc_gui/preferences.tcl
+Current time:       Fri Sep 25 22:31:46 2026
+Hostname:           sd26.ece.kalasalingam.ac.in
+CPU Model:          12th Gen Intel(R) Core(TM) i5-12400
+CPU Details:        Cores = 12 : Sockets = 1 : Cache Size = 18432 KB : Freq = 2.50 GHz
+OS:                 Linux 4.18.0-553.74.1.el8_10.x86_64
+RAM:                 15 GB (Free   3 GB)
+Swap:                 7 GB (Free   7 GB)
+Work Filesystem:    / mounted to /dev/sda6
+Tmp Filesystem:     / mounted to /dev/sda6
+Work Disk:          284 GB (Free  40 GB)
+Tmp Disk:           284 GB (Free  40 GB)
+
+CPU Load: 5%, Ram Free: 3 GB, Swap Free: 7 GB, Work Disk Free: 40 GB, Tmp Disk Free: 40 GB
+# =====================================================================
+# STAGE_04 // PPA OPTIMIZATION
+# Start from frozen Stage-03 synthesized DDC
+# No RTL analyze / elaborate / compile_ultra
+# =====================================================================
+set TOP "tool_life_monitor_top"
+tool_life_monitor_top
+set BASE_DDC "./netlist/saed32/tool_life_monitor_saed32_baseline.ddc"
+./netlist/saed32/tool_life_monitor_saed32_baseline.ddc
+set OUT_DIR    "./stage04_final"
+./stage04_final
+set REPORT_DIR "$OUT_DIR/reports"
+./stage04_final/reports
+set NETLIST_DIR "$OUT_DIR/netlist"
+./stage04_final/netlist
+# ---------------------------------------------------------------------
+# SAED32 libraries
+# ---------------------------------------------------------------------
+set MAX_LIB \
+"/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db
+set MIN_LIB \
+"/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db
+# =====================================================================
+# 1. FILE CHECKS
+# =====================================================================
+if {![file exists $BASE_DDC]} {
+    puts "ERROR: Baseline DDC not found:"
+    puts "$BASE_DDC"
+    exit 1
+}
+if {![file exists $MAX_LIB]} {
+    puts "ERROR: MAX library not found:"
+    puts "$MAX_LIB"
+    exit 1
+}
+if {![file exists $MIN_LIB]} {
+    puts "ERROR: MIN library not found:"
+    puts "$MIN_LIB"
+    exit 1
+}
+# =====================================================================
+# 2. LIBRARY ENVIRONMENT
+# =====================================================================
+set_app_var target_library [list $MAX_LIB]
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db
+set_app_var link_library "* $MAX_LIB $MIN_LIB"
+* /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db
+set_min_library $MAX_LIB -min_version $MIN_LIB
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db'
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db'
+1
+# =====================================================================
+# 3. READ FROZEN STAGE-03 SYNTHESIZED DESIGN
+# =====================================================================
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " READING FROZEN STAGE-03 DDC"
+ READING FROZEN STAGE-03 DDC
+puts "================================================================="
+=================================================================
+puts ""
+
+read_ddc $BASE_DDC
+Loading db file '/home/prem5111/synopsys/dcs/syn/W-2024.09-SP5-3/libraries/syn/gtech.db'
+Loading db file '/home/prem5111/synopsys/dcs/syn/W-2024.09-SP5-3/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'saed32rvt_ff1p16vn40c'
+  Loading link library 'gtech'
+Reading ddc file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/netlist/saed32/tool_life_monitor_saed32_baseline.ddc'.
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Loaded 1 design.
+Current design is 'tool_life_monitor_top'.
+tool_life_monitor_top
+current_design $TOP
+Current design is 'tool_life_monitor_top'.
+{tool_life_monitor_top}
+# Re-assert library environment after DDC load
+set_app_var target_library [list $MAX_LIB]
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db
+set_app_var link_library "* $MAX_LIB $MIN_LIB"
+* /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db
+set_min_library $MAX_LIB -min_version $MIN_LIB
+1
+link
+
+  Linking design 'tool_life_monitor_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  tool_life_monitor_top       /home/prem5111/Downloads/Chipcraft/tool_life_monitor/netlist/saed32/tool_life_monitor_saed32_baseline.ddc
+  saed32rvt_ss0p95v125c (library) /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db
+  saed32rvt_ff1p16vn40c (library) /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db
+
+1
+# =====================================================================
+# 4. STAGE-04 PRE-CTS CONSTRAINT METHODOLOGY
+#
+# No official PPA/timing margins were supplied.
+#
+# Existing Stage-03 clock / I/O delays remain in the DDC.
+#
+# Setup uncertainty = 0.20 ns engineering margin.
+# Hold uncertainty  = 0.00 ns pre-CTS assumption.
+#
+# Physical hold will be re-evaluated after CTS in ICC2.
+# =====================================================================
+set_clock_uncertainty -setup 0.20 [get_clocks CLK]
+1
+set_clock_uncertainty -hold  0.00 [get_clocks CLK]
+1
+# =====================================================================
+# 5. VERIFY DESIGN BEFORE OPTIMIZATION
+# =====================================================================
+redirect -file $REPORT_DIR/baseline/check_design.rpt {
+    check_design
+}
+redirect -file $REPORT_DIR/baseline/check_timing.rpt {
+    check_timing
+}
+# =====================================================================
+# 6. BASELINE REPORTS
+# =====================================================================
+redirect -file $REPORT_DIR/baseline/qor.rpt {
+    report_qor
+}
+redirect -file $REPORT_DIR/baseline/area.rpt {
+    report_area -hierarchy
+}
+redirect -file $REPORT_DIR/baseline/power.rpt {
+    report_power
+}
+redirect -file $REPORT_DIR/baseline/setup_timing.rpt {
+    report_timing \
+        -delay_type max \
+        -max_paths 20 \
+        -path full
+}
+redirect -file $REPORT_DIR/baseline/hold_timing.rpt {
+    report_timing \
+        -delay_type min \
+        -max_paths 20 \
+        -path full
+}
+redirect -file $REPORT_DIR/baseline/constraints.rpt {
+    report_constraint -all_violators
+}
+# =====================================================================
+# 7. ACTUAL STAGE-04 POST-SYNTHESIS PPA OPTIMIZATION
+#
+# IMPORTANT:
+# - No analyze
+# - No elaborate
+# - No compile_ultra
+#
+# optimize_netlist -area is the supported command recommended by
+# this installed DC version.
+# =====================================================================
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " STAGE 04 : POST-SYNTHESIS AREA / PPA OPTIMIZATION"
+ STAGE 04 : POST-SYNTHESIS AREA / PPA OPTIMIZATION
+puts "================================================================="
+=================================================================
+puts ""
+
+optimize_netlist -area
+Loading db file '/home/prem5111/synopsys/dcs/syn/W-2024.09-SP5-3/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 5%, Ram Free: 3 GB, Swap Free: 7 GB, Work Disk Free: 40 GB, Tmp Disk Free: 40 GB
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.5 |     *     |
+| Licensed DW Building Blocks        | W-2024.09-DWBB_202409.5 |     *     |
+============================================================================
+
+
+Loaded alib file './alib-52/saed32rvt_ss0p95v125c.db.alib'
+  Loading design 'tool_life_monitor_top'
+Information: The library cell 'PMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+
+  Beginning Area Optimization
+  -----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    2634.2      0.00       0.0       0.0                           131019464.0000
+    0:00:01    2623.0      0.00       0.0       0.0                           130329400.0000
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db'
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+CPU Load: 5%, Ram Free: 3 GB, Swap Free: 7 GB, Work Disk Free: 40 GB, Tmp Disk Free: 40 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+# =====================================================================
+# 8. FINAL VALIDATION
+# =====================================================================
+redirect -file $REPORT_DIR/final/check_design.rpt {
+    check_design
+}
+redirect -file $REPORT_DIR/final/check_timing.rpt {
+    check_timing
+}
+# =====================================================================
+# 9. FINAL QoR
+# =====================================================================
+redirect -file $REPORT_DIR/final/qor.rpt {
+    report_qor
+}
+# =====================================================================
+# 10. FINAL AREA
+# =====================================================================
+redirect -file $REPORT_DIR/final/area.rpt {
+    report_area -hierarchy
+}
+# =====================================================================
+# 11. FINAL POWER
+# =====================================================================
+redirect -file $REPORT_DIR/final/power.rpt {
+    report_power
+}
+# =====================================================================
+# 12. FINAL SETUP TIMING
+# =====================================================================
+redirect -file $REPORT_DIR/final/setup_timing.rpt {
+    report_timing \
+        -delay_type max \
+        -max_paths 20 \
+        -path full
+}
+# =====================================================================
+# 13. FINAL HOLD TIMING
+# =====================================================================
+redirect -file $REPORT_DIR/final/hold_timing.rpt {
+    report_timing \
+        -delay_type min \
+        -max_paths 20 \
+        -path full
+}
+# =====================================================================
+# 14. FINAL CONSTRAINT REPORT
+# =====================================================================
+redirect -file $REPORT_DIR/final/constraints.rpt {
+    report_constraint -all_violators
+}
+# =====================================================================
+# 15. CELL / REFERENCE REPORT
+# =====================================================================
+redirect -file $REPORT_DIR/final/references.rpt {
+    report_reference
+}
+# =====================================================================
+# 16. WRITE FINAL OPTIMIZED DESIGN
+# =====================================================================
+change_names -rules verilog -hierarchy
+1
+write \
+    -format verilog \
+    -hierarchy \
+    -output $NETLIST_DIR/tool_life_monitor_ppa_opt.v
+Writing verilog file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/stage04_final/netlist/tool_life_monitor_ppa_opt.v'.
+1
+write_file \
+    -format ddc \
+    -hierarchy \
+    -output $NETLIST_DIR/tool_life_monitor_ppa_opt.ddc
+Writing ddc file './stage04_final/netlist/tool_life_monitor_ppa_opt.ddc'.
+1
+write_sdc \
+    $NETLIST_DIR/tool_life_monitor_ppa_opt.sdc
+1
+# =====================================================================
+# 17. COMPLETION
+# =====================================================================
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " STAGE_04 // PPA OPTIMIZATION COMPLETE"
+ STAGE_04 // PPA OPTIMIZATION COMPLETE
+puts "================================================================="
+=================================================================
+puts "Input  : $BASE_DDC"
+Input  : ./netlist/saed32/tool_life_monitor_saed32_baseline.ddc
+puts "Output : $NETLIST_DIR/tool_life_monitor_ppa_opt.v"
+Output : ./stage04_final/netlist/tool_life_monitor_ppa_opt.v
+puts ""
+
+puts "IMPORTANT:"
+IMPORTANT:
+puts "This run started from the frozen Stage-03 synthesized DDC."
+This run started from the frozen Stage-03 synthesized DDC.
+puts "No RTL resynthesis was performed."
+No RTL resynthesis was performed.
+puts "================================================================="
+=================================================================
+puts ""
+
+exit
+
+Memory usage for this session 260 Mbytes.
+Memory usage for this session including child processes 260 Mbytes.
+CPU usage for this session 4 seconds ( 0.00 hours ).
+Elapsed time for this session 9 seconds ( 0.00 hours ).
+
+Thank you...

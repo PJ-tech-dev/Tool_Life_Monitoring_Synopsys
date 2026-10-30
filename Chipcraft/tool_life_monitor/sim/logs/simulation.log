@@ -1,0 +1,99 @@
+Command: /home/prem5111/Downloads/Chipcraft/tool_life_monitor/./simv -l sim/logs/simulation.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP2-4; Runtime version W-2024.09-SP2-4;  Sep 25 21:36 2026
+
+===============================================
+TEST 1 : GLOBAL RESET
+===============================================
+Counts = 0 0 0 0
+Invalid threshold = 1111
+
+===============================================
+TEST 2 : THRESHOLD PROGRAMMING
+===============================================
+Machine 0 threshold = 10
+Machine 1 threshold = 15
+Machine 2 threshold = 20
+Machine 3 threshold = 25
+Invalid threshold = 0000
+
+===============================================
+TEST 3 : ALL MACHINES AT WARNING LEVEL
+===============================================
+Counts  = 8 12 16 20
+Warning = 1111
+
+Machine 0 reached threshold
+count0 = 10
+replacement_req = 0001
+
+Machine 1 reached threshold
+count1 = 15
+replacement_req = 0011
+
+Machine 2 reached threshold
+count2 = 20
+replacement_req = 0111
+
+Machine 3 reached threshold
+count3 = 25
+replacement_req = 1111
+
+===============================================
+TEST 8 : ALL REPLACEMENT FLAGS HIGH
+===============================================
+replacement_req = 1111
+
+Machine 0 acknowledged
+count0 = 0
+replacement_req = 1110
+
+Machine 1 acknowledged
+count1 = 0
+replacement_req = 1100
+
+Machine 2 acknowledged
+count2 = 0
+replacement_req = 1000
+
+Machine 3 acknowledged
+count3 = 0
+replacement_req = 0000
+
+===============================================
+TEST 13 : ALL TOOLS REPLACED
+===============================================
+Counts = 0 0 0 0
+replacement_req = 0000
+warning         = 0000
+
+===============================================
+TEST 14 : COUNTING AFTER REPLACEMENT
+===============================================
+Machine 0 = 2
+Machine 1 = 3
+Machine 2 = 4
+Machine 3 = 5
+
+===============================================
+TEST 15 : SIMULTANEOUS MACHINE OPERATION
+===============================================
+Machine 0 = 3
+Machine 1 = 4
+Machine 2 = 5
+Machine 3 = 6
+Read M0 : Count=3 Threshold=10 Status=00
+Read M1 : Count=4 Threshold=15 Status=00
+Read M2 : Count=5 Threshold=20 Status=00
+Read M3 : Count=6 Threshold=25 Status=00
+
+===============================================
+ALL FUNCTIONAL TESTS COMPLETED
+===============================================
+$finish called from file "tb/tb_tool_life_monitor.sv", line 602.
+$finish at simulation time              1982000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1982000 ps
+CPU Time:      0.220 seconds;       Data structure size:   0.0Mb
+Fri Sep 25 21:36:17 2026

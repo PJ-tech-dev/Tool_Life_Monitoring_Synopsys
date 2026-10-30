@@ -1,0 +1,46 @@
+****************************************
+ Report : check_design
+ Options: { pin_placement }
+ Design : tool_life_monitor_top
+ Version: X-2025.06-SP1
+ Date   : Sat Sep 26 05:42:27 2026
+****************************************
+
+Running atomic-check 'pin_placement'
+Warning: Didn't find any enabled planning block for check_pin_placement. (DPPA-268)
+0 total number of pre-routes loaded
+0 total number of vias loaded
+0 total number of edges loaded
+----------------------- Start Of Missing Pin Check ------------------------
+------------------------ End Of Missing Pin Check -------------------------
+
+-------------------- Start Of Technology Spacing Check --------------------
+--------------------- End Of Technology Spacing Check ---------------------
+
+------------------------ Start Of Pin Short Check -------------------------
+------------------------- End Of Pin Short Check --------------------------
+
+No violation has been found
+***Summary***
+---------------------------------------------------------------------------
+Type of Violation        |                                            Count
+-------------------------+-------------------------------------------------
+Missing Pins             |                                               0
+Pin Short                |                                               0
+Technology Spacing       |                                               0
+-------------------------+-------------------------------------------------
+Total Violations         |                                               0
+---------------------------------------------------------------------------
+
+  *** EMS Message summary ***
+  Total 0 EMS messages : 0 errors, 0 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+      DPPA-268   Warn          1 Didn't find any enabled planning block for %s.
+  ----------------------------------------------------------------------------------------------------
+  Total 1 non-EMS messages : 0 errors, 1 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------

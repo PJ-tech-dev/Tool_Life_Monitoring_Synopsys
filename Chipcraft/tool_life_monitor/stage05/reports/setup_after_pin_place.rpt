@@ -1,0 +1,1126 @@
+Information: Timer using 1 threads
+Timing Update Started(Full_timing_update) : updateCount: 1 / Mem-peak : 669 MB / Date: Sat Sep 26 05:42:28 2026
+
+Timing Update Completed: Mem-peak: 669 MB / Date: Sat Sep 26 05:42:28 2026
+
+Information: Corner default: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'tool_life_monitor.nlib:tool_life_monitor_top/cts_opt.design'. (TIM-125)
+Information: Design tool_life_monitor_top has 1026 nets, 0 global routed, 1 detail routed. (NEX-024)
+Information: The RC mode used is CTO for design 'tool_life_monitor_top'. (NEX-022)
+Information: Design Average RC for design tool_life_monitor_top  (NEX-011)
+Information: r = 1.072588 ohm/um, via_r = 0.468224 ohm/cut, c = 0.071890 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 1.392353 ohm/um, via_r = 0.580476 ohm/cut, c = 0.082359 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 1024, routed nets = 1, across physical hierarchy nets = 0, parasitics cached nets = 1024, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+LLE:                                       disabled
+ML Acceleration:                           off
+Smart Arc Optimization:                    disabled
+************************************************************
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 20
+        -report_by design
+Design : tool_life_monitor_top
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 05:42:28 2026
+****************************************
+
+  Startpoint: u_system_counter_count_reg_1__2_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: selected_status[0] (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  u_system_counter_count_reg_1__2_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_system_counter_count_reg_1__2_/Q (DFFARX1_HVT)
+                                                   0.23      0.23 f
+  HFSBUF_308_33/Y (NBUFFX2_HVT)                    0.10      0.33 f
+  ctmTdsLR_1_117/Y (AND2X1_HVT)                    0.13      0.46 f
+  intadd_0_U14/S (FADDX1_HVT)                      0.22      0.67 r
+  U631/Y (AO222X1_HVT)                             0.21      0.88 r
+  U630/Y (AO222X1_HVT)                             0.23      1.11 r
+  U629/Y (AO222X1_HVT)                             0.23      1.34 r
+  U672/Y (AO222X1_HVT)                             0.23      1.58 r
+  U671/Y (AO222X1_HVT)                             0.23      1.81 r
+  U670/Y (AO222X1_HVT)                             0.23      2.04 r
+  U669/Y (AO222X1_HVT)                             0.23      2.27 r
+  U712/Y (AO222X1_HVT)                             0.23      2.49 r
+  U711/Y (AO222X1_HVT)                             0.23      2.73 r
+  U710/Y (AO222X1_HVT)                             0.23      2.95 r
+  U709/Y (AO222X1_HVT)                             0.23      3.18 r
+  U767/Y (AO222X1_HVT)                             0.23      3.41 r
+  U766/Y (AO222X1_HVT)                             0.23      3.64 r
+  U764/Y (AO222X1_HVT)                             0.21      3.85 r
+  U942/Y (AO222X1_HVT)                             0.22      4.07 r
+  U940/Y (OA221X1_HVT)                             0.19      4.25 r
+  U878/Y (MUX41X1_HVT)                             0.20      4.46 r
+  selected_status[0] (out)                         0.00      4.46 r
+  data arrival time                                          4.46
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -1.00      8.80
+  data required time                                         8.80
+  ------------------------------------------------------------------------
+  data required time                                         8.80
+  data arrival time                                         -4.46
+  ------------------------------------------------------------------------
+  slack (MET)                                                4.34
+
+
+
+  Startpoint: u_system_counter_count_reg_1__2_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: warning[1] (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  u_system_counter_count_reg_1__2_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_system_counter_count_reg_1__2_/Q (DFFARX1_HVT)
+                                                   0.23      0.23 f
+  HFSBUF_308_33/Y (NBUFFX2_HVT)                    0.10      0.33 f
+  ctmTdsLR_1_117/Y (AND2X1_HVT)                    0.13      0.46 f
+  intadd_0_U14/S (FADDX1_HVT)                      0.22      0.67 r
+  U631/Y (AO222X1_HVT)                             0.21      0.88 r
+  U630/Y (AO222X1_HVT)                             0.23      1.11 r
+  U629/Y (AO222X1_HVT)                             0.23      1.34 r
+  U672/Y (AO222X1_HVT)                             0.23      1.58 r
+  U671/Y (AO222X1_HVT)                             0.23      1.81 r
+  U670/Y (AO222X1_HVT)                             0.23      2.04 r
+  U669/Y (AO222X1_HVT)                             0.23      2.27 r
+  U712/Y (AO222X1_HVT)                             0.23      2.49 r
+  U711/Y (AO222X1_HVT)                             0.23      2.73 r
+  U710/Y (AO222X1_HVT)                             0.23      2.95 r
+  U709/Y (AO222X1_HVT)                             0.23      3.18 r
+  U767/Y (AO222X1_HVT)                             0.23      3.41 r
+  U766/Y (AO222X1_HVT)                             0.23      3.64 r
+  U764/Y (AO222X1_HVT)                             0.21      3.85 r
+  U942/Y (AO222X1_HVT)                             0.22      4.07 r
+  U940/Y (OA221X1_HVT)                             0.19      4.25 r
+  warning[1] (out)                                 0.00      4.25 r
+  data arrival time                                          4.25
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -1.00      8.80
+  data required time                                         8.80
+  ------------------------------------------------------------------------
+  data required time                                         8.80
+  data arrival time                                         -4.25
+  ------------------------------------------------------------------------
+  slack (MET)                                                4.55
+
+
+
+  Startpoint: u_system_counter_count_reg_3__2_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: warning[3] (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__2_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__2_/Q (DFFARX1_HVT)
+                                                   0.23      0.24 f
+  HFSBUF_352_37/Y (NBUFFX2_HVT)                    0.10      0.34 f
+  ctmTdsLR_1_118/Y (AND2X1_HVT)                    0.13      0.47 f
+  intadd_1_U14/S (FADDX1_HVT)                      0.22      0.69 r
+  U651/Y (AO222X1_HVT)                             0.21      0.90 r
+  U650/Y (AO222X1_HVT)                             0.23      1.13 r
+  U649/Y (AO222X1_HVT)                             0.23      1.36 r
+  U692/Y (AO222X1_HVT)                             0.23      1.59 r
+  U691/Y (AO222X1_HVT)                             0.23      1.81 r
+  U690/Y (AO222X1_HVT)                             0.23      2.04 r
+  U689/Y (AO222X1_HVT)                             0.23      2.27 r
+  U732/Y (AO222X1_HVT)                             0.23      2.50 r
+  U731/Y (AO222X1_HVT)                             0.23      2.73 r
+  U730/Y (AO222X1_HVT)                             0.23      2.96 r
+  U729/Y (AO222X1_HVT)                             0.23      3.19 r
+  U785/Y (AO222X1_HVT)                             0.23      3.42 r
+  U784/Y (AO222X1_HVT)                             0.22      3.65 r
+  U782/Y (AO222X1_HVT)                             0.21      3.86 r
+  U950/Y (AO222X1_HVT)                             0.21      4.07 r
+  U948/Y (OA221X1_HVT)                             0.18      4.25 r
+  warning[3] (out)                                 0.00      4.25 r
+  data arrival time                                          4.25
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -1.00      8.80
+  data required time                                         8.80
+  ------------------------------------------------------------------------
+  data required time                                         8.80
+  data arrival time                                         -4.25
+  ------------------------------------------------------------------------
+  slack (MET)                                                4.55
+
+
+
+  Startpoint: u_system_counter_count_reg_2__0_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: warning[2] (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  u_system_counter_count_reg_2__0_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_system_counter_count_reg_2__0_/Q (DFFARX1_HVT)
+                                                   0.29      0.29 f
+  ctmTdsLR_1_120/Y (AND2X1_HVT)                    0.15      0.44 f
+  intadd_3_U14/S (FADDX1_HVT)                      0.22      0.66 r
+  U641/Y (AO222X1_HVT)                             0.22      0.87 r
+  U640/Y (AO222X1_HVT)                             0.23      1.10 r
+  U639/Y (AO222X1_HVT)                             0.23      1.34 r
+  U682/Y (AO222X1_HVT)                             0.23      1.57 r
+  U681/Y (AO222X1_HVT)                             0.23      1.79 r
+  U680/Y (AO222X1_HVT)                             0.23      2.02 r
+  U679/Y (AO222X1_HVT)                             0.23      2.25 r
+  U722/Y (AO222X1_HVT)                             0.23      2.48 r
+  U721/Y (AO222X1_HVT)                             0.23      2.70 r
+  U720/Y (AO222X1_HVT)                             0.23      2.93 r
+  U719/Y (AO222X1_HVT)                             0.23      3.16 r
+  U776/Y (AO222X1_HVT)                             0.23      3.39 r
+  U775/Y (AO222X1_HVT)                             0.23      3.62 r
+  U773/Y (AO222X1_HVT)                             0.22      3.84 r
+  U946/Y (AO222X1_HVT)                             0.22      4.05 r
+  U944/Y (OA221X1_HVT)                             0.18      4.23 r
+  warning[2] (out)                                 0.00      4.23 r
+  data arrival time                                          4.23
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -1.00      8.80
+  data required time                                         8.80
+  ------------------------------------------------------------------------
+  data required time                                         8.80
+  data arrival time                                         -4.23
+  ------------------------------------------------------------------------
+  slack (MET)                                                4.57
+
+
+
+  Startpoint: u_system_counter_count_reg_0__2_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: warning[0] (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  u_system_counter_count_reg_0__2_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_system_counter_count_reg_0__2_/Q (DFFARX1_HVT)
+                                                   0.23      0.23 f
+  HFSBUF_253_31/Y (NBUFFX2_HVT)                    0.10      0.33 f
+  ctmTdsLR_1_116/Y (AND2X1_HVT)                    0.12      0.44 f
+  intadd_2_U14/S (FADDX1_HVT)                      0.21      0.66 r
+  U621/Y (AO222X1_HVT)                             0.21      0.87 r
+  U620/Y (AO222X1_HVT)                             0.23      1.09 r
+  U619/Y (AO222X1_HVT)                             0.23      1.32 r
+  U662/Y (AO222X1_HVT)                             0.23      1.55 r
+  U661/Y (AO222X1_HVT)                             0.23      1.78 r
+  U660/Y (AO222X1_HVT)                             0.23      2.00 r
+  U659/Y (AO222X1_HVT)                             0.23      2.23 r
+  U702/Y (AO222X1_HVT)                             0.23      2.46 r
+  U701/Y (AO222X1_HVT)                             0.23      2.68 r
+  U700/Y (AO222X1_HVT)                             0.23      2.91 r
+  U699/Y (AO222X1_HVT)                             0.23      3.15 r
+  U758/Y (AO222X1_HVT)                             0.23      3.37 r
+  U757/Y (AO222X1_HVT)                             0.23      3.60 r
+  U755/Y (AO222X1_HVT)                             0.21      3.81 r
+  U938/Y (AO222X1_HVT)                             0.21      4.02 r
+  U936/Y (OA221X1_HVT)                             0.21      4.23 r
+  warning[0] (out)                                 0.00      4.23 r
+  data arrival time                                          4.23
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -1.00      8.80
+  data required time                                         8.80
+  ------------------------------------------------------------------------
+  data required time                                         8.80
+  data arrival time                                         -4.23
+  ------------------------------------------------------------------------
+  slack (MET)                                                4.57
+
+
+
+  Startpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: selected_status[1] (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__1_/Q (DFFARX1_HVT)
+                                                   0.27      0.28 r
+  HFSBUF_181_58/Y (NBUFFX2_HVT)                    0.11      0.39 r
+  U617/Y (AO222X1_HVT)                             0.21      0.60 r
+  U616/Y (AO222X1_HVT)                             0.21      0.81 r
+  U615/Y (AO222X1_HVT)                             0.20      1.01 r
+  U658/Y (AO222X1_HVT)                             0.23      1.24 r
+  U657/Y (AO222X1_HVT)                             0.23      1.46 r
+  U656/Y (AO222X1_HVT)                             0.23      1.69 r
+  U655/Y (AO222X1_HVT)                             0.23      1.92 r
+  U695/Y (AO221X1_HVT)                             0.18      2.10 r
+  U735/Y (AO22X1_HVT)                              0.10      2.20 r
+  ctmTdsLR_1_107/Y (OAI221X1_HVT)                  0.14      2.34 f
+  U789/Y (NAND3X0_HVT)                             0.04      2.39 r
+  U786/Y (NAND3X0_HVT)                             0.12      2.51 f
+  U935/Y (NOR2X1_HVT)                              0.15      2.66 r
+  U879/Y (MUX41X1_HVT)                             0.20      2.86 r
+  selected_status[1] (out)                         0.00      2.86 r
+  data arrival time                                          2.86
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -1.00      8.80
+  data required time                                         8.80
+  ------------------------------------------------------------------------
+  data required time                                         8.80
+  data arrival time                                         -2.86
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.94
+
+
+
+  Startpoint: u_threshold_bank_threshold_reg_1__0_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__2_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  u_threshold_bank_threshold_reg_1__0_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_threshold_bank_threshold_reg_1__0_/Q (DFFARX1_HVT)
+                                                   0.24      0.24 f
+  U610/Y (NAND2X0_HVT)                             0.08      0.32 r
+  U609/Y (AO222X1_HVT)                             0.20      0.53 r
+  U608/Y (AO222X1_HVT)                             0.20      0.73 r
+  U607/Y (AO222X1_HVT)                             0.20      0.93 r
+  U638/Y (AO222X1_HVT)                             0.23      1.16 r
+  U637/Y (AO222X1_HVT)                             0.23      1.39 r
+  U636/Y (AO222X1_HVT)                             0.23      1.61 r
+  U635/Y (AO222X1_HVT)                             0.23      1.84 r
+  U675/Y (AO221X1_HVT)                             0.18      2.02 r
+  U715/Y (AO22X1_HVT)                              0.10      2.12 r
+  ctmTdsLR_1_106/Y (OAI221X1_HVT)                  0.14      2.26 f
+  U771/Y (NAND3X0_HVT)                             0.04      2.30 r
+  U768/Y (NAND3X0_HVT)                             0.13      2.44 f
+  U933/Y (NOR2X1_HVT)                              0.17      2.61 r
+  U832/Y (AO22X2_HVT)                              0.20      2.81 r
+  U835/Y (NAND2X0_HVT)                             0.26      3.07 f
+  HFSINV_991_81/Y (INVX0_HVT)                      0.08      3.15 r
+  HFSBUF_975_80/Y (NBUFFX2_HVT)                    0.15      3.30 r
+  U828/Y (NAND2X0_HVT)                             0.08      3.38 f
+  U827/Y (NAND2X0_HVT)                             0.09      3.47 r
+  U1039/Y (AO222X1_HVT)                            0.19      3.66 r
+  u_system_counter_count_reg_1__2_/D (DFFARX1_HVT)
+                                                   0.00      3.66 r
+  data arrival time                                          3.66
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  u_system_counter_count_reg_1__2_/CLK (DFFARX1_HVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.11      9.69
+  data required time                                         9.69
+  ------------------------------------------------------------------------
+  data required time                                         9.69
+  data arrival time                                         -3.66
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.03
+
+
+
+  Startpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__14_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__1_/Q (DFFARX1_HVT)
+                                                   0.27      0.28 r
+  HFSBUF_181_58/Y (NBUFFX2_HVT)                    0.11      0.39 r
+  U617/Y (AO222X1_HVT)                             0.21      0.60 r
+  U616/Y (AO222X1_HVT)                             0.21      0.81 r
+  U615/Y (AO222X1_HVT)                             0.20      1.01 r
+  U658/Y (AO222X1_HVT)                             0.23      1.24 r
+  U657/Y (AO222X1_HVT)                             0.23      1.46 r
+  U656/Y (AO222X1_HVT)                             0.23      1.69 r
+  U655/Y (AO222X1_HVT)                             0.23      1.92 r
+  U695/Y (AO221X1_HVT)                             0.18      2.10 r
+  U735/Y (AO22X1_HVT)                              0.10      2.20 r
+  ctmTdsLR_1_107/Y (OAI221X1_HVT)                  0.14      2.34 f
+  U789/Y (NAND3X0_HVT)                             0.04      2.39 r
+  U786/Y (NAND3X0_HVT)                             0.12      2.51 f
+  U935/Y (NOR2X1_HVT)                              0.15      2.66 r
+  U866/Y (AO22X1_HVT)                              0.18      2.85 r
+  U869/Y (NAND2X0_HVT)                             0.25      3.09 f
+  HFSINV_306_88/Y (INVX0_HVT)                      0.08      3.17 r
+  HFSBUF_278_87/Y (NBUFFX2_HVT)                    0.14      3.31 r
+  U870/Y (AO21X1_HVT)                              0.14      3.46 r
+  U1110/Y (AO222X1_HVT)                            0.18      3.64 r
+  u_system_counter_count_reg_3__14_/D (DFFARX1_HVT)
+                                                   0.00      3.64 r
+  data arrival time                                          3.64
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.01     10.01
+  u_system_counter_count_reg_3__14_/CLK (DFFARX1_HVT)
+                                                   0.00     10.01 r
+  clock uncertainty                               -0.20      9.81
+  library setup time                              -0.11      9.70
+  data required time                                         9.70
+  ------------------------------------------------------------------------
+  data required time                                         9.70
+  data arrival time                                         -3.64
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.06
+
+
+
+  Startpoint: u_threshold_bank_threshold_reg_1__0_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__14_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  u_threshold_bank_threshold_reg_1__0_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_threshold_bank_threshold_reg_1__0_/Q (DFFARX1_HVT)
+                                                   0.24      0.24 f
+  U610/Y (NAND2X0_HVT)                             0.08      0.32 r
+  U609/Y (AO222X1_HVT)                             0.20      0.53 r
+  U608/Y (AO222X1_HVT)                             0.20      0.73 r
+  U607/Y (AO222X1_HVT)                             0.20      0.93 r
+  U638/Y (AO222X1_HVT)                             0.23      1.16 r
+  U637/Y (AO222X1_HVT)                             0.23      1.39 r
+  U636/Y (AO222X1_HVT)                             0.23      1.61 r
+  U635/Y (AO222X1_HVT)                             0.23      1.84 r
+  U675/Y (AO221X1_HVT)                             0.18      2.02 r
+  U715/Y (AO22X1_HVT)                              0.10      2.12 r
+  ctmTdsLR_1_106/Y (OAI221X1_HVT)                  0.14      2.26 f
+  U771/Y (NAND3X0_HVT)                             0.04      2.30 r
+  U768/Y (NAND3X0_HVT)                             0.13      2.44 f
+  U933/Y (NOR2X1_HVT)                              0.17      2.61 r
+  U832/Y (AO22X2_HVT)                              0.20      2.81 r
+  U835/Y (NAND2X0_HVT)                             0.26      3.07 f
+  HFSINV_991_81/Y (INVX0_HVT)                      0.08      3.15 r
+  HFSBUF_975_80/Y (NBUFFX2_HVT)                    0.15      3.30 r
+  U836/Y (AO21X1_HVT)                              0.14      3.44 r
+  U1049/Y (AO222X1_HVT)                            0.18      3.62 r
+  u_system_counter_count_reg_1__14_/D (DFFARX1_HVT)
+                                                   0.00      3.62 r
+  data arrival time                                          3.62
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  u_system_counter_count_reg_1__14_/CLK (DFFARX1_HVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.11      9.69
+  data required time                                         9.69
+  ------------------------------------------------------------------------
+  data required time                                         9.69
+  data arrival time                                         -3.62
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.07
+
+
+
+  Startpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__2_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__1_/Q (DFFARX1_HVT)
+                                                   0.27      0.28 r
+  HFSBUF_181_58/Y (NBUFFX2_HVT)                    0.11      0.39 r
+  U617/Y (AO222X1_HVT)                             0.21      0.60 r
+  U616/Y (AO222X1_HVT)                             0.21      0.81 r
+  U615/Y (AO222X1_HVT)                             0.20      1.01 r
+  U658/Y (AO222X1_HVT)                             0.23      1.24 r
+  U657/Y (AO222X1_HVT)                             0.23      1.46 r
+  U656/Y (AO222X1_HVT)                             0.23      1.69 r
+  U655/Y (AO222X1_HVT)                             0.23      1.92 r
+  U695/Y (AO221X1_HVT)                             0.18      2.10 r
+  U735/Y (AO22X1_HVT)                              0.10      2.20 r
+  ctmTdsLR_1_107/Y (OAI221X1_HVT)                  0.14      2.34 f
+  U789/Y (NAND3X0_HVT)                             0.04      2.39 r
+  U786/Y (NAND3X0_HVT)                             0.12      2.51 f
+  U935/Y (NOR2X1_HVT)                              0.15      2.66 r
+  U866/Y (AO22X1_HVT)                              0.18      2.85 r
+  U869/Y (NAND2X0_HVT)                             0.25      3.09 f
+  HFSINV_306_88/Y (INVX0_HVT)                      0.08      3.17 r
+  HFSBUF_278_87/Y (NBUFFX2_HVT)                    0.14      3.31 r
+  U862/Y (NAND2X0_HVT)                             0.08      3.39 f
+  U861/Y (NAND2X0_HVT)                             0.09      3.48 r
+  ctmTdsLR_2_161/Y (NAND2X0_HVT)                   0.08      3.56 f
+  ctmTdsLR_1_160/Y (NAND3X0_HVT)                   0.07      3.62 r
+  u_system_counter_count_reg_3__2_/D (DFFARX1_HVT)
+                                                   0.00      3.62 r
+  data arrival time                                          3.62
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  u_system_counter_count_reg_3__2_/CLK (DFFARX1_HVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.11      9.69
+  data required time                                         9.69
+  ------------------------------------------------------------------------
+  data required time                                         9.69
+  data arrival time                                         -3.62
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.07
+
+
+
+  Startpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__1_/Q (DFFARX1_HVT)
+                                                   0.27      0.28 r
+  HFSBUF_181_58/Y (NBUFFX2_HVT)                    0.11      0.39 r
+  U617/Y (AO222X1_HVT)                             0.21      0.60 r
+  U616/Y (AO222X1_HVT)                             0.21      0.81 r
+  U615/Y (AO222X1_HVT)                             0.20      1.01 r
+  U658/Y (AO222X1_HVT)                             0.23      1.24 r
+  U657/Y (AO222X1_HVT)                             0.23      1.46 r
+  U656/Y (AO222X1_HVT)                             0.23      1.69 r
+  U655/Y (AO222X1_HVT)                             0.23      1.92 r
+  U695/Y (AO221X1_HVT)                             0.18      2.10 r
+  U735/Y (AO22X1_HVT)                              0.10      2.20 r
+  ctmTdsLR_1_107/Y (OAI221X1_HVT)                  0.14      2.34 f
+  U789/Y (NAND3X0_HVT)                             0.04      2.39 r
+  U786/Y (NAND3X0_HVT)                             0.12      2.51 f
+  U935/Y (NOR2X1_HVT)                              0.15      2.66 r
+  U866/Y (AO22X1_HVT)                              0.18      2.85 r
+  U869/Y (NAND2X0_HVT)                             0.25      3.09 f
+  HFSINV_306_88/Y (INVX0_HVT)                      0.08      3.17 r
+  HFSBUF_278_87/Y (NBUFFX2_HVT)                    0.14      3.31 r
+  U862/Y (NAND2X0_HVT)                             0.08      3.39 f
+  U861/Y (NAND2X0_HVT)                             0.09      3.48 r
+  U1099/Y (AO22X1_HVT)                             0.15      3.63 r
+  u_system_counter_count_reg_3__1_/D (DFFARX1_HVT)
+                                                   0.00      3.63 r
+  data arrival time                                          3.63
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.10      9.71
+  data required time                                         9.71
+  ------------------------------------------------------------------------
+  data required time                                         9.71
+  data arrival time                                         -3.63
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.08
+
+
+
+  Startpoint: u_threshold_bank_threshold_reg_1__0_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  u_threshold_bank_threshold_reg_1__0_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_threshold_bank_threshold_reg_1__0_/Q (DFFARX1_HVT)
+                                                   0.24      0.24 f
+  U610/Y (NAND2X0_HVT)                             0.08      0.32 r
+  U609/Y (AO222X1_HVT)                             0.20      0.53 r
+  U608/Y (AO222X1_HVT)                             0.20      0.73 r
+  U607/Y (AO222X1_HVT)                             0.20      0.93 r
+  U638/Y (AO222X1_HVT)                             0.23      1.16 r
+  U637/Y (AO222X1_HVT)                             0.23      1.39 r
+  U636/Y (AO222X1_HVT)                             0.23      1.61 r
+  U635/Y (AO222X1_HVT)                             0.23      1.84 r
+  U675/Y (AO221X1_HVT)                             0.18      2.02 r
+  U715/Y (AO22X1_HVT)                              0.10      2.12 r
+  ctmTdsLR_1_106/Y (OAI221X1_HVT)                  0.14      2.26 f
+  U771/Y (NAND3X0_HVT)                             0.04      2.30 r
+  U768/Y (NAND3X0_HVT)                             0.13      2.44 f
+  U933/Y (NOR2X1_HVT)                              0.17      2.61 r
+  U832/Y (AO22X2_HVT)                              0.20      2.81 r
+  U835/Y (NAND2X0_HVT)                             0.26      3.07 f
+  HFSINV_991_81/Y (INVX0_HVT)                      0.08      3.15 r
+  HFSBUF_975_80/Y (NBUFFX2_HVT)                    0.15      3.30 r
+  U828/Y (NAND2X0_HVT)                             0.08      3.38 f
+  U827/Y (NAND2X0_HVT)                             0.09      3.47 r
+  U1038/Y (AO22X1_HVT)                             0.15      3.62 r
+  u_system_counter_count_reg_1__1_/D (DFFARX1_HVT)
+                                                   0.00      3.62 r
+  data arrival time                                          3.62
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  u_system_counter_count_reg_1__1_/CLK (DFFARX1_HVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.10      9.70
+  data required time                                         9.70
+  ------------------------------------------------------------------------
+  data required time                                         9.70
+  data arrival time                                         -3.62
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.08
+
+
+
+  Startpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__13_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__1_/Q (DFFARX1_HVT)
+                                                   0.27      0.28 r
+  HFSBUF_181_58/Y (NBUFFX2_HVT)                    0.11      0.39 r
+  U617/Y (AO222X1_HVT)                             0.21      0.60 r
+  U616/Y (AO222X1_HVT)                             0.21      0.81 r
+  U615/Y (AO222X1_HVT)                             0.20      1.01 r
+  U658/Y (AO222X1_HVT)                             0.23      1.24 r
+  U657/Y (AO222X1_HVT)                             0.23      1.46 r
+  U656/Y (AO222X1_HVT)                             0.23      1.69 r
+  U655/Y (AO222X1_HVT)                             0.23      1.92 r
+  U695/Y (AO221X1_HVT)                             0.18      2.10 r
+  U735/Y (AO22X1_HVT)                              0.10      2.20 r
+  ctmTdsLR_1_107/Y (OAI221X1_HVT)                  0.14      2.34 f
+  U789/Y (NAND3X0_HVT)                             0.04      2.39 r
+  U786/Y (NAND3X0_HVT)                             0.12      2.51 f
+  U935/Y (NOR2X1_HVT)                              0.15      2.66 r
+  U866/Y (AO22X1_HVT)                              0.18      2.85 r
+  U869/Y (NAND2X0_HVT)                             0.25      3.09 f
+  HFSINV_306_88/Y (INVX0_HVT)                      0.08      3.17 r
+  HFSBUF_278_87/Y (NBUFFX2_HVT)                    0.14      3.31 r
+  U870/Y (AO21X1_HVT)                              0.14      3.46 r
+  U1007/Y (AO22X1_HVT)                             0.14      3.59 r
+  u_system_counter_count_reg_3__13_/D (DFFARX1_HVT)
+                                                   0.00      3.59 r
+  data arrival time                                          3.59
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.01     10.01
+  u_system_counter_count_reg_3__13_/CLK (DFFARX1_HVT)
+                                                   0.00     10.01 r
+  clock uncertainty                               -0.20      9.81
+  library setup time                              -0.10      9.71
+  data required time                                         9.71
+  ------------------------------------------------------------------------
+  data required time                                         9.71
+  data arrival time                                         -3.59
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.12
+
+
+
+  Startpoint: u_threshold_bank_threshold_reg_1__0_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__13_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  u_threshold_bank_threshold_reg_1__0_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_threshold_bank_threshold_reg_1__0_/Q (DFFARX1_HVT)
+                                                   0.24      0.24 f
+  U610/Y (NAND2X0_HVT)                             0.08      0.32 r
+  U609/Y (AO222X1_HVT)                             0.20      0.53 r
+  U608/Y (AO222X1_HVT)                             0.20      0.73 r
+  U607/Y (AO222X1_HVT)                             0.20      0.93 r
+  U638/Y (AO222X1_HVT)                             0.23      1.16 r
+  U637/Y (AO222X1_HVT)                             0.23      1.39 r
+  U636/Y (AO222X1_HVT)                             0.23      1.61 r
+  U635/Y (AO222X1_HVT)                             0.23      1.84 r
+  U675/Y (AO221X1_HVT)                             0.18      2.02 r
+  U715/Y (AO22X1_HVT)                              0.10      2.12 r
+  ctmTdsLR_1_106/Y (OAI221X1_HVT)                  0.14      2.26 f
+  U771/Y (NAND3X0_HVT)                             0.04      2.30 r
+  U768/Y (NAND3X0_HVT)                             0.13      2.44 f
+  U933/Y (NOR2X1_HVT)                              0.17      2.61 r
+  U832/Y (AO22X2_HVT)                              0.20      2.81 r
+  U835/Y (NAND2X0_HVT)                             0.26      3.07 f
+  HFSINV_991_81/Y (INVX0_HVT)                      0.08      3.15 r
+  HFSBUF_975_80/Y (NBUFFX2_HVT)                    0.15      3.30 r
+  U836/Y (AO21X1_HVT)                              0.14      3.44 r
+  U979/Y (AO22X1_HVT)                              0.14      3.58 r
+  u_system_counter_count_reg_1__13_/D (DFFARX1_HVT)
+                                                   0.00      3.58 r
+  data arrival time                                          3.58
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  u_system_counter_count_reg_1__13_/CLK (DFFARX1_HVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.10      9.70
+  data required time                                         9.70
+  ------------------------------------------------------------------------
+  data required time                                         9.70
+  data arrival time                                         -3.58
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.13
+
+
+
+  Startpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__4_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__1_/Q (DFFARX1_HVT)
+                                                   0.27      0.28 r
+  HFSBUF_181_58/Y (NBUFFX2_HVT)                    0.11      0.39 r
+  U617/Y (AO222X1_HVT)                             0.21      0.60 r
+  U616/Y (AO222X1_HVT)                             0.21      0.81 r
+  U615/Y (AO222X1_HVT)                             0.20      1.01 r
+  U658/Y (AO222X1_HVT)                             0.23      1.24 r
+  U657/Y (AO222X1_HVT)                             0.23      1.46 r
+  U656/Y (AO222X1_HVT)                             0.23      1.69 r
+  U655/Y (AO222X1_HVT)                             0.23      1.92 r
+  U695/Y (AO221X1_HVT)                             0.18      2.10 r
+  U735/Y (AO22X1_HVT)                              0.10      2.20 r
+  ctmTdsLR_1_107/Y (OAI221X1_HVT)                  0.14      2.34 f
+  U789/Y (NAND3X0_HVT)                             0.04      2.39 r
+  U786/Y (NAND3X0_HVT)                             0.12      2.51 f
+  U935/Y (NOR2X1_HVT)                              0.15      2.66 r
+  U866/Y (AO22X1_HVT)                              0.18      2.85 r
+  U869/Y (NAND2X0_HVT)                             0.25      3.09 f
+  HFSINV_306_88/Y (INVX0_HVT)                      0.08      3.17 r
+  HFSBUF_278_87/Y (NBUFFX2_HVT)                    0.14      3.31 r
+  ctmTdsLR_1_119/Y (AND4X1_HVT)                    0.13      3.45 r
+  U997/Y (OA22X1_HVT)                              0.13      3.58 r
+  u_system_counter_count_reg_3__4_/D (DFFARX1_HVT)
+                                                   0.00      3.58 r
+  data arrival time                                          3.58
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.01     10.01
+  u_system_counter_count_reg_3__4_/CLK (DFFARX1_HVT)
+                                                   0.00     10.01 r
+  clock uncertainty                               -0.20      9.81
+  library setup time                              -0.10      9.71
+  data required time                                         9.71
+  ------------------------------------------------------------------------
+  data required time                                         9.71
+  data arrival time                                         -3.58
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.13
+
+
+
+  Startpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__8_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__1_/Q (DFFARX1_HVT)
+                                                   0.27      0.28 r
+  HFSBUF_181_58/Y (NBUFFX2_HVT)                    0.11      0.39 r
+  U617/Y (AO222X1_HVT)                             0.21      0.60 r
+  U616/Y (AO222X1_HVT)                             0.21      0.81 r
+  U615/Y (AO222X1_HVT)                             0.20      1.01 r
+  U658/Y (AO222X1_HVT)                             0.23      1.24 r
+  U657/Y (AO222X1_HVT)                             0.23      1.46 r
+  U656/Y (AO222X1_HVT)                             0.23      1.69 r
+  U655/Y (AO222X1_HVT)                             0.23      1.92 r
+  U695/Y (AO221X1_HVT)                             0.18      2.10 r
+  U735/Y (AO22X1_HVT)                              0.10      2.20 r
+  ctmTdsLR_1_107/Y (OAI221X1_HVT)                  0.14      2.34 f
+  U789/Y (NAND3X0_HVT)                             0.04      2.39 r
+  U786/Y (NAND3X0_HVT)                             0.12      2.51 f
+  U935/Y (NOR2X1_HVT)                              0.15      2.66 r
+  U866/Y (AO22X1_HVT)                              0.18      2.85 r
+  U869/Y (NAND2X0_HVT)                             0.25      3.09 f
+  HFSBUF_822_89/Y (NBUFFX2_HVT)                    0.17      3.26 f
+  U1104/Y (OA221X1_HVT)                            0.16      3.43 f
+  U581/Y (OA22X1_HVT)                              0.11      3.54 f
+  U582/Y (INVX0_HVT)                               0.04      3.58 r
+  u_system_counter_count_reg_3__8_/D (DFFARX1_HVT)
+                                                   0.00      3.58 r
+  data arrival time                                          3.58
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.01     10.01
+  u_system_counter_count_reg_3__8_/CLK (DFFARX1_HVT)
+                                                   0.00     10.01 r
+  clock uncertainty                               -0.20      9.81
+  library setup time                              -0.09      9.71
+  data required time                                         9.71
+  ------------------------------------------------------------------------
+  data required time                                         9.71
+  data arrival time                                         -3.58
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.13
+
+
+
+  Startpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__15_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__1_/Q (DFFARX1_HVT)
+                                                   0.27      0.28 r
+  HFSBUF_181_58/Y (NBUFFX2_HVT)                    0.11      0.39 r
+  U617/Y (AO222X1_HVT)                             0.21      0.60 r
+  U616/Y (AO222X1_HVT)                             0.21      0.81 r
+  U615/Y (AO222X1_HVT)                             0.20      1.01 r
+  U658/Y (AO222X1_HVT)                             0.23      1.24 r
+  U657/Y (AO222X1_HVT)                             0.23      1.46 r
+  U656/Y (AO222X1_HVT)                             0.23      1.69 r
+  U655/Y (AO222X1_HVT)                             0.23      1.92 r
+  U695/Y (AO221X1_HVT)                             0.18      2.10 r
+  U735/Y (AO22X1_HVT)                              0.10      2.20 r
+  ctmTdsLR_1_107/Y (OAI221X1_HVT)                  0.14      2.34 f
+  U789/Y (NAND3X0_HVT)                             0.04      2.39 r
+  U786/Y (NAND3X0_HVT)                             0.12      2.51 f
+  U935/Y (NOR2X1_HVT)                              0.15      2.66 r
+  U866/Y (AO22X1_HVT)                              0.18      2.85 r
+  U869/Y (NAND2X0_HVT)                             0.25      3.09 f
+  HFSINV_306_88/Y (INVX0_HVT)                      0.08      3.17 r
+  HFSBUF_278_87/Y (NBUFFX2_HVT)                    0.14      3.31 r
+  U873/Y (AND3X1_HVT)                              0.14      3.45 r
+  U1112/Y (AO22X1_HVT)                             0.12      3.57 r
+  u_system_counter_count_reg_3__15_/D (DFFARX1_HVT)
+                                                   0.00      3.57 r
+  data arrival time                                          3.57
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.01     10.01
+  u_system_counter_count_reg_3__15_/CLK (DFFARX1_HVT)
+                                                   0.00     10.01 r
+  clock uncertainty                               -0.20      9.81
+  library setup time                              -0.10      9.71
+  data required time                                         9.71
+  ------------------------------------------------------------------------
+  data required time                                         9.71
+  data arrival time                                         -3.57
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.13
+
+
+
+  Startpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__6_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__1_/Q (DFFARX1_HVT)
+                                                   0.27      0.28 r
+  HFSBUF_181_58/Y (NBUFFX2_HVT)                    0.11      0.39 r
+  U617/Y (AO222X1_HVT)                             0.21      0.60 r
+  U616/Y (AO222X1_HVT)                             0.21      0.81 r
+  U615/Y (AO222X1_HVT)                             0.20      1.01 r
+  U658/Y (AO222X1_HVT)                             0.23      1.24 r
+  U657/Y (AO222X1_HVT)                             0.23      1.46 r
+  U656/Y (AO222X1_HVT)                             0.23      1.69 r
+  U655/Y (AO222X1_HVT)                             0.23      1.92 r
+  U695/Y (AO221X1_HVT)                             0.18      2.10 r
+  U735/Y (AO22X1_HVT)                              0.10      2.20 r
+  ctmTdsLR_1_107/Y (OAI221X1_HVT)                  0.14      2.34 f
+  U789/Y (NAND3X0_HVT)                             0.04      2.39 r
+  U786/Y (NAND3X0_HVT)                             0.12      2.51 f
+  U935/Y (NOR2X1_HVT)                              0.15      2.66 r
+  U866/Y (AO22X1_HVT)                              0.18      2.85 r
+  U869/Y (NAND2X0_HVT)                             0.25      3.09 f
+  HFSBUF_822_89/Y (NBUFFX2_HVT)                    0.17      3.26 f
+  U1102/Y (OA221X1_HVT)                            0.16      3.43 f
+  U565/Y (OA22X1_HVT)                              0.12      3.55 f
+  U566/Y (INVX0_HVT)                               0.04      3.58 r
+  u_system_counter_count_reg_3__6_/D (DFFARX1_HVT)
+                                                   0.00      3.58 r
+  data arrival time                                          3.58
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.01     10.01
+  u_system_counter_count_reg_3__6_/CLK (DFFARX1_HVT)
+                                                   0.00     10.01 r
+  clock uncertainty                               -0.20      9.81
+  library setup time                              -0.09      9.72
+  data required time                                         9.72
+  ------------------------------------------------------------------------
+  data required time                                         9.72
+  data arrival time                                         -3.58
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.13
+
+
+
+  Startpoint: u_system_counter_count_reg_3__1_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: replacement_req[3] (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  u_system_counter_count_reg_3__1_/CLK (DFFARX1_HVT)
+                                                   0.00      0.01 r
+  u_system_counter_count_reg_3__1_/Q (DFFARX1_HVT)
+                                                   0.27      0.28 r
+  HFSBUF_181_58/Y (NBUFFX2_HVT)                    0.11      0.39 r
+  U617/Y (AO222X1_HVT)                             0.21      0.60 r
+  U616/Y (AO222X1_HVT)                             0.21      0.81 r
+  U615/Y (AO222X1_HVT)                             0.20      1.01 r
+  U658/Y (AO222X1_HVT)                             0.23      1.24 r
+  U657/Y (AO222X1_HVT)                             0.23      1.46 r
+  U656/Y (AO222X1_HVT)                             0.23      1.69 r
+  U655/Y (AO222X1_HVT)                             0.23      1.92 r
+  U695/Y (AO221X1_HVT)                             0.18      2.10 r
+  U735/Y (AO22X1_HVT)                              0.10      2.20 r
+  ctmTdsLR_1_107/Y (OAI221X1_HVT)                  0.14      2.34 f
+  U789/Y (NAND3X0_HVT)                             0.04      2.39 r
+  U786/Y (NAND3X0_HVT)                             0.12      2.51 f
+  U935/Y (NOR2X1_HVT)                              0.15      2.66 r
+  replacement_req[3] (out)                         0.00      2.66 r
+  data arrival time                                          2.66
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -1.00      8.80
+  data required time                                         8.80
+  ------------------------------------------------------------------------
+  data required time                                         8.80
+  data arrival time                                         -2.66
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.14
+
+
+
+  Startpoint: u_threshold_bank_threshold_reg_1__0_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__8_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  u_threshold_bank_threshold_reg_1__0_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_threshold_bank_threshold_reg_1__0_/Q (DFFARX1_HVT)
+                                                   0.24      0.24 f
+  U610/Y (NAND2X0_HVT)                             0.08      0.32 r
+  U609/Y (AO222X1_HVT)                             0.20      0.53 r
+  U608/Y (AO222X1_HVT)                             0.20      0.73 r
+  U607/Y (AO222X1_HVT)                             0.20      0.93 r
+  U638/Y (AO222X1_HVT)                             0.23      1.16 r
+  U637/Y (AO222X1_HVT)                             0.23      1.39 r
+  U636/Y (AO222X1_HVT)                             0.23      1.61 r
+  U635/Y (AO222X1_HVT)                             0.23      1.84 r
+  U675/Y (AO221X1_HVT)                             0.18      2.02 r
+  U715/Y (AO22X1_HVT)                              0.10      2.12 r
+  ctmTdsLR_1_106/Y (OAI221X1_HVT)                  0.14      2.26 f
+  U771/Y (NAND3X0_HVT)                             0.04      2.30 r
+  U768/Y (NAND3X0_HVT)                             0.13      2.44 f
+  U933/Y (NOR2X1_HVT)                              0.17      2.61 r
+  U832/Y (AO22X2_HVT)                              0.20      2.81 r
+  U835/Y (NAND2X0_HVT)                             0.26      3.07 f
+  HFSBUF_1073_82/Y (NBUFFX2_HVT)                   0.18      3.25 f
+  U1043/Y (OA221X1_HVT)                            0.16      3.41 f
+  U577/Y (OA22X1_HVT)                              0.12      3.53 f
+  U578/Y (INVX0_HVT)                               0.04      3.56 r
+  u_system_counter_count_reg_1__8_/D (DFFARX1_HVT)
+                                                   0.00      3.56 r
+  data arrival time                                          3.56
+
+  clock CLK (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  u_system_counter_count_reg_1__8_/CLK (DFFARX1_HVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.09      9.71
+  data required time                                         9.71
+  ------------------------------------------------------------------------
+  data required time                                         9.71
+  data arrival time                                         -3.56
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.15
+
+
+1

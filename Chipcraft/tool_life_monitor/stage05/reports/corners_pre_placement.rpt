@@ -1,0 +1,62 @@
+****************************************
+Report : corner
+Design : tool_life_monitor_top
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 04:39:39 2026
+****************************************
+
+--------------------------------------------------------------------------------
+Corner default
+--------------------------------------------------------------------------------
+
+Current: true  Default: true  Empty: false
+
+Scenarios associated with this corner:
+
+                                                         Leakage   Dynamic
+Scenario            Mode            Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+default             default         true    true   true  true      true      true      true     true     false    false
+
+
+Top-Level PVT Settings:
+  early process label             slow
+  early process number            0.99
+  early voltage                   0.95
+    source                        hierarchical setting
+    file/line                     /home/prem5111/Downloads/Chipcraft/tool_life_monitor/stage05/scripts/03_placement.tcl, line 36
+  early temperature               125.00
+    source                        hierarchical setting
+    file/line                     /home/prem5111/Downloads/Chipcraft/tool_life_monitor/stage05/scripts/03_placement.tcl, line 39
+
+  late process label              slow
+  late process number             0.99
+  late voltage                    0.95
+    source                        hierarchical setting
+    file/line                     /home/prem5111/Downloads/Chipcraft/tool_life_monitor/stage05/scripts/03_placement.tcl, line 36
+  late temperature                125.00
+    source                        hierarchical setting
+    file/line                     /home/prem5111/Downloads/Chipcraft/tool_life_monitor/stage05/scripts/03_placement.tcl, line 39
+
+
+
+
+0 objects with explicit PVT settings.
+
+
+Top-level cell timing derates:
+ data_cell derate early:   rise: 1.00    fall: 1.00  
+ clk_cell derate early:   rise: 1.00    fall: 1.00  
+ cell_check derate early:   rise: 1.00    fall: 1.00  
+ data_cell derate  late:   rise: 1.00    fall: 1.00  
+ clk_cell derate  late:   rise: 1.00    fall: 1.00  
+ cell_check derate  late:   rise: 1.00    fall: 1.00  
+
+Global net timing derates:
+ net_data, early:   rise: 1.00    fall: 1.00  
+ net_data, late:   rise: 1.00    fall: 1.00  
+ net_clock, early:   rise: 1.00    fall: 1.00  
+ net_clock, late:   rise: 1.00    fall: 1.00  
+
+
+1

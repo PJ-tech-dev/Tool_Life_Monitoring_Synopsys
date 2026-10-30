@@ -1,0 +1,203 @@
+
+
+
+                              IC Compiler II (TM)
+
+                Version X-2025.06-SP1 for linux64 - Aug 01, 2025
+                            Base build date 7/7/2025
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+ 
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+set TOP "tool_life_monitor_top"
+tool_life_monitor_top
+set DESIGN_LIB "./stage05/work/tool_life_monitor.nlib"
+./stage05/work/tool_life_monitor.nlib
+puts "============================================================"
+============================================================
+puts " POST-PLACEMENT PG REPAIR: M1 RAIL -> M8 MESH"
+ POST-PLACEMENT PG REPAIR: M1 RAIL -> M8 MESH
+puts "============================================================"
+============================================================
+open_lib $DESIGN_LIB
+Information: Loading library file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/stage05/work/tool_life_monitor.nlib' (FILE-007)
+Information: Loading library file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/CLIBs/saed32_hvt.ndm' (FILE-007)
+{tool_life_monitor.nlib}
+open_block ${TOP}/placed
+Information: User units loaded from library 'saed32_hvt|saed32_hvt_std' (LNK-040)
+Opening block 'tool_life_monitor.nlib:tool_life_monitor_top/placed.design' in edit mode
+{tool_life_monitor.nlib:tool_life_monitor_top/placed.design}
+# ------------------------------------------------------------
+# PVT
+# ------------------------------------------------------------
+set_process_label  -corners [get_corners default] slow
+Using libraries: tool_life_monitor.nlib saed32_hvt
+Warning: In library tool_life_monitor.nlib, no block views exist for block tool_life_monitor_top. (LNK-064)
+Visiting block tool_life_monitor.nlib:tool_life_monitor_top/placed.design
+Design 'tool_life_monitor_top' was successfully linked.
+1
+set_process_number -corners [get_corners default] 0.99
+1
+set_voltage        -corners [get_corners default] 0.95
+1
+set_temperature    -corners [get_corners default] 125
+1
+# ------------------------------------------------------------
+# LOGICAL PG CONNECTION
+# ------------------------------------------------------------
+connect_pg_net -net VDD [get_pins -physical_context */VDD]
+1
+connect_pg_net -net VSS [get_pins -physical_context */VSS]
+1
+puts "VDD PG pins = [sizeof_collection [get_pins -physical_context */VDD]]"
+VDD PG pins = 825
+puts "VSS PG pins = [sizeof_collection [get_pins -physical_context */VSS]]"
+VSS PG pins = 825
+# ------------------------------------------------------------
+# CRITICAL FIX
+#
+# Standard-cell rails : M1 horizontal
+# Mesh vertical layer : M8 vertical
+#
+# Therefore connect existing std_conn on M1 to
+# core_mesh_strategy on M8.
+# ------------------------------------------------------------
+set_pg_strategy_via_rule stdcell_to_m8_via_rule \
+    -via_rule { \
+        {{{strategies: core_mesh_strategy} {layers: M8}} \
+         {{existing: std_conn} {layers: M1}} \
+         {via_master: default}} \
+        {{intersection: undefined} \
+         {via_master: NIL}} \
+    }
+Information: The command 'set_pg_strategy_via_rule' cleared the undo history. (UNDO-016)
+Successfully set strategy via rule stdcell_to_m8_via_rule.
+puts "============================================================"
+============================================================
+puts " COMPILING M1-TO-M8 PG VIAS"
+ COMPILING M1-TO-M8 PG VIAS
+puts "============================================================"
+============================================================
+compile_pg \
+    -strategies {core_mesh_strategy} \
+    -via_rule stdcell_to_m8_via_rule
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Updating PG strategies.
+Updating strategy core_mesh_strategy.
+Loading library and design information.
+Number of Standard Cells: 825
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies core_mesh_strategy .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies core_mesh_strategy .
+Check and fix DRC for 26 wires for strategy core_mesh_strategy.
+Number of threads: 1
+Number of partitions: 2
+Direction of partitions: vertical
+Number of wires: 13
+Checking DRC for 13 wires: 0% 100%
+Number of threads: 1
+Number of partitions: 2
+Direction of partitions: horizontal
+Number of wires: 13
+Checking DRC for 13 wires: 0% 100%
+Creating 26 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies core_mesh_strategy .
+Working on strategy core_mesh_strategy.
+Number of detected intersections: 85
+Total runtime of via shapes creation: 0 seconds
+Check and fix DRC for 85 stacked vias for strategy core_mesh_strategy.
+Number of threads: 1
+Number of partitions: 2
+Direction of partitions: horizontal
+Number of vias: 85
+Checking DRC for 85 stacked vias:: 0% 100%
+85 regular vias are not fixed
+Runtime of via DRC checking for strategy core_mesh_strategy: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 520 stacked vias.
+Number of threads: 1
+Number of partitions: 4
+Direction of partitions: horizontal
+Number of vias: 520
+Checking DRC for 520 stacked vias:: 0% 100%
+260 regular vias are not fixed
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 260 stacked vias: 0% 100%
+Found 260 dangling/floating vias.
+Start iteration 2:
+Checking potential dangling/floating power plan wires.
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committing wires takes 0.00 seconds.
+Committing vias takes 0.00 seconds.
+Committed 26 wires.
+Committed 0 vias.
+Committed 0 wires for via creation.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+# ------------------------------------------------------------
+# REASSERT LOGICAL CONNECTION
+# ------------------------------------------------------------
+connect_pg_net -net VDD [get_pins -physical_context */VDD]
+1
+connect_pg_net -net VSS [get_pins -physical_context */VSS]
+1
+# ------------------------------------------------------------
+# CHECKS
+# ------------------------------------------------------------
+redirect -file ./stage05/reports/pg_connectivity_m8_repair.rpt {
+    check_pg_connectivity \
+        -nets {VDD VSS} \
+        -check_std_cell_pins all
+}
+redirect -file ./stage05/reports/pg_drc_m8_repair.rpt {
+    check_pg_drc -nets {VDD VSS}
+}
+save_block -as ${TOP}/placed_pg_connected
+Information: Saving 'tool_life_monitor.nlib:tool_life_monitor_top/placed.design' to 'tool_life_monitor.nlib:tool_life_monitor_top/placed_pg_connected.design'. (DES-028)
+1
+save_lib
+Saving library 'tool_life_monitor.nlib'
+1
+puts ""
+
+puts "============================================================"
+============================================================
+puts " M1-TO-M8 PG REPAIR COMPLETE"
+ M1-TO-M8 PG REPAIR COMPLETE
+puts "============================================================"
+============================================================
+puts ""
+
+exit
+Maximum memory usage for this session: 435.20 MB
+Maximum memory usage for this session including child processes: 435.20 MB
+CPU usage for this session:      7 seconds (  0.00 hours)
+Elapsed time for this session:     10 seconds (  0.00 hours)
+Thank you for using IC Compiler II.

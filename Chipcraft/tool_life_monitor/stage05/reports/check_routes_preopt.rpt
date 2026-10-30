@@ -1,0 +1,336 @@
+INFO: wire-opt feature for router enabled
+INFO: wire-opt feature for router enabled
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MRDL
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Warning: Cannot find a default contact code for layer CO. (ZRT-022)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: AutoNdr rule can't be found. Check the settings.
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 5.32 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 5.32 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+
+
+Start checking for open nets ... 
+
+net(clk) has floating ports (dbId = 0 idx_ = 0 numNodes = 252 numEdges = 251 numCmps = 5)
+net(rst_n) has floating ports (dbId = 1 idx_ = 1 numNodes = 98 numEdges = 0 numCmps = 98)
+net(cycle_event[3]) has floating ports (dbId = 2 idx_ = 2 numNodes = 2 numEdges = 0 numCmps = 2)
+net(cycle_event[2]) has floating ports (dbId = 3 idx_ = 3 numNodes = 2 numEdges = 0 numCmps = 2)
+net(cycle_event[1]) has floating ports (dbId = 4 idx_ = 4 numNodes = 2 numEdges = 0 numCmps = 2)
+net(cycle_event[0]) has floating ports (dbId = 5 idx_ = 5 numNodes = 2 numEdges = 0 numCmps = 2)
+net(system_sel[1]) has floating ports (dbId = 6 idx_ = 6 numNodes = 4 numEdges = 0 numCmps = 4)
+net(system_sel[0]) has floating ports (dbId = 7 idx_ = 7 numNodes = 38 numEdges = 0 numCmps = 38)
+net(threshold_data[15]) has floating ports (dbId = 8 idx_ = 8 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[14]) has floating ports (dbId = 9 idx_ = 9 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[13]) has floating ports (dbId = 10 idx_ = 10 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[12]) has floating ports (dbId = 11 idx_ = 11 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[11]) has floating ports (dbId = 12 idx_ = 12 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[10]) has floating ports (dbId = 13 idx_ = 13 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[9]) has floating ports (dbId = 14 idx_ = 14 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[8]) has floating ports (dbId = 15 idx_ = 15 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[7]) has floating ports (dbId = 16 idx_ = 16 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[6]) has floating ports (dbId = 17 idx_ = 17 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[5]) has floating ports (dbId = 18 idx_ = 18 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[4]) has floating ports (dbId = 19 idx_ = 19 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[3]) has floating ports (dbId = 20 idx_ = 20 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[2]) has floating ports (dbId = 21 idx_ = 21 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[1]) has floating ports (dbId = 22 idx_ = 22 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_data[0]) has floating ports (dbId = 23 idx_ = 23 numNodes = 5 numEdges = 0 numCmps = 5)
+net(threshold_we) has floating ports (dbId = 24 idx_ = 24 numNodes = 5 numEdges = 0 numCmps = 5)
+net(replace_ack[3]) has floating ports (dbId = 25 idx_ = 25 numNodes = 3 numEdges = 0 numCmps = 3)
+net(replace_ack[2]) has floating ports (dbId = 26 idx_ = 26 numNodes = 3 numEdges = 0 numCmps = 3)
+net(replace_ack[1]) has floating ports (dbId = 27 idx_ = 27 numNodes = 3 numEdges = 0 numCmps = 3)
+net(replace_ack[0]) has floating ports (dbId = 28 idx_ = 28 numNodes = 3 numEdges = 0 numCmps = 3)
+net(warning[3]) has floating ports (dbId = 29 idx_ = 29 numNodes = 3 numEdges = 0 numCmps = 3)
+net(warning[2]) has floating ports (dbId = 30 idx_ = 30 numNodes = 3 numEdges = 0 numCmps = 3)
+net(warning[1]) has floating ports (dbId = 31 idx_ = 31 numNodes = 3 numEdges = 0 numCmps = 3)
+net(warning[0]) has floating ports (dbId = 32 idx_ = 32 numNodes = 3 numEdges = 0 numCmps = 3)
+net(replacement_req[3]) has floating ports (dbId = 33 idx_ = 33 numNodes = 5 numEdges = 0 numCmps = 5)
+net(replacement_req[2]) has floating ports (dbId = 34 idx_ = 34 numNodes = 5 numEdges = 0 numCmps = 5)
+net(replacement_req[1]) has floating ports (dbId = 35 idx_ = 35 numNodes = 5 numEdges = 0 numCmps = 5)
+net(replacement_req[0]) has floating ports (dbId = 36 idx_ = 36 numNodes = 5 numEdges = 0 numCmps = 5)
+net(invalid_threshold[3]) has floating ports (dbId = 37 idx_ = 37 numNodes = 3 numEdges = 0 numCmps = 3)
+net(invalid_threshold[2]) has floating ports (dbId = 38 idx_ = 38 numNodes = 3 numEdges = 0 numCmps = 3)
+net(invalid_threshold[1]) has floating ports (dbId = 39 idx_ = 39 numNodes = 3 numEdges = 0 numCmps = 3)
+net(invalid_threshold[0]) has floating ports (dbId = 40 idx_ = 40 numNodes = 3 numEdges = 0 numCmps = 3)
+net(counter_max[3]) has floating ports (dbId = 41 idx_ = 41 numNodes = 2 numEdges = 0 numCmps = 2)
+net(counter_max[2]) has floating ports (dbId = 42 idx_ = 42 numNodes = 2 numEdges = 0 numCmps = 2)
+net(counter_max[1]) has floating ports (dbId = 43 idx_ = 43 numNodes = 2 numEdges = 0 numCmps = 2)
+net(counter_max[0]) has floating ports (dbId = 44 idx_ = 44 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[15]) has floating ports (dbId = 45 idx_ = 45 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[14]) has floating ports (dbId = 46 idx_ = 46 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[13]) has floating ports (dbId = 47 idx_ = 47 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[12]) has floating ports (dbId = 48 idx_ = 48 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[11]) has floating ports (dbId = 49 idx_ = 49 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[10]) has floating ports (dbId = 50 idx_ = 50 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[9]) has floating ports (dbId = 51 idx_ = 51 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[8]) has floating ports (dbId = 52 idx_ = 52 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[7]) has floating ports (dbId = 53 idx_ = 53 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[6]) has floating ports (dbId = 54 idx_ = 54 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[5]) has floating ports (dbId = 55 idx_ = 55 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[4]) has floating ports (dbId = 56 idx_ = 56 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[3]) has floating ports (dbId = 57 idx_ = 57 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[2]) has floating ports (dbId = 58 idx_ = 58 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[1]) has floating ports (dbId = 59 idx_ = 59 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_count[0]) has floating ports (dbId = 60 idx_ = 60 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[15]) has floating ports (dbId = 61 idx_ = 61 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[14]) has floating ports (dbId = 62 idx_ = 62 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[13]) has floating ports (dbId = 63 idx_ = 63 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[12]) has floating ports (dbId = 64 idx_ = 64 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[11]) has floating ports (dbId = 65 idx_ = 65 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[10]) has floating ports (dbId = 66 idx_ = 66 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[9]) has floating ports (dbId = 67 idx_ = 67 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[8]) has floating ports (dbId = 68 idx_ = 68 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[7]) has floating ports (dbId = 69 idx_ = 69 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[6]) has floating ports (dbId = 70 idx_ = 70 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[5]) has floating ports (dbId = 71 idx_ = 71 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[4]) has floating ports (dbId = 72 idx_ = 72 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[3]) has floating ports (dbId = 73 idx_ = 73 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[2]) has floating ports (dbId = 74 idx_ = 74 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[1]) has floating ports (dbId = 75 idx_ = 75 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_threshold[0]) has floating ports (dbId = 76 idx_ = 76 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_status[1]) has floating ports (dbId = 77 idx_ = 77 numNodes = 2 numEdges = 0 numCmps = 2)
+net(selected_status[0]) has floating ports (dbId = 78 idx_ = 78 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n364) has floating ports (dbId = 79 idx_ = 79 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n365) has floating ports (dbId = 80 idx_ = 80 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n366) has floating ports (dbId = 81 idx_ = 81 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n367) has floating ports (dbId = 82 idx_ = 82 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n368) has floating ports (dbId = 83 idx_ = 83 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n369) has floating ports (dbId = 84 idx_ = 84 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n370) has floating ports (dbId = 85 idx_ = 85 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n371) has floating ports (dbId = 86 idx_ = 86 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n372) has floating ports (dbId = 87 idx_ = 87 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n373) has floating ports (dbId = 88 idx_ = 88 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n374) has floating ports (dbId = 89 idx_ = 89 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n375) has floating ports (dbId = 90 idx_ = 90 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n376) has floating ports (dbId = 91 idx_ = 91 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n377) has floating ports (dbId = 92 idx_ = 92 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n378) has floating ports (dbId = 93 idx_ = 93 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n379) has floating ports (dbId = 94 idx_ = 94 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n380) has floating ports (dbId = 95 idx_ = 95 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n381) has floating ports (dbId = 96 idx_ = 96 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n382) has floating ports (dbId = 97 idx_ = 97 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n383) has floating ports (dbId = 98 idx_ = 98 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n384) has floating ports (dbId = 99 idx_ = 99 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n385) has floating ports (dbId = 100 idx_ = 100 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n386) has floating ports (dbId = 101 idx_ = 101 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n387) has floating ports (dbId = 102 idx_ = 102 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n388) has floating ports (dbId = 103 idx_ = 103 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n389) has floating ports (dbId = 104 idx_ = 104 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n390) has floating ports (dbId = 105 idx_ = 105 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n391) has floating ports (dbId = 106 idx_ = 106 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n392) has floating ports (dbId = 107 idx_ = 107 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n393) has floating ports (dbId = 108 idx_ = 108 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n394) has floating ports (dbId = 109 idx_ = 109 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n395) has floating ports (dbId = 110 idx_ = 110 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n396) has floating ports (dbId = 111 idx_ = 111 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n397) has floating ports (dbId = 112 idx_ = 112 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n398) has floating ports (dbId = 113 idx_ = 113 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n399) has floating ports (dbId = 114 idx_ = 114 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n400) has floating ports (dbId = 115 idx_ = 115 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n401) has floating ports (dbId = 116 idx_ = 116 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n402) has floating ports (dbId = 117 idx_ = 117 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n403) has floating ports (dbId = 118 idx_ = 118 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n404) has floating ports (dbId = 119 idx_ = 119 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n405) has floating ports (dbId = 120 idx_ = 120 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n406) has floating ports (dbId = 121 idx_ = 121 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n407) has floating ports (dbId = 122 idx_ = 122 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n408) has floating ports (dbId = 123 idx_ = 123 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n409) has floating ports (dbId = 124 idx_ = 124 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n410) has floating ports (dbId = 125 idx_ = 125 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n411) has floating ports (dbId = 126 idx_ = 126 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n412) has floating ports (dbId = 127 idx_ = 127 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n413) has floating ports (dbId = 128 idx_ = 128 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n414) has floating ports (dbId = 129 idx_ = 129 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n415) has floating ports (dbId = 130 idx_ = 130 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n416) has floating ports (dbId = 131 idx_ = 131 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n417) has floating ports (dbId = 132 idx_ = 132 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n418) has floating ports (dbId = 133 idx_ = 133 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n419) has floating ports (dbId = 134 idx_ = 134 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n420) has floating ports (dbId = 135 idx_ = 135 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n421) has floating ports (dbId = 136 idx_ = 136 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n422) has floating ports (dbId = 137 idx_ = 137 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n423) has floating ports (dbId = 138 idx_ = 138 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n424) has floating ports (dbId = 139 idx_ = 139 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n425) has floating ports (dbId = 140 idx_ = 140 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n426) has floating ports (dbId = 141 idx_ = 141 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n427) has floating ports (dbId = 142 idx_ = 142 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n428) has floating ports (dbId = 143 idx_ = 143 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n429) has floating ports (dbId = 144 idx_ = 144 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n430) has floating ports (dbId = 145 idx_ = 145 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n431) has floating ports (dbId = 146 idx_ = 146 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n432) has floating ports (dbId = 147 idx_ = 147 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n433) has floating ports (dbId = 148 idx_ = 148 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n434) has floating ports (dbId = 149 idx_ = 149 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n435) has floating ports (dbId = 150 idx_ = 150 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n436) has floating ports (dbId = 151 idx_ = 151 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n437) has floating ports (dbId = 152 idx_ = 152 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n438) has floating ports (dbId = 153 idx_ = 153 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n439) has floating ports (dbId = 154 idx_ = 154 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n440) has floating ports (dbId = 155 idx_ = 155 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n441) has floating ports (dbId = 156 idx_ = 156 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n442) has floating ports (dbId = 157 idx_ = 157 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n443) has floating ports (dbId = 158 idx_ = 158 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n444) has floating ports (dbId = 159 idx_ = 159 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n445) has floating ports (dbId = 160 idx_ = 160 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n446) has floating ports (dbId = 161 idx_ = 161 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n447) has floating ports (dbId = 162 idx_ = 162 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n448) has floating ports (dbId = 163 idx_ = 163 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n449) has floating ports (dbId = 164 idx_ = 164 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n450) has floating ports (dbId = 165 idx_ = 165 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n451) has floating ports (dbId = 166 idx_ = 166 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n452) has floating ports (dbId = 167 idx_ = 167 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n453) has floating ports (dbId = 168 idx_ = 168 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n454) has floating ports (dbId = 169 idx_ = 169 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n455) has floating ports (dbId = 170 idx_ = 170 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n456) has floating ports (dbId = 171 idx_ = 171 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n457) has floating ports (dbId = 172 idx_ = 172 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n458) has floating ports (dbId = 173 idx_ = 173 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n459) has floating ports (dbId = 174 idx_ = 174 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n460) has floating ports (dbId = 175 idx_ = 175 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n461) has floating ports (dbId = 176 idx_ = 176 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n462) has floating ports (dbId = 177 idx_ = 177 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n463) has floating ports (dbId = 178 idx_ = 178 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n464) has floating ports (dbId = 179 idx_ = 179 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n465) has floating ports (dbId = 180 idx_ = 180 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n466) has floating ports (dbId = 181 idx_ = 181 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n467) has floating ports (dbId = 182 idx_ = 182 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n468) has floating ports (dbId = 183 idx_ = 183 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n469) has floating ports (dbId = 184 idx_ = 184 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n470) has floating ports (dbId = 185 idx_ = 185 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n471) has floating ports (dbId = 186 idx_ = 186 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n472) has floating ports (dbId = 187 idx_ = 187 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n473) has floating ports (dbId = 188 idx_ = 188 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n474) has floating ports (dbId = 189 idx_ = 189 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n475) has floating ports (dbId = 190 idx_ = 190 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n476) has floating ports (dbId = 191 idx_ = 191 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n477) has floating ports (dbId = 192 idx_ = 192 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n478) has floating ports (dbId = 193 idx_ = 193 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n479) has floating ports (dbId = 194 idx_ = 194 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n480) has floating ports (dbId = 195 idx_ = 195 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n481) has floating ports (dbId = 196 idx_ = 196 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n482) has floating ports (dbId = 197 idx_ = 197 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n483) has floating ports (dbId = 198 idx_ = 198 numNodes = 2 numEdges = 0 numCmps = 2)
+net(n484) has floating ports (dbId = 199 idx_ = 199 numNodes = 2 numEdges = 0 numCmps = 2)
+
+... and 824 more nets has floating ports 
+
+Total number of nets = 1026, of which 0 are not extracted
+Total number of open nets = 1024, of which 0 are frozen
+
+Check 1026 nets, 1024 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used    0  Alloctr    0  Proc 4700 
+Printing options for 'route.common.*'
+
+Printing options for 'route.detail.*'
+detail.enable_auto_ndr_flow                             :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+There are 0 out of total 1026 nets with relaxed min layer from GR.
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked	3/4 Partitions, Violations =	0
+Checked	4/4 Partitions, Violations =	0
+[DRC CHECK] Elapsed real time: 0:00:00 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    5 
+[DRC CHECK] Total (MB): Used    0  Alloctr    0  Proc 4706 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+
+Information: The app option "route.detail.report_soft_drc_separately" will be on-by-default in future release. (ZRT-807)
+	@@@@@@@ TOTAL SOFT VIOLATIONS =	0
+
+
+Total Wire Length =                    514 micron
+Total Number of Contacts =             369
+Total Number of Wires =                384
+Total Number of PtConns =              142
+Total Number of Routed Wires =       380
+Total Routed Wire Length =           509 micron
+Total Number of Routed Contacts =       369
+	Layer             M1 :          2 micron
+	Layer             M2 :         26 micron
+	Layer             M3 :        266 micron
+	Layer             M4 :        209 micron
+	Layer             M5 :          5 micron
+	Layer             M6 :          0 micron
+	Layer             M7 :          0 micron
+	Layer             M8 :          0 micron
+	Layer             M9 :          0 micron
+	Layer           MRDL :          0 micron
+	Via   VIA45SQ_C(rot) :          2
+	Via        VIA34SQ_C :        114
+	Via   VIA23SQ_C(rot) :        128
+	Via        VIA12SQ_C :        125
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 369 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 125     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (125     vias)
+    Layer VIA2       =  0.00% (0      / 128     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (128     vias)
+    Layer VIA3       =  0.00% (0      / 114     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (114     vias)
+    Layer VIA4       =  0.00% (0      / 2       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 369 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 125     vias)
+    Layer VIA2       =  0.00% (0      / 128     vias)
+    Layer VIA3       =  0.00% (0      / 114     vias)
+    Layer VIA4       =  0.00% (0      / 2       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 369 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 125     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (125     vias)
+    Layer VIA2       =  0.00% (0      / 128     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (128     vias)
+    Layer VIA3       =  0.00% (0      / 114     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (114     vias)
+    Layer VIA4       =  0.00% (0      / 2       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2       vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 1026, of which 0 are not extracted
+Total number of open nets = 1024, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+
+Total number of DRCs = 0
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+Total number of DRCs on M3 and below = 0
+

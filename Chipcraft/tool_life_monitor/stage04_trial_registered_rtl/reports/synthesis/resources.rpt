@@ -1,0 +1,132 @@
+ 
+****************************************
+Report : resources
+Design : tool_life_monitor_top
+Version: W-2024.09-SP5-3
+Date   : Fri Sep 25 21:26:58 2026
+****************************************
+
+
+Resource Report for this hierarchy in file ./rtl/system_counter.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_1        | DW01_inc       | width=16   | u_system_counter/add_24 (system_counter.sv:24) |
+| add_x_2        | DW01_inc       | width=16   | u_system_counter/add_24_I2 (system_counter.sv:24) |
+| add_x_3        | DW01_inc       | width=16   | u_system_counter/add_24_I3 (system_counter.sv:24) |
+| add_x_4        | DW01_inc       | width=16   | u_system_counter/add_24_I4 (system_counter.sv:24) |
+| gte_x_18       | DW_cmp         | width=16   | u_status_logic/gte_38 (status_logic.sv:38) |
+| gte_x_19       | DW_cmp         | width=16   | u_status_logic/gte_38_I2 (status_logic.sv:38) |
+| gte_x_20       | DW_cmp         | width=16   | u_status_logic/gte_38_I3 (status_logic.sv:38) |
+| gte_x_21       | DW_cmp         | width=16   | u_status_logic/gte_38_I4 (status_logic.sv:38) |
+| DP_OP_79J1_122_4483             |            |                            |
+|                | DP_OP_79J1_122_4483 |       |                            |
+| DP_OP_80J1_123_4483             |            |                            |
+|                | DP_OP_80J1_123_4483 |       |                            |
+| DP_OP_81J1_124_4483             |            |                            |
+|                | DP_OP_81J1_124_4483 |       |                            |
+| DP_OP_82J1_125_4483             |            |                            |
+|                | DP_OP_82J1_125_4483 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_79J1_122_4483
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_79J1_122_4483  | u_status_logic/add_30 (status_logic.sv:30)          |
+|                      | u_status_logic/gte_43 (status_logic.sv:43)          |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 16    |                                          |
+| I2    | PI   | Unsigned | 18    |                                          |
+| I3    | PI   | Unsigned | 18    |                                          |
+| T17   | IFO  | Unsigned | 19    | I1 + I2 (status_logic.sv:30)             |
+| O1    | PO   | Unsigned | 1     | T17 >= I3 (status_logic.sv:43)           |
+==============================================================================
+
+Datapath Report for DP_OP_80J1_123_4483
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_80J1_123_4483  | u_status_logic/add_30_I2 (status_logic.sv:30)       |
+|                      | u_status_logic/gte_43_I2 (status_logic.sv:43)       |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 16    |                                          |
+| I2    | PI   | Unsigned | 18    |                                          |
+| I3    | PI   | Unsigned | 18    |                                          |
+| T20   | IFO  | Unsigned | 19    | I1 + I2 (status_logic.sv:30)             |
+| O1    | PO   | Unsigned | 1     | T20 >= I3 (status_logic.sv:43)           |
+==============================================================================
+
+Datapath Report for DP_OP_81J1_124_4483
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_81J1_124_4483  | u_status_logic/add_30_I3 (status_logic.sv:30)       |
+|                      | u_status_logic/gte_43_I3 (status_logic.sv:43)       |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 16    |                                          |
+| I2    | PI   | Unsigned | 18    |                                          |
+| I3    | PI   | Unsigned | 18    |                                          |
+| T23   | IFO  | Unsigned | 19    | I1 + I2 (status_logic.sv:30)             |
+| O1    | PO   | Unsigned | 1     | T23 >= I3 (status_logic.sv:43)           |
+==============================================================================
+
+Datapath Report for DP_OP_82J1_125_4483
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_82J1_125_4483  | u_status_logic/add_30_I4 (status_logic.sv:30)       |
+|                      | u_status_logic/gte_43_I4 (status_logic.sv:43)       |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 16    |                                          |
+| I2    | PI   | Unsigned | 18    |                                          |
+| I3    | PI   | Unsigned | 18    |                                          |
+| T26   | IFO  | Unsigned | 19    | I1 + I2 (status_logic.sv:30)             |
+| O1    | PO   | Unsigned | 1     | T26 >= I3 (status_logic.sv:43)           |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_1            | DW01_inc         | apparch (area)     |                |
+| add_x_2            | DW01_inc         | apparch (area)     |                |
+| add_x_3            | DW01_inc         | apparch (area)     |                |
+| add_x_4            | DW01_inc         | apparch (area)     |                |
+| gte_x_18           | DW_cmp           | apparch (area)     |                |
+| gte_x_19           | DW_cmp           | apparch (area)     |                |
+| gte_x_20           | DW_cmp           | apparch (area)     |                |
+| gte_x_21           | DW_cmp           | apparch (area)     |                |
+| DP_OP_79J1_122_4483                   |                    |                |
+|                    | DP_OP_79J1_122_4483 | str (area)      |                |
+| DP_OP_80J1_123_4483                   |                    |                |
+|                    | DP_OP_80J1_123_4483 | str (area)      |                |
+| DP_OP_81J1_124_4483                   |                    |                |
+|                    | DP_OP_81J1_124_4483 | str (area)      |                |
+| DP_OP_82J1_125_4483                   |                    |                |
+|                    | DP_OP_82J1_125_4483 | str (area)      |                |
+===============================================================================
+
+1

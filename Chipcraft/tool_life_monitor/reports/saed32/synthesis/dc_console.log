@@ -1,0 +1,776 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version W-2024.09-SP5-3 for linux64 - Jul 31, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/prem5111/.synopsys_dc_gui/preferences.tcl
+Current time:       Fri Sep 25 21:08:39 2026
+Hostname:           sd26.ece.kalasalingam.ac.in
+CPU Model:          12th Gen Intel(R) Core(TM) i5-12400
+CPU Details:        Cores = 12 : Sockets = 1 : Cache Size = 18432 KB : Freq = 2.50 GHz
+OS:                 Linux 4.18.0-553.74.1.el8_10.x86_64
+RAM:                 15 GB (Free   3 GB)
+Swap:                 7 GB (Free   7 GB)
+Work Filesystem:    / mounted to /dev/sda6
+Tmp Filesystem:     / mounted to /dev/sda6
+Work Disk:          284 GB (Free  40 GB)
+Tmp Disk:           284 GB (Free  40 GB)
+
+CPU Load: 4%, Ram Free: 3 GB, Swap Free: 7 GB, Work Disk Free: 40 GB, Tmp Disk Free: 40 GB
+# =====================================================================
+# TOOL LIFE MONITOR
+# SAED 32nm RVT SYNTHESIS FLOW
+#
+# Technology      : SAED 32nm
+# Cell Family     : RVT
+# Setup / Max     : SS 0.95V 125C
+# Hold  / Min     : FF 1.16V -40C
+# Clock           : 10 ns = 100 MHz
+#
+# Tool            : Synopsys Design Compiler
+# =====================================================================
+# =====================================================================
+# 1. PROJECT SETTINGS
+# =====================================================================
+set TOP            "tool_life_monitor_top"
+tool_life_monitor_top
+set RTL_DIR        "./rtl"
+./rtl
+set CONSTRAINT_DIR "./constraints"
+./constraints
+set NETLIST_DIR    "./netlist/saed32"
+./netlist/saed32
+set REPORT_DIR     "./reports/saed32"
+./reports/saed32
+# =====================================================================
+# 2. CREATE OUTPUT DIRECTORIES
+# =====================================================================
+file mkdir $NETLIST_DIR
+file mkdir $REPORT_DIR
+file mkdir $REPORT_DIR/timing
+file mkdir $REPORT_DIR/area
+file mkdir $REPORT_DIR/power
+file mkdir $REPORT_DIR/synthesis
+# =====================================================================
+# 3. SAED 32nm LIBRARY PATHS
+# =====================================================================
+# Slow corner:
+# RVT / Slow-Slow / 0.95 V / 125 C
+# Used for setup (maximum delay) analysis.
+set MAX_LIB \
+"/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db
+# Fast corner:
+# RVT / Fast-Fast / 1.16 V / -40 C
+# Used for hold (minimum delay) analysis.
+set MIN_LIB \
+"/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db
+# =====================================================================
+# 4. VERIFY LIBRARY FILES EXIST
+# =====================================================================
+if {![file exists $MAX_LIB]} {
+    puts "ERROR: Maximum-delay library does not exist:"
+    puts "$MAX_LIB"
+    exit 1
+}
+if {![file exists $MIN_LIB]} {
+    puts "ERROR: Minimum-delay library does not exist:"
+    puts "$MIN_LIB"
+    exit 1
+}
+puts ""
+
+puts "SAED32 library files found successfully."
+SAED32 library files found successfully.
+puts "MAX LIB = $MAX_LIB"
+MAX LIB = /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db
+puts "MIN LIB = $MIN_LIB"
+MIN LIB = /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db
+puts ""
+
+# =====================================================================
+# 5. DESIGN COMPILER LIBRARY SETUP
+# =====================================================================
+set_app_var search_path [list . $RTL_DIR]
+. ./rtl
+set_app_var target_library [list $MAX_LIB]
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db
+set_app_var link_library "* $MAX_LIB $MIN_LIB"
+* /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db
+# Associate the slow setup library with the fast hold library.
+#
+# IMPORTANT:
+# Use the actual .db file paths here. Do NOT use only the internal
+# library names, because that caused TIM-120 in the previous run.
+set_min_library $MAX_LIB \
+    -min_version $MIN_LIB
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db'
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db'
+1
+# =====================================================================
+# 6. READ / ANALYZE RTL
+# =====================================================================
+puts ""
+
+puts "============================================================"
+============================================================
+puts " ANALYZING RTL"
+ ANALYZING RTL
+puts "============================================================"
+============================================================
+puts ""
+
+analyze -format sverilog {
+    ./rtl/system_counter.sv
+    ./rtl/threshold_bank.sv
+    ./rtl/safety_checks.sv
+    ./rtl/status_logic.sv
+    ./rtl/replacement_control.sv
+    ./rtl/readback_logic.sv
+    ./rtl/tool_life_monitor_top.sv
+}
+Running PRESTO HDLC
+Compiling source file ./rtl/system_counter.sv
+Compiling source file ./rtl/threshold_bank.sv
+Compiling source file ./rtl/safety_checks.sv
+Compiling source file ./rtl/status_logic.sv
+Compiling source file ./rtl/replacement_control.sv
+Compiling source file ./rtl/readback_logic.sv
+Compiling source file ./rtl/tool_life_monitor_top.sv
+Presto compilation completed successfully.
+1
+# =====================================================================
+# 7. ELABORATE TOP DESIGN
+# =====================================================================
+puts ""
+
+puts "============================================================"
+============================================================
+puts " ELABORATING DESIGN"
+ ELABORATING DESIGN
+puts "============================================================"
+============================================================
+puts ""
+
+elaborate $TOP
+Loading db file '/home/prem5111/synopsys/dcs/syn/W-2024.09-SP5-3/libraries/syn/gtech.db'
+Loading db file '/home/prem5111/synopsys/dcs/syn/W-2024.09-SP5-3/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'saed32rvt_ff1p16vn40c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (tool_life_monitor_top)
+Module: tool_life_monitor_top, Ports: 79, Input: 29, Output: 50, Inout: 0
+Module: tool_life_monitor_top, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module tool_life_monitor_top report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'tool_life_monitor_top'.
+Information: Building the design 'system_counter'. (HDL-193)
+
+Inferred memory devices in process in routine 'system_counter' in file
+	 ./rtl/system_counter.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      count_reg      | Flip-flop |  64   |  Y  | N  | None  | Async | N  |  11  |
+==================================================================================
+Presto compilation completed successfully. (system_counter)
+Module: system_counter, Ports: 74, Input: 10, Output: 64, Inout: 0
+Module: system_counter, Registers: 64, Async set/reset: 64, Sync set/reset: 0
+Information: Module system_counter report end. (ELAB-965)
+Information: Building the design 'threshold_bank'. (HDL-193)
+
+Inferred memory devices in process in routine 'threshold_bank' in file
+	 ./rtl/threshold_bank.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    threshold_reg    | Flip-flop |  64   |  Y  | N  | None  | Async | N  |  12  |
+==================================================================================
+Presto compilation completed successfully. (threshold_bank)
+Module: threshold_bank, Ports: 85, Input: 21, Output: 64, Inout: 0
+Module: threshold_bank, Registers: 64, Async set/reset: 64, Sync set/reset: 0
+Information: Module threshold_bank report end. (ELAB-965)
+Information: Building the design 'safety_checks'. (HDL-193)
+Presto compilation completed successfully. (safety_checks)
+Module: safety_checks, Ports: 136, Input: 128, Output: 8, Inout: 0
+Module: safety_checks, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module safety_checks report end. (ELAB-965)
+Information: Building the design 'status_logic'. (HDL-193)
+Presto compilation completed successfully. (status_logic)
+Module: status_logic, Ports: 148, Input: 132, Output: 16, Inout: 0
+Module: status_logic, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module status_logic report end. (ELAB-965)
+Information: Building the design 'replacement_control'. (HDL-193)
+Presto compilation completed successfully. (replacement_control)
+Module: replacement_control, Ports: 12, Input: 8, Output: 4, Inout: 0
+Module: replacement_control, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module replacement_control report end. (ELAB-965)
+Information: Building the design 'readback_logic'. (HDL-193)
+Statistics for MUX_OPs
+=======================================================
+| block name/line   | Inputs | Outputs | # sel inputs |
+=======================================================
+| readback_logic/14 |   4    |   32    |      2       |
+| readback_logic/16 |   4    |    2    |      2       |
+=======================================================
+Presto compilation completed successfully. (readback_logic)
+Module: readback_logic, Ports: 172, Input: 138, Output: 34, Inout: 0
+Module: readback_logic, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module readback_logic report end. (ELAB-965)
+1
+current_design $TOP
+Current design is 'tool_life_monitor_top'.
+{tool_life_monitor_top}
+# =====================================================================
+# 8. LINK AGAINST SAED32
+# =====================================================================
+puts ""
+
+puts "============================================================"
+============================================================
+puts " LINKING DESIGN WITH SAED32"
+ LINKING DESIGN WITH SAED32
+puts "============================================================"
+============================================================
+puts ""
+
+link
+
+  Linking design 'tool_life_monitor_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (7 designs)               /home/prem5111/Downloads/Chipcraft/tool_life_monitor/tool_life_monitor_top.db, etc
+  saed32rvt_ss0p95v125c (library) /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db
+  saed32rvt_ff1p16vn40c (library) /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db
+
+1
+# =====================================================================
+# 9. PRE-SYNTHESIS DESIGN CHECK
+# =====================================================================
+redirect -file $REPORT_DIR/synthesis/check_design_pre.rpt {
+    check_design
+}
+# =====================================================================
+# 10. APPLY SDC CONSTRAINTS
+# =====================================================================
+puts ""
+
+puts "============================================================"
+============================================================
+puts " APPLYING TIMING CONSTRAINTS"
+ APPLYING TIMING CONSTRAINTS
+puts "============================================================"
+============================================================
+puts ""
+
+source $CONSTRAINT_DIR/tool_life_monitor.sdc
+1
+# =====================================================================
+# 11. PRE-SYNTHESIS TIMING CHECKS
+# =====================================================================
+redirect -file $REPORT_DIR/timing/check_timing_pre.rpt {
+    check_timing
+}
+redirect -file $REPORT_DIR/timing/clocks.rpt {
+    report_clocks
+}
+redirect -file $REPORT_DIR/synthesis/ports.rpt {
+    report_port
+}
+# =====================================================================
+# 12. SYNTHESIS / OPTIMIZATION
+# =====================================================================
+puts ""
+
+puts "============================================================"
+============================================================
+puts " RUNNING COMPILE_ULTRA"
+ RUNNING COMPILE_ULTRA
+puts "============================================================"
+============================================================
+puts ""
+
+compile_ultra
+Loading db file '/home/prem5111/synopsys/dcs/syn/W-2024.09-SP5-3/libraries/syn/dw_foundation.sldb'
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 4%, Ram Free: 3 GB, Swap Free: 7 GB, Work Disk Free: 40 GB, Tmp Disk Free: 40 GB
+Alib files are up-to-date.
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.5 |     *     |
+| Licensed DW Building Blocks        | W-2024.09-DWBB_202409.5 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 460                                    |
+| Number of User Hierarchies                              | 6                                      |
+| Sequential Cell Count                                   | 128                                    |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 66                                     |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 8 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'tool_life_monitor_top'
+
+Loaded alib file './alib-52/saed32rvt_ss0p95v125c.db.alib'
+Module: DW01_NAND2, Ports: 3, Input: 2, Output: 1, Inout: 0
+Module: DW01_NAND2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Building model 'DW01_NAND2'
+Information: Changed minimum wire load model for 'DW01_NAND2' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'readback_logic' from 'ForQA' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'status_logic' from 'ForQA' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'threshold_bank' from 'ForQA' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'system_counter' from 'ForQA' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top' from 'ForQA' to '8000'. (OPT-171)
+Information: Ungrouping hierarchy u_system_counter before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_threshold_bank before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_safety_checks before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_status_logic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_replacement_control before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_readback_logic before Pass 1 (OPT-776)
+Information: Ungrouping 6 of 7 hierarchies before Pass 1 (OPT-775)
+CPU Load: 6%, Ram Free: 3 GB, Swap Free: 7 GB, Work Disk Free: 40 GB, Tmp Disk Free: 40 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'tool_life_monitor_top'
+ Implement Synthetic for 'tool_life_monitor_top'.
+Information: Added key list 'DesignWare' to design 'tool_life_monitor_top'. (DDB-72)
+CPU Load: 6%, Ram Free: 3 GB, Swap Free: 7 GB, Work Disk Free: 40 GB, Tmp Disk Free: 40 GB
+
+  Updating timing information
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_inc_J1_3' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_inc_J1_2' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_inc_J1_1' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_inc_J1_0' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DP_OP_75J1_122_4483_J1_0' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DP_OP_76J1_123_4483_J1_0' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DP_OP_77J1_124_4483_J1_0' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DP_OP_78J1_125_4483_J1_0' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: There is no timing violation in design tool_life_monitor_top. Delay-based auto_ungroup will not be performed. (OPT-780)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_add_3' from '8000' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_add_2' from '8000' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_add_1' from '8000' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_add_0' from '8000' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_add_3' from '8000' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_add_2' from '8000' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_add_1' from '8000' to 'ForQA'. (OPT-171)
+Information: Changed minimum wire load model for 'tool_life_monitor_top_DW01_add_0' from '8000' to 'ForQA'. (OPT-171)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:04    3088.1      0.00       0.0       0.0                           218053856.0000
+    0:00:04    3088.1      0.00       0.0       0.0                           218053856.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:04    3088.1      0.00       0.0       0.0                           218053856.0000
+    0:00:04    3088.1      0.00       0.0       0.0                           218053856.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:04    2656.8      0.00       0.0      11.1                           135288368.0000
+    0:00:04    2656.8      0.00       0.0      11.1                           135288368.0000
+    0:00:04    2656.8      0.00       0.0      11.1                           135288368.0000
+    0:00:04    2656.8      0.00       0.0      11.1                           135288368.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+    0:00:04    2656.8      0.00       0.0      11.1                           135288368.0000
+    0:00:04    2656.8      0.00       0.0      11.1                           135288368.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:04    2644.4      0.00       0.0       8.5                           133996144.0000
+    0:00:04    2644.4      0.00       0.0       8.5                           133996144.0000
+    0:00:04    2644.4      0.00       0.0       8.5                           133996144.0000
+    0:00:04    2644.4      0.00       0.0       8.5                           133996144.0000
+    0:00:04    2644.4      0.00       0.0       8.5                           133996144.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:04    2636.5      0.00       0.0       0.2                           132283080.0000
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:04    2637.8      0.00       0.0       0.0                           132491992.0000
+    0:00:04    2637.8      0.00       0.0       0.0                           132491992.0000
+    0:00:04    2637.8      0.00       0.0       0.0                           132491992.0000
+    0:00:04    2637.8      0.00       0.0       0.0                           132491992.0000
+    0:00:04    2637.8      0.00       0.0       0.0                           132491992.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:04    2637.5      0.00       0.0       0.0                           131535792.0000
+    0:00:04    2634.2      0.00       0.0       0.0                           131019464.0000
+    0:00:04    2634.2      0.00       0.0       0.0                           131019464.0000
+    0:00:04    2634.2      0.00       0.0       0.0                           131019464.0000
+    0:00:04    2634.2      0.00       0.0       0.0                           131019464.0000
+    0:00:04    2634.2      0.00       0.0       0.0                           131019464.0000
+    0:00:04    2634.2      0.00       0.0       0.0                           131019464.0000
+    0:00:04    2634.2      0.00       0.0       0.0                           131019464.0000
+    0:00:04    2634.2      0.00       0.0       0.0                           131019464.0000
+    0:00:04    2634.2      0.00       0.0       0.0                           131019464.0000
+    0:00:04    2634.2      0.00       0.0       0.0                           131019464.0000
+CPU Load: 6%, Ram Free: 3 GB, Swap Free: 7 GB, Work Disk Free: 40 GB, Tmp Disk Free: 40 GB
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db'
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+CPU Load: 6%, Ram Free: 3 GB, Swap Free: 7 GB, Work Disk Free: 40 GB, Tmp Disk Free: 40 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+# =====================================================================
+# 13. POST-SYNTHESIS DESIGN CHECK
+# =====================================================================
+redirect -file $REPORT_DIR/synthesis/check_design_post.rpt {
+    check_design
+}
+# =====================================================================
+# 14. POST-SYNTHESIS TIMING CHECK
+# =====================================================================
+redirect -file $REPORT_DIR/timing/check_timing_post.rpt {
+    check_timing
+}
+# =====================================================================
+# 15. SETUP / MAX-DELAY TIMING REPORT
+# =====================================================================
+redirect -file $REPORT_DIR/timing/setup_timing.rpt {
+    report_timing \
+        -delay_type max \
+        -max_paths 10 \
+        -path full
+}
+# =====================================================================
+# 16. HOLD / MIN-DELAY TIMING REPORT
+# =====================================================================
+redirect -file $REPORT_DIR/timing/hold_timing.rpt {
+    report_timing \
+        -delay_type min \
+        -max_paths 10 \
+        -path full
+}
+# =====================================================================
+# 17. TIMING CONSTRAINT VIOLATIONS
+# =====================================================================
+redirect -file $REPORT_DIR/timing/constraints.rpt {
+    report_constraint -all_violators
+}
+# =====================================================================
+# 18. AREA REPORT
+# =====================================================================
+redirect -file $REPORT_DIR/area/area.rpt {
+    report_area -hierarchy
+}
+# =====================================================================
+# 19. POWER REPORT
+# =====================================================================
+redirect -file $REPORT_DIR/power/power.rpt {
+    report_power
+}
+# =====================================================================
+# 20. QUALITY OF RESULTS REPORT
+# =====================================================================
+redirect -file $REPORT_DIR/synthesis/qor.rpt {
+    report_qor
+}
+# =====================================================================
+# 21. RESOURCE INFERENCE REPORT
+# =====================================================================
+redirect -file $REPORT_DIR/synthesis/resources.rpt {
+    report_resources
+}
+# =====================================================================
+# 22. STANDARD-CELL USAGE REPORT
+# =====================================================================
+redirect -file $REPORT_DIR/synthesis/references.rpt {
+    report_reference
+}
+# =====================================================================
+# 23. CLEAN NAMES FOR VERILOG / PHYSICAL DESIGN
+# =====================================================================
+change_names -rules verilog -hierarchy
+1
+# =====================================================================
+# 24. WRITE SAED32 GATE-LEVEL NETLIST
+# =====================================================================
+write \
+    -format verilog \
+    -hierarchy \
+    -output $NETLIST_DIR/tool_life_monitor_saed32_syn.v
+Writing verilog file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/netlist/saed32/tool_life_monitor_saed32_syn.v'.
+1
+# =====================================================================
+# 25. WRITE DESIGN COMPILER DATABASE
+# =====================================================================
+write_file \
+    -format ddc \
+    -hierarchy \
+    -output $NETLIST_DIR/tool_life_monitor_saed32.ddc
+Writing ddc file './netlist/saed32/tool_life_monitor_saed32.ddc'.
+1
+# =====================================================================
+# 26. WRITE SYNTHESIZED SDC
+# =====================================================================
+write_sdc \
+    $NETLIST_DIR/tool_life_monitor_saed32.sdc
+1
+# =====================================================================
+# 27. FINAL SUMMARY
+# =====================================================================
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " TOOL LIFE MONITOR - SAED 32nm SYNTHESIS COMPLETED"
+ TOOL LIFE MONITOR - SAED 32nm SYNTHESIS COMPLETED
+puts "================================================================="
+=================================================================
+puts " Technology       : SAED 32nm"
+ Technology       : SAED 32nm
+puts " Standard cells   : RVT"
+ Standard cells   : RVT
+puts " Setup corner     : SS 0.95V 125C"
+ Setup corner     : SS 0.95V 125C
+puts " Hold corner      : FF 1.16V -40C"
+ Hold corner      : FF 1.16V -40C
+puts " Clock target     : 10 ns / 100 MHz"
+ Clock target     : 10 ns / 100 MHz
+puts ""
+
+puts " Reports:"
+ Reports:
+puts " $REPORT_DIR/timing/setup_timing.rpt"
+ ./reports/saed32/timing/setup_timing.rpt
+puts " $REPORT_DIR/timing/hold_timing.rpt"
+ ./reports/saed32/timing/hold_timing.rpt
+puts " $REPORT_DIR/timing/constraints.rpt"
+ ./reports/saed32/timing/constraints.rpt
+puts " $REPORT_DIR/area/area.rpt"
+ ./reports/saed32/area/area.rpt
+puts " $REPORT_DIR/power/power.rpt"
+ ./reports/saed32/power/power.rpt
+puts " $REPORT_DIR/synthesis/qor.rpt"
+ ./reports/saed32/synthesis/qor.rpt
+puts " $REPORT_DIR/synthesis/resources.rpt"
+ ./reports/saed32/synthesis/resources.rpt
+puts " $REPORT_DIR/synthesis/references.rpt"
+ ./reports/saed32/synthesis/references.rpt
+puts ""
+
+puts " Netlist:"
+ Netlist:
+puts " $NETLIST_DIR/tool_life_monitor_saed32_syn.v"
+ ./netlist/saed32/tool_life_monitor_saed32_syn.v
+puts ""
+
+puts " DDC:"
+ DDC:
+puts " $NETLIST_DIR/tool_life_monitor_saed32.ddc"
+ ./netlist/saed32/tool_life_monitor_saed32.ddc
+puts "================================================================="
+=================================================================
+puts ""
+
+exit
+
+Memory usage for this session 284 Mbytes.
+Memory usage for this session including child processes 284 Mbytes.
+CPU usage for this session 7 seconds ( 0.00 hours ).
+Elapsed time for this session 15 seconds ( 0.00 hours ).
+
+Thank you...

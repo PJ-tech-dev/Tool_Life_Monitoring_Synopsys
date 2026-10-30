@@ -1,0 +1,135 @@
+****************************************
+ Report : check_design
+ Options: { pre_placement_stage }
+ Design : tool_life_monitor_top
+ Version: X-2025.06-SP1
+ Date   : Sat Sep 26 04:13:35 2026
+****************************************
+
+****************************************
+Report : Data Mismatches
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 04:13:35 2026
+****************************************
+No mismatches exist on the design.
+1
+Using libraries: tool_life_monitor.nlib saed32_hvt
+Warning: In library tool_life_monitor.nlib, no block views exist for block tool_life_monitor_top. (LNK-064)
+Visiting block tool_life_monitor.nlib:tool_life_monitor_top/power_plan.design
+Design 'tool_life_monitor_top' was successfully linked.
+1
+Information: There are no relative placement groups in the design. (NDMUI-173)
+Information: Timer using 1 threads
+Timing Update Started(Full_timing_update) : updateCount: 1 / Mem-peak : 413 MB / Date: Sat Sep 26 04:13:35 2026
+
+Timing Update Completed: Mem-peak: 418 MB / Date: Sat Sep 26 04:13:36 2026
+
+1
+1
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DFT-011      Info   1          The design has no scan chain defined in the scandef.
+  TCK-001      Warn   128        The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  ----------------------------------------------------------------------------------------------------
+  Total 129 EMS messages : 0 errors, 128 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+       LNK-064   Warn          1 In library %s, no block views exist for block %s.
+     NDMUI-173   Info          1 There are no relative placement groups in the design.
+       PVT-030   Warn          1 Corner %s:  %d process number, %d process label, %d voltage, and...
+       PVT-031   Warn          1 %d cells affected for early, %d for late.
+       PVT-034   Warn          1 %d port driving_cells affected for early, %d for late.
+  ----------------------------------------------------------------------------------------------------
+  Total 5 non-EMS messages : 0 errors, 4 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+****************************************
+ Report : check_design
+ Options: { pre_placement_stage }
+ Design : tool_life_monitor_top
+ Version: X-2025.06-SP1
+ Date   : Sat Sep 26 04:24:59 2026
+****************************************
+
+****************************************
+Report : Data Mismatches
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 04:24:59 2026
+****************************************
+No mismatches exist on the design.
+1
+1
+Information: There are no relative placement groups in the design. (NDMUI-173)
+Information: Timer using 1 threads
+Timing Update Started(Full_timing_update) : updateCount: 1 / Mem-peak : 413 MB / Date: Sat Sep 26 04:24:59 2026
+
+Timing Update Completed: Mem-peak: 418 MB / Date: Sat Sep 26 04:24:59 2026
+
+1
+1
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DFT-011      Info   1          The design has no scan chain defined in the scandef.
+  TCK-001      Warn   128        The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  ----------------------------------------------------------------------------------------------------
+  Total 129 EMS messages : 0 errors, 128 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+     NDMUI-173   Info          1 There are no relative placement groups in the design.
+       PVT-030   Warn          1 Corner %s:  %d process number, %d process label, %d voltage, and...
+       PVT-031   Warn          1 %d cells affected for early, %d for late.
+       PVT-034   Warn          1 %d port driving_cells affected for early, %d for late.
+  ----------------------------------------------------------------------------------------------------
+  Total 4 non-EMS messages : 0 errors, 3 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+****************************************
+ Report : check_design
+ Options: { pre_placement_stage }
+ Design : tool_life_monitor_top
+ Version: X-2025.06-SP1
+ Date   : Sat Sep 26 04:39:41 2026
+****************************************
+
+****************************************
+Report : Data Mismatches
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 04:39:41 2026
+****************************************
+No mismatches exist on the design.
+1
+1
+Information: There are no relative placement groups in the design. (NDMUI-173)
+1
+1
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DFT-011      Info   1          The design has no scan chain defined in the scandef.
+  TCK-001      Warn   128        The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  ----------------------------------------------------------------------------------------------------
+  Total 129 EMS messages : 0 errors, 128 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+     NDMUI-173   Info          1 There are no relative placement groups in the design.
+  ----------------------------------------------------------------------------------------------------
+  Total 1 non-EMS messages : 0 errors, 0 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------

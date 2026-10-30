@@ -1,0 +1,19 @@
+****************************************
+Report : clock
+Design : tool_life_monitor_top
+Mode   : default
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 03:59:14 2026
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK             10.00   {0 5}                         {clk}
+
+1

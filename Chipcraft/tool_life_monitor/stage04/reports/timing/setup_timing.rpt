@@ -1,0 +1,1022 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : tool_life_monitor_top
+Version: W-2024.09-SP5-3
+Date   : Fri Sep 25 21:39:55 2026
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_system_counter/count_reg[0][2]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: selected_status[0]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[0][2]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[0][2]/Q (DFFARX1_RVT)        0.19       0.19 f
+  U571/Y (AND2X1_RVT)                                     0.08       0.27 f
+  intadd_2/U14/S (FADDX1_RVT)                             0.15       0.42 r
+  U794/Y (AO222X1_RVT)                                    0.13       0.56 r
+  U795/Y (AO222X1_RVT)                                    0.14       0.70 r
+  U796/Y (AO222X1_RVT)                                    0.14       0.84 r
+  U797/Y (AO222X1_RVT)                                    0.14       0.98 r
+  U798/Y (AO222X1_RVT)                                    0.14       1.13 r
+  U799/Y (AO222X1_RVT)                                    0.14       1.27 r
+  U800/Y (AO222X1_RVT)                                    0.14       1.41 r
+  U801/Y (AO222X1_RVT)                                    0.14       1.55 r
+  U802/Y (AO222X1_RVT)                                    0.14       1.69 r
+  U803/Y (AO222X1_RVT)                                    0.14       1.84 r
+  U804/Y (AO222X1_RVT)                                    0.14       1.98 r
+  U805/Y (AO222X1_RVT)                                    0.14       2.12 r
+  U806/Y (AO222X1_RVT)                                    0.14       2.26 r
+  U809/Y (AO222X1_RVT)                                    0.14       2.40 r
+  U811/Y (AO222X1_RVT)                                    0.14       2.54 r
+  U812/Y (OA221X1_RVT)                                    0.10       2.63 r
+  U853/Y (MUX41X1_RVT)                                    0.12       2.75 r
+  selected_status[0] (out)                                0.00       2.75 r
+  data arrival time                                                  2.75
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -2.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.05
+
+
+  Startpoint: u_system_counter/count_reg[3][2]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: warning[3] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[3][2]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[3][2]/Q (DFFARX1_RVT)        0.19       0.19 f
+  U605/Y (AND2X1_RVT)                                     0.08       0.28 f
+  intadd_1/U14/S (FADDX1_RVT)                             0.15       0.42 r
+  U814/Y (AO222X1_RVT)                                    0.13       0.56 r
+  U815/Y (AO222X1_RVT)                                    0.14       0.70 r
+  U816/Y (AO222X1_RVT)                                    0.14       0.84 r
+  U817/Y (AO222X1_RVT)                                    0.14       0.98 r
+  U818/Y (AO222X1_RVT)                                    0.14       1.13 r
+  U819/Y (AO222X1_RVT)                                    0.14       1.27 r
+  U820/Y (AO222X1_RVT)                                    0.14       1.41 r
+  U821/Y (AO222X1_RVT)                                    0.14       1.55 r
+  U822/Y (AO222X1_RVT)                                    0.14       1.69 r
+  U823/Y (AO222X1_RVT)                                    0.14       1.84 r
+  U824/Y (AO222X1_RVT)                                    0.14       1.98 r
+  U825/Y (AO222X1_RVT)                                    0.14       2.12 r
+  U826/Y (AO222X1_RVT)                                    0.14       2.26 r
+  U829/Y (AO222X1_RVT)                                    0.14       2.40 r
+  U831/Y (AO222X1_RVT)                                    0.14       2.54 r
+  U832/Y (OA221X1_RVT)                                    0.10       2.63 r
+  warning[3] (out)                                        0.00       2.63 r
+  data arrival time                                                  2.63
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -2.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.17
+
+
+  Startpoint: u_system_counter/count_reg[0][2]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: warning[0] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[0][2]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[0][2]/Q (DFFARX1_RVT)        0.19       0.19 f
+  U571/Y (AND2X1_RVT)                                     0.08       0.27 f
+  intadd_2/U14/S (FADDX1_RVT)                             0.15       0.42 r
+  U794/Y (AO222X1_RVT)                                    0.13       0.56 r
+  U795/Y (AO222X1_RVT)                                    0.14       0.70 r
+  U796/Y (AO222X1_RVT)                                    0.14       0.84 r
+  U797/Y (AO222X1_RVT)                                    0.14       0.98 r
+  U798/Y (AO222X1_RVT)                                    0.14       1.13 r
+  U799/Y (AO222X1_RVT)                                    0.14       1.27 r
+  U800/Y (AO222X1_RVT)                                    0.14       1.41 r
+  U801/Y (AO222X1_RVT)                                    0.14       1.55 r
+  U802/Y (AO222X1_RVT)                                    0.14       1.69 r
+  U803/Y (AO222X1_RVT)                                    0.14       1.84 r
+  U804/Y (AO222X1_RVT)                                    0.14       1.98 r
+  U805/Y (AO222X1_RVT)                                    0.14       2.12 r
+  U806/Y (AO222X1_RVT)                                    0.14       2.26 r
+  U809/Y (AO222X1_RVT)                                    0.14       2.40 r
+  U811/Y (AO222X1_RVT)                                    0.14       2.54 r
+  U812/Y (OA221X1_RVT)                                    0.10       2.63 r
+  warning[0] (out)                                        0.00       2.63 r
+  data arrival time                                                  2.63
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -2.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.17
+
+
+  Startpoint: u_system_counter/count_reg[2][2]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: warning[2] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[2][2]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[2][2]/Q (DFFARX1_RVT)        0.19       0.19 f
+  U594/Y (AND2X1_RVT)                                     0.08       0.27 f
+  intadd_3/U14/S (FADDX1_RVT)                             0.15       0.42 r
+  U774/Y (AO222X1_RVT)                                    0.13       0.56 r
+  U775/Y (AO222X1_RVT)                                    0.14       0.70 r
+  U776/Y (AO222X1_RVT)                                    0.14       0.84 r
+  U777/Y (AO222X1_RVT)                                    0.14       0.98 r
+  U778/Y (AO222X1_RVT)                                    0.14       1.13 r
+  U779/Y (AO222X1_RVT)                                    0.14       1.27 r
+  U780/Y (AO222X1_RVT)                                    0.14       1.41 r
+  U781/Y (AO222X1_RVT)                                    0.14       1.55 r
+  U782/Y (AO222X1_RVT)                                    0.14       1.69 r
+  U783/Y (AO222X1_RVT)                                    0.14       1.84 r
+  U784/Y (AO222X1_RVT)                                    0.14       1.98 r
+  U785/Y (AO222X1_RVT)                                    0.14       2.12 r
+  U786/Y (AO222X1_RVT)                                    0.14       2.26 r
+  U789/Y (AO222X1_RVT)                                    0.14       2.40 r
+  U791/Y (AO222X1_RVT)                                    0.14       2.54 r
+  U792/Y (OA221X1_RVT)                                    0.10       2.63 r
+  warning[2] (out)                                        0.00       2.63 r
+  data arrival time                                                  2.63
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -2.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.17
+
+
+  Startpoint: u_system_counter/count_reg[1][2]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: warning[1] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[1][2]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[1][2]/Q (DFFARX1_RVT)        0.19       0.19 f
+  U582/Y (AND2X1_RVT)                                     0.08       0.27 f
+  intadd_0/U14/S (FADDX1_RVT)                             0.15       0.42 r
+  U834/Y (AO222X1_RVT)                                    0.13       0.56 r
+  U835/Y (AO222X1_RVT)                                    0.14       0.70 r
+  U836/Y (AO222X1_RVT)                                    0.14       0.84 r
+  U837/Y (AO222X1_RVT)                                    0.14       0.98 r
+  U838/Y (AO222X1_RVT)                                    0.14       1.13 r
+  U839/Y (AO222X1_RVT)                                    0.14       1.27 r
+  U840/Y (AO222X1_RVT)                                    0.14       1.41 r
+  U841/Y (AO222X1_RVT)                                    0.14       1.55 r
+  U842/Y (AO222X1_RVT)                                    0.14       1.69 r
+  U843/Y (AO222X1_RVT)                                    0.14       1.84 r
+  U844/Y (AO222X1_RVT)                                    0.14       1.98 r
+  U845/Y (AO222X1_RVT)                                    0.14       2.12 r
+  U846/Y (AO222X1_RVT)                                    0.14       2.26 r
+  U849/Y (AO222X1_RVT)                                    0.14       2.40 r
+  U851/Y (AO222X1_RVT)                                    0.14       2.54 r
+  U852/Y (OA221X1_RVT)                                    0.10       2.63 r
+  warning[1] (out)                                        0.00       2.63 r
+  data arrival time                                                  2.63
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -2.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.17
+
+
+  Startpoint: u_system_counter/count_reg[0][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: selected_status[1]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[0][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[0][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U696/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U697/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U698/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U699/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U700/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U701/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U702/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U705/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U706/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U568/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U567/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U710/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U711/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U772/Y (MUX41X1_RVT)                                    0.12       1.67 r
+  selected_status[1] (out)                                0.00       1.67 r
+  data arrival time                                                  1.67
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -1.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.13
+
+
+  Startpoint: u_system_counter/count_reg[3][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: replacement_req[3]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[3][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[3][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U726/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U727/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U728/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U729/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U730/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U731/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U732/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U735/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U736/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U566/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U565/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U740/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U741/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  replacement_req[3] (out)                                0.00       1.55 r
+  data arrival time                                                  1.55
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -1.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.25
+
+
+  Startpoint: u_system_counter/count_reg[0][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: replacement_req[0]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[0][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[0][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U696/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U697/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U698/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U699/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U700/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U701/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U702/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U705/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U706/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U568/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U567/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U710/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U711/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  replacement_req[0] (out)                                0.00       1.55 r
+  data arrival time                                                  1.55
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -1.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.25
+
+
+  Startpoint: u_system_counter/count_reg[2][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: replacement_req[2]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[2][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[2][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U666/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U667/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U668/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U669/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U670/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U671/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U672/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U675/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U676/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U570/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U569/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U680/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U681/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  replacement_req[2] (out)                                0.00       1.55 r
+  data arrival time                                                  1.55
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -1.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.25
+
+
+  Startpoint: u_system_counter/count_reg[1][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: replacement_req[1]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[1][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[1][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U756/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U757/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U758/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U759/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U760/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U761/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U762/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U765/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U766/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U564/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U563/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U770/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U771/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  replacement_req[1] (out)                                0.00       1.55 r
+  data arrival time                                                  1.55
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -1.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.25
+
+
+  Startpoint: u_system_counter/count_reg[3][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter/count_reg[3][4]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[3][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[3][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U726/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U727/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U728/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U729/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U730/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U731/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U732/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U735/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U736/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U566/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U565/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U740/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U741/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U873/Y (NAND2X0_RVT)                                    0.09       1.64 f
+  U874/Y (NAND2X0_RVT)                                    0.20       1.84 r
+  U903/Y (INVX0_RVT)                                      0.13       1.97 f
+  U854/Y (AND4X1_RVT)                                     0.16       2.12 f
+  U630/Y (OA22X1_RVT)                                     0.09       2.21 f
+  u_system_counter/count_reg[3][4]/D (DFFARX1_RVT)        0.00       2.21 f
+  data arrival time                                                  2.21
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_system_counter/count_reg[3][4]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -2.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+  Startpoint: u_system_counter/count_reg[0][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter/count_reg[0][4]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[0][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[0][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U696/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U697/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U698/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U699/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U700/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U701/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U702/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U705/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U706/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U568/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U567/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U710/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U711/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U1065/Y (NAND2X0_RVT)                                   0.09       1.64 f
+  U1066/Y (NAND2X0_RVT)                                   0.20       1.84 r
+  U618/Y (INVX0_RVT)                                      0.13       1.97 f
+  U617/Y (AND4X1_RVT)                                     0.16       2.12 f
+  U616/Y (OA22X1_RVT)                                     0.09       2.21 f
+  u_system_counter/count_reg[0][4]/D (DFFARX1_RVT)        0.00       2.21 f
+  data arrival time                                                  2.21
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_system_counter/count_reg[0][4]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -2.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+  Startpoint: u_system_counter/count_reg[2][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter/count_reg[2][4]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[2][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[2][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U666/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U667/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U668/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U669/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U670/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U671/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U672/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U675/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U676/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U570/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U569/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U680/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U681/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U938/Y (NAND2X0_RVT)                                    0.09       1.64 f
+  U939/Y (NAND2X0_RVT)                                    0.20       1.84 r
+  U560/Y (INVX0_RVT)                                      0.13       1.97 f
+  U559/Y (AND4X1_RVT)                                     0.16       2.12 f
+  U558/Y (OA22X1_RVT)                                     0.09       2.21 f
+  u_system_counter/count_reg[2][4]/D (DFFARX1_RVT)        0.00       2.21 f
+  data arrival time                                                  2.21
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_system_counter/count_reg[2][4]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -2.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+  Startpoint: u_system_counter/count_reg[1][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter/count_reg[1][4]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[1][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[1][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U756/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U757/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U758/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U759/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U760/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U761/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U762/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U765/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U766/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U564/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U563/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U770/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U771/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U1002/Y (NAND2X0_RVT)                                   0.09       1.64 f
+  U1003/Y (NAND2X0_RVT)                                   0.20       1.84 r
+  U557/Y (INVX0_RVT)                                      0.13       1.97 f
+  U548/Y (AND4X1_RVT)                                     0.16       2.12 f
+  U547/Y (OA22X1_RVT)                                     0.09       2.21 f
+  u_system_counter/count_reg[1][4]/D (DFFARX1_RVT)        0.00       2.21 f
+  data arrival time                                                  2.21
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_system_counter/count_reg[1][4]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -2.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+  Startpoint: u_system_counter/count_reg[3][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter/count_reg[3][2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[3][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[3][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U726/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U727/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U728/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U729/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U730/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U731/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U732/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U735/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U736/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U566/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U565/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U740/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U741/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U871/Y (AO22X1_RVT)                                     0.10       1.65 r
+  U874/Y (NAND2X0_RVT)                                    0.16       1.82 f
+  U903/Y (INVX0_RVT)                                      0.16       1.97 r
+  U911/Y (NAND2X0_RVT)                                    0.04       2.01 f
+  U912/Y (NAND2X0_RVT)                                    0.07       2.08 r
+  U914/Y (AO222X1_RVT)                                    0.12       2.20 r
+  u_system_counter/count_reg[3][2]/D (DFFARX1_RVT)        0.00       2.20 r
+  data arrival time                                                  2.20
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_system_counter/count_reg[3][2]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -2.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+  Startpoint: u_system_counter/count_reg[0][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter/count_reg[0][2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[0][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[0][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U696/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U697/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U698/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U699/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U700/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U701/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U702/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U705/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U706/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U568/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U567/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U710/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U711/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U1063/Y (AO22X1_RVT)                                    0.10       1.65 r
+  U1066/Y (NAND2X0_RVT)                                   0.16       1.82 f
+  U618/Y (INVX0_RVT)                                      0.16       1.97 r
+  U1102/Y (NAND2X0_RVT)                                   0.04       2.01 f
+  U1103/Y (NAND2X0_RVT)                                   0.07       2.08 r
+  U1105/Y (AO222X1_RVT)                                   0.12       2.20 r
+  u_system_counter/count_reg[0][2]/D (DFFARX1_RVT)        0.00       2.20 r
+  data arrival time                                                  2.20
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_system_counter/count_reg[0][2]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -2.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+  Startpoint: u_system_counter/count_reg[2][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter/count_reg[2][2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[2][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[2][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U666/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U667/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U668/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U669/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U670/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U671/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U672/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U675/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U676/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U570/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U569/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U680/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U681/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U936/Y (AO22X1_RVT)                                     0.10       1.65 r
+  U939/Y (NAND2X0_RVT)                                    0.16       1.82 f
+  U560/Y (INVX0_RVT)                                      0.16       1.97 r
+  U976/Y (NAND2X0_RVT)                                    0.04       2.01 f
+  U977/Y (NAND2X0_RVT)                                    0.07       2.08 r
+  U979/Y (AO222X1_RVT)                                    0.12       2.20 r
+  u_system_counter/count_reg[2][2]/D (DFFARX1_RVT)        0.00       2.20 r
+  data arrival time                                                  2.20
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_system_counter/count_reg[2][2]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -2.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+  Startpoint: u_system_counter/count_reg[1][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter/count_reg[1][2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[1][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[1][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U756/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U757/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U758/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U759/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U760/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U761/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U762/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U765/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U766/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U564/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U563/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U770/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U771/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U1000/Y (AO22X1_RVT)                                    0.10       1.65 r
+  U1003/Y (NAND2X0_RVT)                                   0.16       1.82 f
+  U557/Y (INVX0_RVT)                                      0.16       1.97 r
+  U1039/Y (NAND2X0_RVT)                                   0.04       2.01 f
+  U1040/Y (NAND2X0_RVT)                                   0.07       2.08 r
+  U1042/Y (AO222X1_RVT)                                   0.12       2.19 r
+  u_system_counter/count_reg[1][2]/D (DFFARX1_RVT)        0.00       2.19 r
+  data arrival time                                                  2.19
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_system_counter/count_reg[1][2]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -2.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+  Startpoint: u_system_counter/count_reg[3][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter/count_reg[3][14]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[3][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[3][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U726/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U727/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U728/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U729/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U730/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U731/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U732/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U735/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U736/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U566/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U565/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U740/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U741/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U871/Y (AO22X1_RVT)                                     0.10       1.65 r
+  U874/Y (NAND2X0_RVT)                                    0.16       1.82 f
+  U903/Y (INVX0_RVT)                                      0.16       1.97 r
+  U879/Y (AO21X1_RVT)                                     0.10       2.08 r
+  U880/Y (AO222X1_RVT)                                    0.11       2.19 r
+  u_system_counter/count_reg[3][14]/D (DFFARX1_RVT)       0.00       2.19 r
+  data arrival time                                                  2.19
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_system_counter/count_reg[3][14]/CLK (DFFARX1_RVT)     0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -2.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+  Startpoint: u_system_counter/count_reg[0][1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter/count_reg[0][14]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter/count_reg[0][1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  u_system_counter/count_reg[0][1]/Q (DFFARX1_RVT)        0.21       0.21 r
+  U696/Y (AO222X1_RVT)                                    0.15       0.35 r
+  U697/Y (AO222X1_RVT)                                    0.12       0.48 r
+  U698/Y (AO222X1_RVT)                                    0.12       0.60 r
+  U699/Y (AO222X1_RVT)                                    0.14       0.74 r
+  U700/Y (AO222X1_RVT)                                    0.14       0.88 r
+  U701/Y (AO222X1_RVT)                                    0.14       1.03 r
+  U702/Y (AO222X1_RVT)                                    0.14       1.16 r
+  U705/Y (AO221X1_RVT)                                    0.10       1.26 r
+  U706/Y (AO22X1_RVT)                                     0.07       1.33 r
+  U568/Y (NAND2X0_RVT)                                    0.03       1.36 f
+  U567/Y (NAND3X0_RVT)                                    0.04       1.40 r
+  U710/Y (NAND3X0_RVT)                                    0.06       1.46 f
+  U711/Y (NOR2X0_RVT)                                     0.09       1.55 r
+  U1063/Y (AO22X1_RVT)                                    0.10       1.65 r
+  U1066/Y (NAND2X0_RVT)                                   0.16       1.82 f
+  U618/Y (INVX0_RVT)                                      0.16       1.97 r
+  U1071/Y (AO21X1_RVT)                                    0.10       2.08 r
+  U1072/Y (AO222X1_RVT)                                   0.11       2.19 r
+  u_system_counter/count_reg[0][14]/D (DFFARX1_RVT)       0.00       2.19 r
+  data arrival time                                                  2.19
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_system_counter/count_reg[0][14]/CLK (DFFARX1_RVT)     0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -2.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+1

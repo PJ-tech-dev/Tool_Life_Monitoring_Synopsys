@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : tool_life_monitor_top
+Version: W-2024.09-SP5-3
+Date   : Fri Sep 25 21:26:57 2026
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v125c (File: /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db)
+
+Number of ports:                           79
+Number of nets:                           954
+Number of cells:                          753
+Number of combinational cells:            620
+Number of sequential cells:               132
+Number of macros/black boxes:               0
+Number of buf/inv:                         50
+Number of references:                      24
+
+Combinational area:               1733.516226
+Buf/Inv area:                       67.348161
+Noncombinational area:             939.824528
+Macro/Black Box area:                0.000000
+Net Interconnect area:             742.414008
+
+Total cell area:                  2673.340755
+Total area:                       3415.754763
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+tool_life_monitor_top             2673.3408    100.0  1733.5162   939.8245  0.0000  tool_life_monitor_top
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 1733.5162   939.8245  0.0000
+
+1

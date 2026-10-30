@@ -1,0 +1,73 @@
+Error: Required argument '-checks' was not found (CMD-007)
+****************************************
+ Report : check_design
+ Options: { dp_pre_floorplan }
+ Design : tool_life_monitor_top
+ Version: X-2025.06-SP1
+ Date   : Sat Sep 26 03:55:39 2026
+****************************************
+
+Running atomic-check 'dp_pre_floorplan'
+Start checking preparation for floorplan ...
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M1'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M2'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M3'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M4'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M5'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M6'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M7'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M8'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M9'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'MRDL'. (DPUI-924)
+End checking preparation for floorplan.
+
+1
+
+  *** EMS Message summary ***
+  Total 0 EMS messages : 0 errors, 0 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+      DPUI-924   Warn         10 The routing directions for layer '%s' are missing. Auto deriving...
+  ----------------------------------------------------------------------------------------------------
+  Total 10 non-EMS messages : 0 errors, 10 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+****************************************
+ Report : check_design
+ Options: { dp_pre_floorplan }
+ Design : tool_life_monitor_top
+ Version: X-2025.06-SP1
+ Date   : Sat Sep 26 03:59:14 2026
+****************************************
+
+Running atomic-check 'dp_pre_floorplan'
+Start checking preparation for floorplan ...
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M1'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M2'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M3'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M4'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M5'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M6'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M7'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M8'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M9'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'MRDL'. (DPUI-924)
+End checking preparation for floorplan.
+
+1
+
+  *** EMS Message summary ***
+  Total 0 EMS messages : 0 errors, 0 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+      DPUI-924   Warn         10 The routing directions for layer '%s' are missing. Auto deriving...
+  ----------------------------------------------------------------------------------------------------
+  Total 10 non-EMS messages : 0 errors, 10 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------

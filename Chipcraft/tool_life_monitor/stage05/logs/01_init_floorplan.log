@@ -1,0 +1,245 @@
+
+
+
+                              IC Compiler II (TM)
+
+                Version X-2025.06-SP1 for linux64 - Aug 01, 2025
+                            Base build date 7/7/2025
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+ 
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+set TOP "tool_life_monitor_top"
+tool_life_monitor_top
+set NETLIST "./final_netlist/tool_life_monitor_hvt_final.v"
+./final_netlist/tool_life_monitor_hvt_final.v
+set SDC     "./final_netlist/tool_life_monitor_hvt_final.sdc"
+./final_netlist/tool_life_monitor_hvt_final.sdc
+set REFROOT "/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref
+set TECH       "$REFROOT/tech/saed32nm_1p9m.tf"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/tech/saed32nm_1p9m.tf
+set HVT_NDM    "$REFROOT/CLIBs/saed32_hvt.ndm"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/CLIBs/saed32_hvt.ndm
+set TLU_MAX    "$REFROOT/tech/saed32nm_1p9m_Cmax.lv.tluplus"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/tech/saed32nm_1p9m_Cmax.lv.tluplus
+set TLU_MIN    "$REFROOT/tech/saed32nm_1p9m_Cmin.lv.tluplus"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/tech/saed32nm_1p9m_Cmin.lv.tluplus
+set TLU_MAP    "$REFROOT/tech/saed32nm_tf_itf_tluplus.map"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/tech/saed32nm_tf_itf_tluplus.map
+set DESIGN_LIB "./stage05/work/tool_life_monitor.nlib"
+./stage05/work/tool_life_monitor.nlib
+puts "============================================================"
+============================================================
+puts " STAGE 05 - INITIALIZATION + FLOORPLAN"
+ STAGE 05 - INITIALIZATION + FLOORPLAN
+puts "============================================================"
+============================================================
+# ------------------------------------------------------------
+# CREATE DESIGN LIBRARY
+# ------------------------------------------------------------
+create_lib \
+    -technology $TECH \
+    -ref_libs [list $HVT_NDM] \
+    $DESIGN_LIB
+Information: Loading technology file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/tech/saed32nm_1p9m.tf' (FILE-007)
+{tool_life_monitor.nlib}
+# ------------------------------------------------------------
+# READ FINAL HVT NETLIST
+# ------------------------------------------------------------
+read_verilog $NETLIST
+Loading verilog file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/final_netlist/tool_life_monitor_hvt_final.v'
+Information: Reading Verilog into new design 'tool_life_monitor_top' in library 'tool_life_monitor.nlib'. (VR-012)
+Number of modules read: 1
+Top level ports: 79
+Total ports in all modules: 79
+Total nets in all modules: 968
+Total instances in all modules: 767
+Elapsed = 00:00:00.01, CPU = 00:00:00.01
+1
+current_block $TOP
+{tool_life_monitor.nlib:tool_life_monitor_top.design}
+link_block
+Using libraries: tool_life_monitor.nlib saed32_hvt
+Linking block tool_life_monitor.nlib:tool_life_monitor_top.design
+Information: User units loaded from library 'saed32_hvt|saed32_hvt_std' (LNK-040)
+Design 'tool_life_monitor_top' was successfully linked.
+1
+puts "Current block:"
+Current block:
+puts [get_object_name [current_block]]
+tool_life_monitor.nlib:tool_life_monitor_top.design
+puts "Instance count:"
+Instance count:
+puts [sizeof_collection [get_cells -hierarchical *]]
+767
+# ------------------------------------------------------------
+# READ CONSTRAINTS
+# ------------------------------------------------------------
+read_sdc $SDC
+Information: Loading SDC version 2.2 file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/final_netlist/tool_life_monitor_hvt_final.sdc' (FILE-007)
+Warning: SDC version in file (2.1) does not match the version you requested
+        	from read_sdc (2.2).  Some constraints and options may not function. (SDC-2)
+Information: Timer using 1 threads
+Timing Update Started(Full_timing_update) : updateCount: 1 / Mem-peak : 404 MB / Date: Sat Sep 26 03:59:12 2026
+
+Timing Update Completed: Mem-peak: 407 MB / Date: Sat Sep 26 03:59:12 2026
+
+1
+# ------------------------------------------------------------
+# PARASITIC TECHNOLOGY
+# ------------------------------------------------------------
+read_parasitic_tech \
+    -tlup $TLU_MAX \
+    -layermap $TLU_MAP \
+    -name maxTLU
+1
+read_parasitic_tech \
+    -tlup $TLU_MIN \
+    -layermap $TLU_MAP \
+    -name minTLU
+1
+set_parasitic_parameters \
+    -late_spec maxTLU \
+    -early_spec minTLU
+1
+# ------------------------------------------------------------
+# PRE-FLOORPLAN CHECK
+# ------------------------------------------------------------
+puts "============================================================"
+============================================================
+puts " PRE-FLOORPLAN DESIGN CHECK"
+ PRE-FLOORPLAN DESIGN CHECK
+puts "============================================================"
+============================================================
+check_design \
+    -checks {dp_pre_floorplan} \
+    -log_file ./stage05/reports/check_design_pre_floorplan.rpt
+****************************************
+ Report : check_design 
+ Options: { dp_pre_floorplan }
+ Design : tool_life_monitor_top
+ Version: X-2025.06-SP1
+ Date   : Sat Sep 26 03:59:14 2026
+****************************************
+
+Running atomic-check 'dp_pre_floorplan'
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Total 0 EMS messages : 0 errors, 0 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DPUI-924     Warn   10         The routing directions for layer '%s' are missing. Auto deriving...
+  ----------------------------------------------------------------------------------------------------
+  Total 10 non-EMS messages : 0 errors, 10 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+Information: Non-EMS messages are saved into file './stage05/reports/check_design_pre_floorplan.rpt'.
+1
+# ------------------------------------------------------------
+# CLOCK REPORT
+# ------------------------------------------------------------
+redirect -file ./stage05/reports/clocks_pre_floorplan.rpt {
+    report_clocks
+}
+# ------------------------------------------------------------
+# INITIAL FLOORPLAN
+# ------------------------------------------------------------
+puts "============================================================"
+============================================================
+puts " CREATING FLOORPLAN"
+ CREATING FLOORPLAN
+puts "============================================================"
+============================================================
+initialize_floorplan \
+    -shape R \
+    -core_utilization 0.60 \
+    -side_ratio {1 1} \
+    -core_offset {5 5}
+Use site_def 'unit' to initialize floorplan.
+Removing existing floorplan objects
+Creating core...
+Core utilization ratio = 61.14%
+Unplacing all cells...
+Creating site array...
+Creating routing tracks...
+Initializing floorplan completed.
+# ------------------------------------------------------------
+# POST-FLOORPLAN CHECK
+# ------------------------------------------------------------
+check_design \
+    -checks {dp_floorplan_rules} \
+    -log_file ./stage05/reports/check_design_post_floorplan.rpt
+****************************************
+ Report : check_design 
+ Options: { dp_floorplan_rules }
+ Design : tool_life_monitor_top
+ Version: X-2025.06-SP1
+ Date   : Sat Sep 26 03:59:14 2026
+****************************************
+
+Running atomic-check 'dp_floorplan_rules'
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Total 0 EMS messages : 0 errors, 0 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DPCHK-008    Warn   1          Design '%s' does not have FinFET grid.
+  DPP-054      Info   1          Default error view %s is created in GUI error browser.
+  ----------------------------------------------------------------------------------------------------
+  Total 2 non-EMS messages : 0 errors, 1 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+Information: Non-EMS messages are saved into file './stage05/reports/check_design_post_floorplan.rpt'.
+1
+# ------------------------------------------------------------
+# REPORT FLOORPLAN
+# ------------------------------------------------------------
+redirect -file ./stage05/reports/floorplan_utilization.rpt {
+    report_utilization
+}
+# ------------------------------------------------------------
+# SAVE BLOCK
+# ------------------------------------------------------------
+save_block -as ${TOP}/floorplan_initial
+Information: The command 'save_block' cleared the undo history. (UNDO-016)
+Information: Saving 'tool_life_monitor.nlib:tool_life_monitor_top.design' to 'tool_life_monitor.nlib:tool_life_monitor_top/floorplan_initial.design'. (DES-028)
+1
+puts ""
+
+puts "============================================================"
+============================================================
+puts " INITIAL FLOORPLAN COMPLETE"
+ INITIAL FLOORPLAN COMPLETE
+puts "============================================================"
+============================================================
+puts ""
+
+exit
+Maximum memory usage for this session: 421.34 MB
+Maximum memory usage for this session including child processes: 421.34 MB
+CPU usage for this session:      6 seconds (  0.00 hours)
+Elapsed time for this session:     10 seconds (  0.00 hours)
+Thank you for using IC Compiler II.

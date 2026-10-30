@@ -1,0 +1,151 @@
+ 
+****************************************
+Report : port
+Design : tool_life_monitor_top
+Version: W-2024.09-SP5-3
+Date   : Fri Sep 25 21:08:40 2026
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000   --      --      --         
+cycle_event[0] in      0.0000   0.0000   --      --      --         
+cycle_event[1] in      0.0000   0.0000   --      --      --         
+cycle_event[2] in      0.0000   0.0000   --      --      --         
+cycle_event[3] in      0.0000   0.0000   --      --      --         
+replace_ack[0] in      0.0000   0.0000   --      --      --         
+replace_ack[1] in      0.0000   0.0000   --      --      --         
+replace_ack[2] in      0.0000   0.0000   --      --      --         
+replace_ack[3] in      0.0000   0.0000   --      --      --         
+rst_n          in      0.0000   0.0000   --      --      --         
+system_sel[0]  in      0.0000   0.0000   --      --      --         
+system_sel[1]  in      0.0000   0.0000   --      --      --         
+threshold_data[0]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[1]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[2]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[3]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[4]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[5]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[6]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[7]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[8]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[9]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[10]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[11]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[12]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[13]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[14]
+               in      0.0000   0.0000   --      --      --         
+threshold_data[15]
+               in      0.0000   0.0000   --      --      --         
+threshold_we   in      0.0000   0.0000   --      --      --         
+counter_max[0] out     0.0000   0.0000   --      --      --         
+counter_max[1] out     0.0000   0.0000   --      --      --         
+counter_max[2] out     0.0000   0.0000   --      --      --         
+counter_max[3] out     0.0000   0.0000   --      --      --         
+invalid_threshold[0]
+               out     0.0000   0.0000   --      --      --         
+invalid_threshold[1]
+               out     0.0000   0.0000   --      --      --         
+invalid_threshold[2]
+               out     0.0000   0.0000   --      --      --         
+invalid_threshold[3]
+               out     0.0000   0.0000   --      --      --         
+replacement_req[0]
+               out     0.0000   0.0000   --      --      --         
+replacement_req[1]
+               out     0.0000   0.0000   --      --      --         
+replacement_req[2]
+               out     0.0000   0.0000   --      --      --         
+replacement_req[3]
+               out     0.0000   0.0000   --      --      --         
+selected_count[0]
+               out     0.0000   0.0000   --      --      --         
+selected_count[1]
+               out     0.0000   0.0000   --      --      --         
+selected_count[2]
+               out     0.0000   0.0000   --      --      --         
+selected_count[3]
+               out     0.0000   0.0000   --      --      --         
+selected_count[4]
+               out     0.0000   0.0000   --      --      --         
+selected_count[5]
+               out     0.0000   0.0000   --      --      --         
+selected_count[6]
+               out     0.0000   0.0000   --      --      --         
+selected_count[7]
+               out     0.0000   0.0000   --      --      --         
+selected_count[8]
+               out     0.0000   0.0000   --      --      --         
+selected_count[9]
+               out     0.0000   0.0000   --      --      --         
+selected_count[10]
+               out     0.0000   0.0000   --      --      --         
+selected_count[11]
+               out     0.0000   0.0000   --      --      --         
+selected_count[12]
+               out     0.0000   0.0000   --      --      --         
+selected_count[13]
+               out     0.0000   0.0000   --      --      --         
+selected_count[14]
+               out     0.0000   0.0000   --      --      --         
+selected_count[15]
+               out     0.0000   0.0000   --      --      --         
+selected_status[0]
+               out     0.0000   0.0000   --      --      --         
+selected_status[1]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[0]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[1]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[2]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[3]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[4]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[5]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[6]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[7]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[8]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[9]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[10]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[11]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[12]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[13]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[14]
+               out     0.0000   0.0000   --      --      --         
+selected_threshold[15]
+               out     0.0000   0.0000   --      --      --         
+warning[0]     out     0.0000   0.0000   --      --      --         
+warning[1]     out     0.0000   0.0000   --      --      --         
+warning[2]     out     0.0000   0.0000   --      --      --         
+warning[3]     out     0.0000   0.0000   --      --      --         
+
+1

@@ -1,0 +1,221 @@
+
+                                 Formality (R)
+
+               Version W-2024.09-SP5 for linux64 - Apr 09, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Build: 9717777
+Hostname: sd26.ece.kalasalingam.ac.in
+Current time: Sat Sep 26 03:27:10 2026
+
+Loading db file '/home/prem5111/synopsys/fm/W-2024.09-SP5/libraries/syn/gtech.db'
+
+Script: final_netlist/formal/formal_hvt_final.tcl
+
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+set LIBROOT "/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs
+set HVT_MAX "$LIBROOT/saed32hvt_ss0p95v125c.db"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32hvt_ss0p95v125c.db
+set RVT_MAX "$LIBROOT/saed32rvt_ss0p95v125c.db"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db
+set RVT_MIN "$LIBROOT/saed32rvt_ff1p16vn40c.db"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db
+set REF_DDC "./netlist/saed32/tool_life_monitor_saed32_baseline.ddc"
+./netlist/saed32/tool_life_monitor_saed32_baseline.ddc
+set IMP_DDC "./final_netlist/tool_life_monitor_hvt_final.ddc"
+./final_netlist/tool_life_monitor_hvt_final.ddc
+puts "=================================================="
+==================================================
+puts " LOADING TECHNOLOGY LIBRARIES"
+ LOADING TECHNOLOGY LIBRARIES
+puts "=================================================="
+==================================================
+read_db -technology_library $RVT_MAX
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db'
+1
+read_db -technology_library $RVT_MIN
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ff1p16vn40c.db'
+1
+read_db -technology_library $HVT_MAX
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32hvt_ss0p95v125c.db'
+1
+puts "=================================================="
+==================================================
+puts " READING REFERENCE DESIGN"
+ READING REFERENCE DESIGN
+puts "=================================================="
+==================================================
+read_ddc -r $REF_DDC
+Loading ddc file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/netlist/saed32/tool_life_monitor_saed32_baseline.ddc'
+No target library specified, default is WORK
+Current container set to 'r'
+1
+set_top -auto
+Setting top design to 'r:/WORK/tool_life_monitor_top'
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  24 unlinked power cell(s) with unread pg pins.
+Warning:  3 unlinked power cell(s) with unread save/restore retention signals.
+Warning:  216 unlinked power cell(s) with no power down function on an ff or latch.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'r:/WORK/tool_life_monitor_top'
+Reference design set to 'r:/WORK/tool_life_monitor_top'
+1
+puts "=================================================="
+==================================================
+puts " READING FINAL HVT IMPLEMENTATION"
+ READING FINAL HVT IMPLEMENTATION
+puts "=================================================="
+==================================================
+read_ddc -i $IMP_DDC
+Loading ddc file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/final_netlist/tool_life_monitor_hvt_final.ddc'
+No target library specified, default is WORK
+Current container set to 'i'
+1
+set_top -auto
+Setting top design to 'i:/WORK/tool_life_monitor_top'
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  24 unlinked power cell(s) with unread pg pins.
+Warning:  3 unlinked power cell(s) with unread save/restore retention signals.
+Warning:  216 unlinked power cell(s) with no power down function on an ff or latch.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'i:/WORK/tool_life_monitor_top'
+Implementation design set to 'i:/WORK/tool_life_monitor_top'
+1
+puts "=================================================="
+==================================================
+puts " MATCH"
+ MATCH
+puts "=================================================="
+==================================================
+match
+Reference design is 'r:/WORK/tool_life_monitor_top'
+Implementation design is 'i:/WORK/tool_life_monitor_top'
+    Info:  Detected netlists in reference and implementation designs.
+           Starting fast netlist verification mode.
+Status:  Checking designs...
+Status:  Building verification models...
+Status:  Matching...
+    Info:  Matching results from fast netlist verification mode may
+           change during the verification step.
+    
+*********************************** Matching Results ***********************************    
+ 178 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 29 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+****************************************************************************************
+
+1
+puts "=================================================="
+==================================================
+puts " VERIFY"
+ VERIFY
+puts "=================================================="
+==================================================
+verify
+Reference design is 'r:/WORK/tool_life_monitor_top'
+Implementation design is 'i:/WORK/tool_life_monitor_top'
+Status:  Verifying...
+    
+*********************************** Matching Results ***********************************    
+ 178 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 29 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+****************************************************************************************
+
+
+
+********************************* Verification Results *********************************
+Verification SUCCEEDED
+----------------------
+ Reference design: r:/WORK/tool_life_monitor_top
+ Implementation design: i:/WORK/tool_life_monitor_top
+ 178 Passing compare points
+----------------------------------------------------------------------------------------
+Matched Compare Points     BBPin    Loop   BBNet     Cut    Port     DFF     LAT   TOTAL
+----------------------------------------------------------------------------------------
+Passing (equivalent)           0       0       0       0      50     128       0     178
+Failing (not equivalent)       0       0       0       0       0       0       0       0
+****************************************************************************************
+1
+puts "=================================================="
+==================================================
+puts " UNMATCHED POINTS"
+ UNMATCHED POINTS
+puts "=================================================="
+==================================================
+report_unmatched_points
+**************************************************
+Report         : unmatched_points
+
+Reference      : r:/WORK/tool_life_monitor_top
+Implementation : i:/WORK/tool_life_monitor_top
+Version        : W-2024.09-SP5
+Date           : Sat Sep 26 03:27:11 2026
+**************************************************
+
+No unmatched points.
+
+1
+puts "=================================================="
+==================================================
+puts " FAILING POINTS"
+ FAILING POINTS
+puts "=================================================="
+==================================================
+report_failing_points
+**************************************************
+Report         : failing_points
+
+Reference      : r:/WORK/tool_life_monitor_top
+Implementation : i:/WORK/tool_life_monitor_top
+Version        : W-2024.09-SP5
+Date           : Sat Sep 26 03:27:11 2026
+**************************************************
+
+No failing compare points.
+
+1
+puts "=================================================="
+==================================================
+puts " FORMAL CHECK COMPLETE"
+ FORMAL CHECK COMPLETE
+puts "=================================================="
+==================================================
+exit
+
+Maximum memory usage for this session: 990 MB
+CPU usage for this session: 2.1 seconds ( 0.00 hours )
+Current time: Sat Sep 26 03:27:11 2026
+Elapsed time: 3 seconds ( 0.00 hours )
+
+Thank you for using Formality (R)!

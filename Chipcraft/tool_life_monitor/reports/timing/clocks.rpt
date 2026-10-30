@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : clocks
+Design : tool_life_monitor_top
+Version: W-2024.09-SP5-3
+Date   : Fri Sep 25 17:55:38 2026
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK             10.00   {0 5}                         {clk}
+--------------------------------------------------------------------------------
+1

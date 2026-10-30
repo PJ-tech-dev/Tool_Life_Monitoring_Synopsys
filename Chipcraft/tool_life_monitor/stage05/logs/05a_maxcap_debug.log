@@ -1,0 +1,85 @@
+
+
+
+                              IC Compiler II (TM)
+
+                Version X-2025.06-SP1 for linux64 - Aug 01, 2025
+                            Base build date 7/7/2025
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+ 
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+set TOP "tool_life_monitor_top"
+tool_life_monitor_top
+set DESIGN_LIB "./stage05/work/tool_life_monitor.nlib"
+./stage05/work/tool_life_monitor.nlib
+open_lib $DESIGN_LIB
+Information: Loading library file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/stage05/work/tool_life_monitor.nlib' (FILE-007)
+Information: Loading library file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/CLIBs/saed32_hvt.ndm' (FILE-007)
+{tool_life_monitor.nlib}
+open_block ${TOP}/routed_final
+Information: User units loaded from library 'saed32_hvt|saed32_hvt_std' (LNK-040)
+Opening block 'tool_life_monitor.nlib:tool_life_monitor_top/routed_final.design' in edit mode
+{tool_life_monitor.nlib:tool_life_monitor_top/routed_final.design}
+# Match implementation PVT
+set_process_label  -corners [get_corners default] slow
+Using libraries: tool_life_monitor.nlib saed32_hvt
+Warning: In library tool_life_monitor.nlib, no block views exist for block tool_life_monitor_top. (LNK-064)
+Visiting block tool_life_monitor.nlib:tool_life_monitor_top/routed_final.design
+Design 'tool_life_monitor_top' was successfully linked.
+1
+set_process_number -corners [get_corners default] 0.99
+1
+set_voltage        -corners [get_corners default] 0.95
+1
+set_temperature    -corners [get_corners default] 125
+1
+report_pvt -significant_digits 3
+Information: Timer using 1 threads
+Timing Update Started(Full_timing_update) : updateCount: 1 / Mem-peak : 410 MB / Date: Sat Sep 26 05:59:15 2026
+
+Information: Corner default: no PVT mismatches. (PVT-032)
+Timing Update Completed: Mem-peak: 413 MB / Date: Sat Sep 26 05:59:15 2026
+
+****************************************
+Report : pvt
+Design : tool_life_monitor_top
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 05:59:15 2026
+****************************************
+
+--------------------------------------------------------------------------------
+Information: Corner default: no PVT mismatches. (PVT-032)
+--------------------------------------------------------------------------------
+
+
+
+1
+redirect -file ./stage05/reports/maxcap_violator.rpt {
+    report_constraints \
+        -max_capacitance \
+        -all_violators \
+        -verbose
+}
+puts "MAXCAP DEBUG COMPLETE"
+MAXCAP DEBUG COMPLETE
+exit
+Maximum memory usage for this session: 468.25 MB
+Maximum memory usage for this session including child processes: 468.25 MB
+CPU usage for this session:      6 seconds (  0.00 hours)
+Elapsed time for this session:     11 seconds (  0.00 hours)
+Thank you for using IC Compiler II.

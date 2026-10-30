@@ -1,0 +1,191 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 5
+        -report_by design
+Design : tool_life_monitor_top
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 04:39:41 2026
+****************************************
+
+  Startpoint: u_system_counter_count_reg_0__4_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_0__4_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_system_counter_count_reg_0__4_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_system_counter_count_reg_0__4_/QN (DFFARX1_HVT)
+                                                   0.14      0.14 f
+  U955/Y (OA22X1_HVT)                              0.08      0.22 f
+  u_system_counter_count_reg_0__4_/D (DFFARX1_HVT)
+                                                   0.00      0.22 f
+  data arrival time                                          0.22
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_system_counter_count_reg_0__4_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  library hold time                               -0.02     -0.02
+  data required time                                        -0.02
+  ------------------------------------------------------------------------
+  data required time                                        -0.02
+  data arrival time                                         -0.22
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.23
+
+
+
+  Startpoint: u_system_counter_count_reg_1__4_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__4_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_system_counter_count_reg_1__4_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_system_counter_count_reg_1__4_/QN (DFFARX1_HVT)
+                                                   0.14      0.14 f
+  U969/Y (OA22X1_HVT)                              0.08      0.22 f
+  u_system_counter_count_reg_1__4_/D (DFFARX1_HVT)
+                                                   0.00      0.22 f
+  data arrival time                                          0.22
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_system_counter_count_reg_1__4_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  library hold time                               -0.02     -0.02
+  data required time                                        -0.02
+  ------------------------------------------------------------------------
+  data required time                                        -0.02
+  data arrival time                                         -0.22
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.23
+
+
+
+  Startpoint: u_system_counter_count_reg_2__4_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_2__4_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_system_counter_count_reg_2__4_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_system_counter_count_reg_2__4_/QN (DFFARX1_HVT)
+                                                   0.14      0.14 f
+  U983/Y (OA22X1_HVT)                              0.08      0.22 f
+  u_system_counter_count_reg_2__4_/D (DFFARX1_HVT)
+                                                   0.00      0.22 f
+  data arrival time                                          0.22
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_system_counter_count_reg_2__4_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  library hold time                               -0.02     -0.02
+  data required time                                        -0.02
+  ------------------------------------------------------------------------
+  data required time                                        -0.02
+  data arrival time                                         -0.22
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.23
+
+
+
+  Startpoint: u_system_counter_count_reg_3__4_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__4_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_system_counter_count_reg_3__4_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_system_counter_count_reg_3__4_/QN (DFFARX1_HVT)
+                                                   0.14      0.14 f
+  U997/Y (OA22X1_HVT)                              0.08      0.22 f
+  u_system_counter_count_reg_3__4_/D (DFFARX1_HVT)
+                                                   0.00      0.22 f
+  data arrival time                                          0.22
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_system_counter_count_reg_3__4_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  library hold time                               -0.02     -0.02
+  data required time                                        -0.02
+  ------------------------------------------------------------------------
+  data required time                                        -0.02
+  data arrival time                                         -0.22
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.23
+
+
+
+  Startpoint: u_system_counter_count_reg_0__2_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_0__2_ (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_system_counter_count_reg_0__2_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  u_system_counter_count_reg_0__2_/QN (DFFARX1_HVT)
+                                                   0.14      0.14 f
+  U1009/Y (AO222X1_HVT)                            0.08      0.23 f
+  u_system_counter_count_reg_0__2_/D (DFFARX1_HVT)
+                                                   0.00      0.23 f
+  data arrival time                                          0.23
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_system_counter_count_reg_0__2_/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  library hold time                               -0.01     -0.01
+  data required time                                        -0.01
+  ------------------------------------------------------------------------
+  data required time                                        -0.01
+  data arrival time                                         -0.23
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.24
+
+
+1

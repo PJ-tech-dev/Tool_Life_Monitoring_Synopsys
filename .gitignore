@@ -1,0 +1,26 @@
+# Compiled simulation binaries and intermediate caches
+simv
+simv.daidir/
+csrc/
+*.key
+*.vcd
+*.fsdb
+verdiLog/
+novas.conf
+novas.rc
+novas_dump.log
+
+# Synopsys Design Compiler & Formality caches
+alib-52/
+cksum_dir/
+FM_INFO/
+*.svf
+*.ems
+*.mr
+*.pvl
+*.syn
+.graph_data.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db

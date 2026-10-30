@@ -1,0 +1,22 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP5-3
+Date:        Fri Sep 25 21:39:46 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               8
+    Cells do not drive (LINT-1)                                     8
+--------------------------------------------------------------------------------
+
+Warning: In design 'system_counter', cell 'C704' does not drive any nets. (LINT-1)
+Warning: In design 'system_counter', cell 'C714' does not drive any nets. (LINT-1)
+Warning: In design 'system_counter', cell 'C724' does not drive any nets. (LINT-1)
+Warning: In design 'system_counter', cell 'C734' does not drive any nets. (LINT-1)
+Warning: In design 'status_logic', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'status_logic', cell 'B_14' does not drive any nets. (LINT-1)
+Warning: In design 'status_logic', cell 'B_15' does not drive any nets. (LINT-1)
+Warning: In design 'status_logic', cell 'B_16' does not drive any nets. (LINT-1)
+1

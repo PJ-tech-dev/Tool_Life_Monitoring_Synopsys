@@ -1,0 +1,684 @@
+*****************************************************************
+**********Net VDD Connectivity Stats**************************
+*****************************************************************
+
+  Number of disjoint networks: 21
+
+  **************(main network)***********
+    Number of wires: 40
+    Number of vias: 64
+    Number of std cells: 0
+    Number of hard macros: 0
+    Number of I/O pads: 0
+    Number of terminals: 0
+    Number of hierarchical blocks: 0
+  ***************************************
+
+  *****sub-network 1*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 59
+      HFSBUF_386_57, HFSBUF_266_67, U580, U1072, U726, HFSBUF_390_56, U639, U925, U640, ctmTdsLR_1_113, U1079, U856, HFSBUF_436_69, U989, U1070, U563, U564, U926, U987, U780, U1080, U727, U985, U614, U934, HFSBUF_301_43, U643, U1076, U983, HFSBUF_125_13, HFSBUF_158_15, HFSBUF_247_14, U646, U945, U773, U725, U853, u_system_counter_count_reg_2__0_, ctmTdsLR_1_114, u_system_counter_count_reg_2__2_, ctmTdsLR_2_115, HFSBUF_47_35, HFSBUF_176_11, U642, u_system_counter_count_reg_2__10_, U600, U685, HFSBUF_194_12, U683, U947, U684, U991, U613, U612, U993, U1078, U579, U688, U847, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 2*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 58
+      U958, U962, U965, U816, U791, HFSBUF_246_26, U1019, HFSBUF_144_0, U1015, U792, U794, U819, U817, U762, U759, U821, ctmTdsLR_1_103, U937, U628, U627, U626, U625, U665, U605, U603, ctmTdsLR_1_112, U739, U705, U667, U746, U932, U936, U583, U938, U939, U953, U955, U956, ctmTdsLR_1_125, U565, U1018, U1020, U960, ctmTdsLR_1_116, U1017, U1010, U1011, U566, U790, U761, U793, U813, U814, U708, U818, U820, U822, U666, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 3*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 56
+      U954, U952, U622, HFSBUF_253_31, U559, HFSBUF_234_2, U1014, U750, U959, u_system_counter_count_reg_3__6_, U957, HFSBUF_273_22, U812, U916, HFSBUF_428_79, U706, U917, u_system_counter_count_reg_0__0_, U1012, U1013, U964, U963, HFSINV_483_78, U961, U596, U575, HFSBUF_82_5, U918, U760, U919, U1101, U595, HFSBUF_263_63, u_system_counter_count_reg_0__9_, U1008, U1021, U810, HFSBUF_172_30, U811, HFSBUF_520_61, U1102, U1009, u_threshold_bank_threshold_reg_0__15_, u_system_counter_count_reg_0__11_, ctmTdsLR_1_108, U606, U668, U560, HFSBUF_288_48, U664, U663, U1016, HFSBUF_130_19, u_system_counter_count_reg_0__15_, u_system_counter_count_reg_0__14_, U576, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 4*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 53
+      U771, U740, U799, HFSINV_567_75, HFSBUF_211_65, U977, U768, U770, U747, U837, U839, HFSBUF_224_40, U979, HFSBUF_460_74, U1048, u_system_counter_count_reg_1__10_, U598, U597, U1044, U767, intadd_0_U3, intadd_0_U4, U710, intadd_0_U5, u_system_counter_count_reg_1__15_, HFSBUF_80_8, U709, intadd_0_U2, U1049, u_threshold_bank_threshold_reg_2__14_, u_system_counter_count_reg_2__13_, u_system_counter_count_reg_2__15_, u_threshold_bank_threshold_reg_2__15_, u_threshold_bank_threshold_reg_2__13_, U940, U942, U763, U764, U718, U765, U943, U941, U717, U1050, U911, U585, U910, U778, ctmTdsLR_1_104, U834, U1047, U766, u_system_counter_count_reg_2__5_, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 5*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 53
+      U1071, U850, ctmTdsLR_1_123, U774, U772, U775, U776, intadd_3_U2, U1074, U1075, U686, U1073, U641, HFSINV_713_84, U1068, U611, U1081, U844, U848, U681, U1077, ctmTdsLR_1_120, U803, U988, U748, U599, HFSBUF_398_76, U645, U990, U986, ctmTdsLR_1_127, U804, U852, HFSBUF_664_85, U854, U849, U647, U687, U851, ctmTdsLR_2_124, U846, U648, U802, U801, U992, U682, ctmTdsLR_1_111, U680, U741, U982, U984, U914, HFSINV_436_77, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 6*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 46
+      U654, U653, u_threshold_bank_threshold_reg_0__13_, U1025, U1024, U698, U607, u_system_counter_count_reg_1__4_, U630, U969, intadd_0_U13, U921, u_threshold_bank_threshold_reg_1__3_, U886, U1063, U1062, HFSBUF_268_44, U730, U731, intadd_1_U6, ctmTdsLR_1_121, ctmTdsLR_2_122, U1096, U1094, U1064, U1098, ctmTdsLR_1_126, U796, U891, U745, U843, U1030, u_threshold_bank_threshold_reg_1__4_, U696, u_threshold_bank_threshold_reg_3__9_, HFSBUF_1076_90, U877, U826, HFSINV_1369_91, U866, U915, U749, HFSBUF_348_101, HFSBUF_1312_92, U695, U931, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 7*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 44
+      U860, HFSBUF_753_99, U887, u_threshold_bank_threshold_reg_2__11_, HFSINV_730_94, U889, HFSINV_915_100, HFSBUF_690_95, u_threshold_bank_threshold_reg_3__12_, U1117, u_threshold_bank_threshold_reg_1__5_, u_threshold_bank_threshold_reg_1__11_, intadd_0_U12, u_threshold_bank_threshold_reg_2__3_, U697, HFSBUF_273_36, u_system_counter_count_reg_3__14_, U1093, u_threshold_bank_threshold_reg_2__4_, U1092, U1091, U638, u_system_counter_count_reg_1__5_, U629, HFSBUF_129_21, HFSBUF_69_23, U830, U972, U1110, U742, HFSINV_542_97, U1119, U729, u_threshold_bank_threshold_reg_2__1_, U1112, U1090, U892, U1056, U971, intadd_1_U5, HFSBUF_490_98, U1055, U1086, HFSBUF_515_93, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 8*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 41
+      ctmTdsLR_1_119, U805, HFSBUF_173_25, U806, U995, HFSBUF_223_45, U862, U896, HFSBUF_367_50, U1039, ctmTdsLR_1_109, U1038, u_system_counter_count_reg_1__2_, u_system_counter_count_reg_1__1_, u_threshold_bank_threshold_reg_0__2_, U1037, U1035, U899, U1127, U901, U1128, U1129, u_threshold_bank_threshold_reg_3__1_, u_threshold_bank_threshold_reg_3__0_, U1113, U582, U1106, U618, ctmTdsLR_1_118, U649, ctmTdsLR_1_110, u_system_counter_count_reg_3__0_, HFSBUF_156_20, u_system_counter_count_reg_3__9_, U867, U1003, U998, U997, U929, U650, intadd_1_U14, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 9*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 40
+      U581, u_threshold_bank_threshold_reg_0__8_, u_system_counter_count_reg_3__2_, u_threshold_bank_threshold_reg_0__0_, u_threshold_bank_threshold_reg_0__1_, U999, U1000, U897, HFSBUF_390_49, u_threshold_bank_threshold_reg_0__5_, HFSBUF_822_89, U869, U1004, u_system_counter_count_reg_3__8_, U874, U996, U994, u_system_counter_count_reg_3__3_, U861, HFSBUF_181_58, U863, U1099, U1100, U652, HFSBUF_352_37, U616, U651, U617, u_threshold_bank_threshold_reg_3__2_, u_threshold_bank_threshold_reg_0__3_, HFSBUF_189_47, u_threshold_bank_threshold_reg_0__4_, HFSBUF_128_3, U808, HFSBUF_320_38, HFSBUF_278_87, HFSINV_306_88, u_system_counter_count_reg_0__1_, u_system_counter_count_reg_3__1_, HFSBUF_152_1, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 10*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 40
+      U615, u_threshold_bank_threshold_reg_3__4_, u_threshold_bank_threshold_reg_3__5_, U1125, U1033, U692, U691, intadd_1_U11, U657, intadd_1_U12, U658, intadd_1_U13, intadd_1_U10, HFSBUF_257_71, ctmTdsLR_1_105, U1109, U1107, U602, U601, U1108, U1105, HFSBUF_308_33, U900, U880, u_system_counter_count_reg_3__4_, intadd_1_U8, U827, U829, ctmTdsLR_1_117, U828, U1051, U1034, U1036, u_system_counter_count_reg_3__10_, U1126, U1032, u_threshold_bank_threshold_reg_3__3_, u_system_counter_count_reg_1__0_, U1124, HFSBUF_156_16, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 11*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 40
+      U1082, U1053, U1054, u_threshold_bank_threshold_reg_1__14_, u_threshold_bank_threshold_reg_1__13_, u_threshold_bank_threshold_reg_1__15_, U905, u_threshold_bank_threshold_reg_1__10_, U578, U833, U975, u_system_counter_count_reg_1__8_, HFSBUF_350_66, U577, U976, HFSBUF_1073_82, intadd_0_U9, intadd_0_U8, u_system_counter_count_reg_2__4_, intadd_0_U7, U712, U676, U678, U669, U782, U950, intadd_1_U2, U951, U798, U635, U1083, U894, u_threshold_bank_threshold_reg_3__14_, U879, U738, U906, U633, U920, U634, HFSBUF_222_10, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 12*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 40
+      U675, u_system_counter_count_reg_1__12_, U674, U673, U716, U715, U948, U878, U949, ctmTdsLR_1_106, u_system_counter_count_reg_1__14_, u_threshold_bank_threshold_reg_2__0_, U677, U908, U907, U909, U923, U711, U584, U933, HFSINV_991_81, U751, HFSBUF_975_80, U838, U835, U832, U769, U783, U781, U836, u_system_counter_count_reg_1__9_, HFSBUF_200_7, U913, HFSBUF_238_27, u_threshold_bank_threshold_reg_2__12_, U1046, HFSBUF_283_42, intadd_0_U6, HFSBUF_292_32, U1045, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 13*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 39
+      U690, intadd_1_U9, U632, U609, U966, intadd_1_U7, u_system_counter_count_reg_3__12_, U743, U1029, U1027, U656, u_system_counter_count_reg_1__3_, U868, U1006, U610, U930, u_threshold_bank_threshold_reg_0__9_, U903, U882, U870, U967, U881, U968, U689, U885, u_system_counter_count_reg_3__11_, U1067, U1022, U884, HFSBUF_220_41, U883, U1026, U1028, u_threshold_bank_threshold_reg_0__11_, HFSBUF_240_17, u_threshold_bank_threshold_reg_1__0_, U655, U902, U795, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 14*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 39
+      U1058, U1060, U736, u_system_counter_count_reg_3__15_, U694, U693, HFSBUF_367_51, U1116, U1114, U893, intadd_0_U11, u_system_counter_count_reg_1__6_, U561, U562, U735, u_threshold_bank_threshold_reg_3__10_, U1041, U672, U797, intadd_1_U4, u_threshold_bank_threshold_reg_1__6_, U1061, U890, U888, U831, HFSBUF_140_9, U935, U785, HFSBUF_470_96, u_threshold_bank_threshold_reg_1__12_, u_threshold_bank_threshold_reg_2__5_, U1040, u_threshold_bank_threshold_reg_3__13_, u_threshold_bank_threshold_reg_2__6_, U1111, U637, U636, ctmTdsLR_1_107, U974, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 15*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 36
+      u_threshold_bank_threshold_reg_2__7_, U1043, U922, u_threshold_bank_threshold_reg_1__9_, U753, U904, u_threshold_bank_threshold_reg_3__15_, U1057, U1059, U1084, U1085, U1087, U1088, u_threshold_bank_threshold_reg_2__9_, U1089, intadd_0_U10, U670, U671, U737, intadd_1_U3, U784, u_threshold_bank_threshold_reg_1__8_, u_threshold_bank_threshold_reg_1__7_, U973, U786, U1052, U1042, u_system_counter_count_reg_1__7_, U789, U586, HFSBUF_154_54, U1115, U788, U787, U895, HFSBUF_149_24, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 16*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 34
+      U702, U701, U700, U699, intadd_2_U13, U662, U619, U661, intadd_2_U10, U660, U659, U620, U912, intadd_2_U12, U758, U757, intadd_2_U3, intadd_2_U4, U604, intadd_2_U14, U815, U756, U755, U754, U707, U621, HFSINV_487_73, intadd_2_U7, intadd_2_U11, intadd_2_U2, intadd_2_U8, intadd_2_U5, intadd_2_U6, intadd_2_U9, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 17*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 33
+      u_threshold_bank_threshold_reg_3__7_, u_threshold_bank_threshold_reg_0__6_, u_threshold_bank_threshold_reg_2__2_, u_threshold_bank_threshold_reg_3__8_, u_threshold_bank_threshold_reg_0__12_, u_threshold_bank_threshold_reg_3__11_, U928, U873, u_threshold_bank_threshold_reg_3__6_, U1066, U1065, u_threshold_bank_threshold_reg_0__7_, U631, u_threshold_bank_threshold_reg_1__2_, U970, U1005, U732, u_system_counter_count_reg_3__13_, U1023, U809, U1122, U871, U608, U1118, U1120, U1121, HFSBUF_217_70, U1095, intadd_0_U14, U1031, U1007, U1123, u_threshold_bank_threshold_reg_1__1_, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 18*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 27
+      U865, U1002, U1104, U1103, u_system_counter_count_reg_3__7_, u_system_counter_count_reg_3__5_, u_threshold_bank_threshold_reg_0__14_, HFSBUF_201_59, U1001, HFSBUF_218_60, U864, HFSBUF_351_39, u_system_counter_count_reg_0__8_, u_system_counter_count_reg_0__12_, u_system_counter_count_reg_0__5_, u_system_counter_count_reg_0__6_, U807, u_system_counter_count_reg_0__13_, u_system_counter_count_reg_0__2_, U898, u_system_counter_count_reg_0__7_, u_threshold_bank_threshold_reg_0__10_, u_system_counter_count_reg_0__10_, U623, U624, u_system_counter_count_reg_0__4_, u_system_counter_count_reg_0__3_, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 19*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 26
+      u_system_counter_count_reg_2__3_, U944, U779, HFSBUF_116_6, U752, u_system_counter_count_reg_2__12_, U978, HFSBUF_290_55, U728, U924, U644, u_system_counter_count_reg_1__11_, HFSBUF_255_34, u_system_counter_count_reg_2__11_, u_threshold_bank_threshold_reg_2__8_, U927, u_system_counter_count_reg_1__13_, u_system_counter_count_reg_2__14_, u_system_counter_count_reg_2__1_, u_threshold_bank_threshold_reg_2__10_, u_system_counter_count_reg_2__8_, u_system_counter_count_reg_2__6_, u_system_counter_count_reg_2__7_, U946, U777, u_system_counter_count_reg_2__9_, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 20*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 21
+      intadd_3_U14, U722, intadd_3_U13, intadd_3_U12, intadd_3_U6, intadd_3_U7, U679, intadd_3_U5, intadd_3_U4, intadd_3_U10, U720, U721, intadd_3_U9, intadd_3_U8, intadd_3_U3, U719, U800, U845, U980, U981, intadd_3_U11, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  Number of floating std cells: 0
+    
+
+  *********************************
+
+  Number of floating hard macros: 0
+    
+
+  *********************************
+
+  Number of floating I/O pads: 0
+    
+
+  *********************************
+
+  Number of floating terminals: 0
+
+
+  *********************************
+
+  Number of floating hierarchical blocks: 0
+    
+
+  *********************************
+
+  Number of std cells with unconnected port: 825
+    u_threshold_bank_threshold_reg_3__0_, u_threshold_bank_threshold_reg_3__1_, u_threshold_bank_threshold_reg_3__2_, u_threshold_bank_threshold_reg_3__3_, u_threshold_bank_threshold_reg_3__4_, u_threshold_bank_threshold_reg_3__5_, u_threshold_bank_threshold_reg_3__6_, u_threshold_bank_threshold_reg_3__7_, u_threshold_bank_threshold_reg_3__8_, u_threshold_bank_threshold_reg_3__9_, u_threshold_bank_threshold_reg_3__10_, u_threshold_bank_threshold_reg_3__11_, u_threshold_bank_threshold_reg_3__12_, u_threshold_bank_threshold_reg_3__13_, u_threshold_bank_threshold_reg_3__14_, u_threshold_bank_threshold_reg_3__15_, u_system_counter_count_reg_3__0_, u_system_counter_count_reg_3__15_, u_system_counter_count_reg_3__14_, u_system_counter_count_reg_3__12_, u_system_counter_count_reg_3__10_, u_system_counter_count_reg_3__8_, u_system_counter_count_reg_3__6_, u_system_counter_count_reg_3__2_, u_system_counter_count_reg_3__1_, u_threshold_bank_threshold_reg_2__0_, u_threshold_bank_threshold_reg_2__1_, u_threshold_bank_threshold_reg_2__2_, u_threshold_bank_threshold_reg_2__3_, u_threshold_bank_threshold_reg_2__4_, u_threshold_bank_threshold_reg_2__5_, u_threshold_bank_threshold_reg_2__6_, u_threshold_bank_threshold_reg_2__7_, u_threshold_bank_threshold_reg_2__8_, u_threshold_bank_threshold_reg_2__9_, u_threshold_bank_threshold_reg_2__10_, u_threshold_bank_threshold_reg_2__11_, u_threshold_bank_threshold_reg_2__12_, u_threshold_bank_threshold_reg_2__13_, u_threshold_bank_threshold_reg_2__14_, u_threshold_bank_threshold_reg_2__15_, u_system_counter_count_reg_2__0_, u_system_counter_count_reg_2__15_, u_system_counter_count_reg_2__14_, u_system_counter_count_reg_2__12_, u_system_counter_count_reg_2__10_, u_system_counter_count_reg_2__8_, u_system_counter_count_reg_2__6_, u_system_counter_count_reg_2__2_, u_system_counter_count_reg_2__1_, u_threshold_bank_threshold_reg_1__0_, u_threshold_bank_threshold_reg_1__1_, u_threshold_bank_threshold_reg_1__2_, u_threshold_bank_threshold_reg_1__3_, u_threshold_bank_threshold_reg_1__4_, u_threshold_bank_threshold_reg_1__5_, u_threshold_bank_threshold_reg_1__6_, u_threshold_bank_threshold_reg_1__7_, u_threshold_bank_threshold_reg_1__8_, u_threshold_bank_threshold_reg_1__9_, u_threshold_bank_threshold_reg_1__10_, u_threshold_bank_threshold_reg_1__11_, u_threshold_bank_threshold_reg_1__12_, u_threshold_bank_threshold_reg_1__13_, u_threshold_bank_threshold_reg_1__14_, u_threshold_bank_threshold_reg_1__15_, u_system_counter_count_reg_1__0_, u_system_counter_count_reg_1__15_, u_system_counter_count_reg_1__14_, u_system_counter_count_reg_1__12_, u_system_counter_count_reg_1__10_, u_system_counter_count_reg_1__8_, u_system_counter_count_reg_1__6_, u_system_counter_count_reg_1__2_, u_system_counter_count_reg_1__1_, u_threshold_bank_threshold_reg_0__0_, u_threshold_bank_threshold_reg_0__1_, u_threshold_bank_threshold_reg_0__2_, u_threshold_bank_threshold_reg_0__3_, u_threshold_bank_threshold_reg_0__4_, u_threshold_bank_threshold_reg_0__5_, u_threshold_bank_threshold_reg_0__6_, u_threshold_bank_threshold_reg_0__7_, u_threshold_bank_threshold_reg_0__8_, u_threshold_bank_threshold_reg_0__9_, u_threshold_bank_threshold_reg_0__10_, u_threshold_bank_threshold_reg_0__11_, u_threshold_bank_threshold_reg_0__12_, u_threshold_bank_threshold_reg_0__13_, u_threshold_bank_threshold_reg_0__14_, u_threshold_bank_threshold_reg_0__15_, u_system_counter_count_reg_0__0_, u_system_counter_count_reg_0__15_, u_system_counter_count_reg_0__14_, u_system_counter_count_reg_0__12_, u_system_counter_count_reg_0__10_, u_system_counter_count_reg_0__8_, u_system_counter_count_reg_0__6_, u_system_counter_count_reg_0__2_, u_system_counter_count_reg_0__1_, u_system_counter_count_reg_3__13_, u_system_counter_count_reg_3__11_, u_system_counter_count_reg_3__9_, u_system_counter_count_reg_3__7_, u_system_counter_count_reg_3__5_, u_system_counter_count_reg_3__4_, u_system_counter_count_reg_3__3_, u_system_counter_count_reg_2__13_, u_system_counter_count_reg_2__11_, u_system_counter_count_reg_2__9_, u_system_counter_count_reg_2__7_, u_system_counter_count_reg_2__5_, u_system_counter_count_reg_2__4_, u_system_counter_count_reg_2__3_, u_system_counter_count_reg_1__13_, u_system_counter_count_reg_1__11_, u_system_counter_count_reg_1__9_, u_system_counter_count_reg_1__7_, u_system_counter_count_reg_1__5_, u_system_counter_count_reg_1__4_, u_system_counter_count_reg_1__3_, u_system_counter_count_reg_0__13_, u_system_counter_count_reg_0__11_, u_system_counter_count_reg_0__9_, u_system_counter_count_reg_0__7_, u_system_counter_count_reg_0__5_, u_system_counter_count_reg_0__4_, u_system_counter_count_reg_0__3_, intadd_1_U2, intadd_1_U3, intadd_3_U2, intadd_3_U3, intadd_0_U2, intadd_0_U3, intadd_2_U2, intadd_2_U3, intadd_1_U4, intadd_1_U5, intadd_1_U6, intadd_1_U7, intadd_3_U4, intadd_3_U5, intadd_3_U6, intadd_3_U7, intadd_0_U4, intadd_0_U5, intadd_0_U6, intadd_0_U7, intadd_2_U4, intadd_2_U5, intadd_2_U6, intadd_2_U7, intadd_1_U8, intadd_1_U9, intadd_1_U10, intadd_1_U11, intadd_3_U8, intadd_3_U9, intadd_3_U10, intadd_3_U11, intadd_0_U8, intadd_0_U9, intadd_0_U10, intadd_0_U11, intadd_2_U8, intadd_2_U9, intadd_2_U10, intadd_2_U11, intadd_1_U12, intadd_1_U13, intadd_1_U14, intadd_3_U12, intadd_3_U13, intadd_3_U14, intadd_0_U12, intadd_0_U13, intadd_0_U14, intadd_2_U12, intadd_2_U13, intadd_2_U14, ctmTdsLR_1_120, ctmTdsLR_1_121, ctmTdsLR_1_111, ctmTdsLR_1_112, ctmTdsLR_1_113, ctmTdsLR_1_114, ctmTdsLR_1_116, ctmTdsLR_1_117, ctmTdsLR_2_115, ctmTdsLR_1_118, U559, U560, U561, U562, U563, U564, U565, U566, ctmTdsLR_1_119, ctmTdsLR_2_122, ctmTdsLR_1_123, ctmTdsLR_2_124, ctmTdsLR_1_125, ctmTdsLR_1_126, ctmTdsLR_1_127, U575, U576, U577, U578, U579, U580, U581, U582, U583, U584, U585, U586, U595, U596, U597, U598, U599, U600, U601, U602, U603, U604, U605, U606, U607, U608, U609, U610, U611, U612, U613, U614, U615, U616, U617, U618, U619, U620, U621, U622, U623, U624, U625, U626, U627, U628, U629, U630, U631, U632, U633, U634, U635, U636, U637, U638, U639, U640, U641, U642, U643, U644, U645, U646, U647, U648, U649, U650, U651, U652, U653, U654, U655, U656, U657, U658, U659, U660, U661, U662, U663, U664, U665, U666, U667, U668, U669, U670, U671, U672, U673, U674, U675, U676, U677, U678, U679, U680, U681, U682, U683, U684, U685, U686, U687, U688, U689, U690, U691, U692, U693, U694, U695, U696, U697, U698, U699, U700, U701, U702, U705, U706, U707, U708, U709, U710, U711, U712, U715, U716, U717, U718, U719, U720, U721, U722, U725, U726, U727, U728, U729, U730, U731, U732, U735, U736, U737, U738, U739, U740, U741, U742, U743, U745, U746, U747, U748, U749, U750, U751, U752, U753, U754, U755, U756, U757, U758, U759, U760, U761, U762, U763, U764, U765, U766, U767, U768, U769, U770, U771, U772, U773, U774, U775, U776, U777, U778, U779, U780, U781, U782, U783, U784, U785, U786, U787, U788, U789, U790, U791, U792, U793, U794, U795, U796, U797, U798, U799, U800, U801, U802, U803, U804, U805, U806, U807, U808, U809, U810, U811, U812, U813, U814, U815, U816, U817, U818, U819, U820, U821, U822, ctmTdsLR_1_103, HFSINV_483_78, HFSBUF_1076_90, U826, U827, U828, U829, U830, U831, U832, U833, U834, U835, U836, U837, U838, U839, HFSBUF_460_74, HFSBUF_975_80, HFSBUF_515_93, U843, U844, U845, U846, U847, U848, U849, U850, U851, U852, U853, U854, U856, HFSBUF_398_76, HFSINV_713_84, HFSBUF_470_96, U860, U861, U862, U863, U864, U865, U866, U867, U868, U869, U870, U871, U873, U874, ctmTdsLR_1_104, HFSBUF_753_99, U877, U878, U879, U880, U881, U882, U883, U884, U885, U886, U887, U888, U889, U890, U891, U892, U893, U894, U895, U896, U897, U898, U899, U900, U901, U902, U903, U904, U905, U906, U907, U908, U909, U910, U911, U912, U913, U914, U915, U916, U917, U918, U919, U920, U921, U922, U923, U924, U925, U926, U927, U928, U929, U930, U931, U932, U933, U934, U935, U936, U937, U938, U939, U940, U941, U942, U943, U944, U945, U946, U947, U948, U949, U950, U951, U952, U953, U954, U955, U956, U957, U958, U959, U960, U961, U962, U963, U964, U965, U966, U967, U968, U969, U970, U971, U972, U973, U974, U975, U976, U977, U978, U979, U980, U981, U982, U983, U984, U985, U986, U987, U988, U989, U990, U991, U992, U993, U994, U995, U996, U997, U998, U999, U1000, U1001, U1002, U1003, U1004, U1005, U1006, U1007, U1008, U1009, U1010, U1011, U1012, U1013, U1014, U1015, U1016, U1017, U1018, U1019, U1020, U1021, U1022, U1023, U1024, U1025, U1026, U1027, U1028, U1029, U1030, U1031, U1032, U1033, U1034, U1035, U1036, U1037, U1038, U1039, U1040, U1041, U1042, U1043, U1044, U1045, U1046, U1047, U1048, U1049, U1050, U1051, U1052, U1053, U1054, U1055, U1056, U1057, U1058, U1059, U1060, U1061, U1062, U1063, U1064, U1065, U1066, U1067, U1068, U1070, U1071, U1072, U1073, U1074, U1075, U1076, U1077, U1078, U1079, U1080, U1081, U1082, U1083, U1084, U1085, U1086, U1087, U1088, U1089, U1090, U1091, U1092, U1093, U1094, U1095, U1096, ctmTdsLR_1_105, U1098, U1099, U1100, U1101, U1102, U1103, U1104, U1105, U1106, U1107, U1108, U1109, U1110, U1111, U1112, U1113, U1114, U1115, U1116, U1117, U1118, U1119, U1120, U1121, U1122, U1123, U1124, U1125, U1126, U1127, U1128, U1129, HFSBUF_144_0, HFSBUF_152_1, HFSBUF_234_2, HFSBUF_128_3, ctmTdsLR_1_106, HFSBUF_82_5, HFSBUF_116_6, HFSBUF_200_7, HFSBUF_80_8, HFSBUF_140_9, HFSBUF_222_10, HFSBUF_176_11, HFSBUF_194_12, HFSBUF_125_13, HFSBUF_247_14, HFSBUF_158_15, HFSBUF_156_16, HFSBUF_240_17, HFSBUF_130_19, HFSBUF_156_20, HFSBUF_129_21, HFSBUF_273_22, HFSBUF_69_23, HFSBUF_149_24, HFSBUF_173_25, HFSBUF_246_26, HFSBUF_238_27, HFSBUF_172_30, HFSBUF_253_31, HFSBUF_292_32, HFSBUF_308_33, HFSBUF_255_34, HFSBUF_47_35, HFSBUF_273_36, HFSBUF_352_37, HFSBUF_320_38, HFSBUF_351_39, HFSBUF_224_40, HFSBUF_220_41, HFSBUF_283_42, HFSBUF_301_43, HFSBUF_268_44, HFSBUF_223_45, ctmTdsLR_1_107, HFSBUF_189_47, HFSBUF_288_48, HFSBUF_390_49, HFSBUF_367_50, HFSBUF_367_51, ctmTdsLR_1_108, ctmTdsLR_1_109, HFSBUF_154_54, HFSBUF_290_55, HFSBUF_390_56, HFSBUF_386_57, HFSBUF_181_58, HFSBUF_201_59, HFSBUF_218_60, HFSBUF_520_61, ctmTdsLR_1_110, HFSBUF_263_63, HFSBUF_211_65, HFSBUF_350_66, HFSBUF_266_67, HFSBUF_436_69, HFSBUF_217_70, HFSBUF_257_71, HFSINV_487_73, HFSINV_567_75, HFSINV_436_77, HFSBUF_428_79, HFSINV_991_81, HFSBUF_1073_82, HFSBUF_664_85, HFSBUF_278_87, HFSINV_306_88, HFSBUF_822_89, HFSINV_1369_91, HFSBUF_1312_92, HFSINV_730_94, HFSBUF_690_95, HFSINV_542_97, HFSBUF_490_98, HFSINV_915_100, HFSBUF_348_101, 
+
+  *********************************
+
+  Number of hard macros with unconnected port: 0
+    
+
+  *********************************
+
+  Number of I/O pads with unconnected port: 0
+    
+
+  *********************************
+
+  Number of std cells with unconnected port: 0
+    
+
+
+***********End of Net VDD***********
+
+*****************************************************************
+**********Net VSS Connectivity Stats**************************
+*****************************************************************
+
+  Number of disjoint networks: 21
+
+  **************(main network)***********
+    Number of wires: 46
+    Number of vias: 81
+    Number of std cells: 0
+    Number of hard macros: 0
+    Number of I/O pads: 0
+    Number of terminals: 0
+    Number of hierarchical blocks: 0
+  ***************************************
+
+  *****sub-network 1*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 60
+      U1015, U761, U1017, U1019, U1010, U559, U960, U959, U1013, U793, U575, U1020, U1018, U583, U760, ctmTdsLR_1_125, U810, U953, U708, HFSBUF_234_2, U1011, U957, ctmTdsLR_1_116, U1008, U932, U750, U936, u_system_counter_count_reg_3__6_, U938, U790, U956, U954, U955, U917, U1021, U818, U939, U813, U814, U822, U666, U820, U566, U565, U1101, U812, HFSINV_483_78, HFSBUF_428_79, U916, U919, U964, U952, U595, U1014, HFSBUF_172_30, U706, U963, U961, U596, U1012, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 2*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 60
+      HFSBUF_194_12, U612, ctmTdsLR_1_127, HFSBUF_47_35, U613, U773, U847, U986, U727, U1078, U1077, U991, U600, U599, U1080, U1079, ctmTdsLR_2_124, U748, U579, U1073, U1072, U989, U990, U640, U646, U993, U804, U854, ctmTdsLR_2_115, U1068, U685, U642, U563, U1071, ctmTdsLR_1_114, U1081, HFSBUF_176_11, U853, U639, U856, U688, U641, U774, U775, U772, U645, U686, U687, U647, U1074, U848, U850, U852, HFSBUF_398_76, U1075, ctmTdsLR_1_123, U611, U803, U988, ctmTdsLR_1_120, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 3*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 48
+      u_threshold_bank_threshold_reg_1__14_, U879, intadd_0_U8, u_system_counter_count_reg_2__4_, u_threshold_bank_threshold_reg_1__13_, HFSBUF_350_66, U906, U907, U920, U905, u_threshold_bank_threshold_reg_1__10_, U933, U673, U674, U716, U678, U711, U712, U675, U634, U677, U833, U976, U835, HFSBUF_975_80, HFSBUF_1073_82, HFSINV_991_81, U950, U975, HFSBUF_222_10, U951, U669, u_system_counter_count_reg_1__14_, U769, U908, U949, U909, U783, U781, U584, U923, u_system_counter_count_reg_1__12_, U832, u_threshold_bank_threshold_reg_2__0_, U838, U948, U751, ctmTdsLR_1_106, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 4*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 47
+      u_threshold_bank_threshold_reg_2__8_, U643, u_threshold_bank_threshold_reg_2__10_, U683, U927, u_system_counter_count_reg_2__11_, U726, U684, u_system_counter_count_reg_2__12_, U725, u_system_counter_count_reg_2__14_, U934, ctmTdsLR_1_113, HFSBUF_125_13, HFSBUF_266_67, U1076, u_system_counter_count_reg_2__10_, u_system_counter_count_reg_2__9_, HFSBUF_158_15, u_system_counter_count_reg_2__8_, u_system_counter_count_reg_2__7_, u_system_counter_count_reg_2__6_, U985, U564, U1070, HFSBUF_386_57, U926, HFSBUF_247_14, U987, U580, HFSBUF_436_69, u_system_counter_count_reg_2__1_, u_system_counter_count_reg_2__2_, u_system_counter_count_reg_2__0_, u_system_counter_count_reg_1__13_, U925, HFSBUF_390_56, u_system_counter_count_reg_1__11_, U983, HFSBUF_301_43, U946, U947, U777, U780, HFSBUF_255_34, U945, U614, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 5*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 44
+      U707, U762, intadd_2_U6, U756, intadd_2_U5, intadd_2_U2, U759, intadd_2_U14, HFSINV_487_73, U739, U794, U819, U621, U815, U821, U746, HFSBUF_246_26, intadd_2_U8, intadd_2_U9, U604, intadd_2_U7, U755, intadd_2_U11, U754, U937, U962, U665, HFSBUF_144_0, U958, U965, U628, U627, ctmTdsLR_1_112, U605, U626, U625, U705, U667, U817, ctmTdsLR_1_103, U816, U792, U603, U791, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 6*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 44
+      U796, U830, U698, u_system_counter_count_reg_3__14_, U931, U695, u_threshold_bank_threshold_reg_3__12_, u_threshold_bank_threshold_reg_0__13_, U1119, HFSBUF_129_21, U730, u_system_counter_count_reg_1__4_, U877, HFSBUF_753_99, HFSBUF_348_101, HFSINV_915_100, U843, HFSBUF_690_95, U860, U826, HFSBUF_1312_92, U887, U742, U1094, u_threshold_bank_threshold_reg_1__5_, U749, U1110, ctmTdsLR_2_122, U915, U969, HFSBUF_69_23, U1098, u_threshold_bank_threshold_reg_2__3_, U1063, U1092, U1062, U1091, U1093, intadd_0_U12, u_threshold_bank_threshold_reg_2__11_, U697, u_threshold_bank_threshold_reg_1__11_, HFSINV_730_94, U638, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 7*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 43
+      u_system_counter_count_reg_3__0_, U1003, ctmTdsLR_1_105, U602, U806, U997, U1039, U1038, U862, U1037, U1035, U1106, HFSBUF_367_50, U899, intadd_1_U14, U649, intadd_1_U11, intadd_1_U12, U901, U650, u_system_counter_count_reg_3__9_, u_system_counter_count_reg_3__10_, HFSBUF_223_45, U1129, u_system_counter_count_reg_1__2_, U929, HFSBUF_173_25, U601, HFSBUF_308_33, HFSBUF_257_71, U1105, U1126, U829, U828, U827, U1036, U615, u_threshold_bank_threshold_reg_3__3_, u_threshold_bank_threshold_reg_3__5_, U1034, u_system_counter_count_reg_3__4_, U692, intadd_1_U13, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 8*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 43
+      U608, U871, U731, intadd_1_U6, HFSBUF_268_44, u_threshold_bank_threshold_reg_3__11_, U1007, ctmTdsLR_1_121, U928, U654, U653, U1120, u_threshold_bank_threshold_reg_0__12_, U1025, U1024, HFSBUF_217_70, U1121, U1122, U1118, U891, intadd_0_U14, U1123, u_threshold_bank_threshold_reg_1__1_, u_threshold_bank_threshold_reg_1__3_, U921, U1031, u_system_counter_count_reg_3__13_, U1095, U607, HFSINV_1369_91, U1096, u_threshold_bank_threshold_reg_3__9_, HFSBUF_1076_90, U866, ctmTdsLR_1_126, intadd_0_U13, U696, U745, U886, U1030, u_threshold_bank_threshold_reg_1__4_, U1064, U630, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 9*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 42
+      U682, U681, U680, U776, U914, U846, HFSINV_713_84, HFSINV_436_77, U849, U851, U720, U741, U992, U648, ctmTdsLR_1_111, intadd_3_U2, HFSBUF_664_85, U844, U802, U982, U801, U984, intadd_3_U13, intadd_3_U10, intadd_3_U12, U845, intadd_3_U11, U800, U980, U981, intadd_3_U7, intadd_3_U6, intadd_3_U5, intadd_3_U4, U679, intadd_3_U3, U719, intadd_3_U8, U721, U722, intadd_3_U9, intadd_3_U14, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 10*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 42
+      u_threshold_bank_threshold_reg_2__6_, U974, U1040, HFSBUF_470_96, ctmTdsLR_1_107, U785, U561, u_system_counter_count_reg_3__15_, u_threshold_bank_threshold_reg_3__13_, U1114, u_threshold_bank_threshold_reg_3__15_, U753, u_threshold_bank_threshold_reg_2__5_, U831, U1043, U935, U562, U888, U1059, u_threshold_bank_threshold_reg_1__9_, U1088, U890, U1084, U1085, U1087, U1111, intadd_0_U10, U893, u_threshold_bank_threshold_reg_1__12_, U637, HFSBUF_140_9, U636, u_system_counter_count_reg_1__6_, U671, U670, U737, U1089, intadd_1_U3, u_threshold_bank_threshold_reg_2__7_, U922, U904, U1057, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 11*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 40
+      u_threshold_bank_threshold_reg_3__2_, u_threshold_bank_threshold_reg_0__3_, u_threshold_bank_threshold_reg_0__5_, u_threshold_bank_threshold_reg_3__1_, U1128, U1127, U616, U1100, U1099, ctmTdsLR_1_110, u_system_counter_count_reg_3__8_, HFSBUF_156_20, U869, U1004, U874, U617, U863, U861, ctmTdsLR_1_119, U994, U995, HFSBUF_822_89, U582, HFSBUF_352_37, U996, HFSBUF_189_47, U652, HFSBUF_181_58, U1113, U651, ctmTdsLR_1_118, U805, U618, u_threshold_bank_threshold_reg_3__0_, U896, u_threshold_bank_threshold_reg_0__2_, U998, U867, u_system_counter_count_reg_1__1_, ctmTdsLR_1_109, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 12*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 39
+      U1124, U903, U1033, U1125, u_threshold_bank_threshold_reg_3__4_, u_threshold_bank_threshold_reg_0__9_, U1032, u_system_counter_count_reg_1__0_, u_system_counter_count_reg_1__3_, U900, U880, U882, U881, U632, U1051, U610, intadd_1_U8, intadd_1_U7, u_system_counter_count_reg_3__12_, HFSBUF_156_16, U691, U930, intadd_1_U10, intadd_1_U9, U690, U656, U1107, U743, U1109, U870, U1108, U868, U657, U658, U1027, U1029, ctmTdsLR_1_117, U968, U967, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 13*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 39
+      U878, u_threshold_bank_threshold_reg_2__12_, U1046, U1045, U1044, u_system_counter_count_reg_1__9_, HFSBUF_292_32, intadd_0_U6, U836, U715, HFSBUF_238_27, HFSBUF_200_7, U913, HFSBUF_283_42, u_system_counter_count_reg_1__10_, U837, HFSBUF_460_74, HFSBUF_211_65, U764, intadd_0_U5, U709, u_threshold_bank_threshold_reg_2__14_, U710, ctmTdsLR_1_104, U718, U1049, U747, U717, HFSINV_567_75, u_system_counter_count_reg_2__13_, U1050, U740, u_threshold_bank_threshold_reg_2__13_, U911, U942, U770, U768, U771, U767, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 14*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 38
+      U622, u_system_counter_count_reg_0__2_, U811, HFSBUF_253_31, ctmTdsLR_1_108, u_system_counter_count_reg_0__14_, u_threshold_bank_threshold_reg_0__15_, u_threshold_bank_threshold_reg_0__14_, u_system_counter_count_reg_3__5_, u_system_counter_count_reg_0__13_, u_system_counter_count_reg_0__12_, HFSBUF_520_61, u_system_counter_count_reg_0__11_, U664, U1102, U1104, U1009, U1016, u_system_counter_count_reg_0__15_, u_system_counter_count_reg_0__9_, U663, HFSBUF_82_5, U918, u_system_counter_count_reg_0__8_, U576, U606, HFSBUF_351_39, HFSBUF_130_19, U807, U865, HFSBUF_273_22, U668, HFSBUF_263_63, U560, u_system_counter_count_reg_0__5_, u_system_counter_count_reg_0__0_, HFSBUF_288_48, u_system_counter_count_reg_3__7_, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 15*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 37
+      U598, U597, u_system_counter_count_reg_2__15_, HFSBUF_224_40, U839, U979, u_threshold_bank_threshold_reg_2__15_, U585, U766, intadd_0_U2, U644, u_system_counter_count_reg_1__15_, HFSBUF_80_8, intadd_0_U4, intadd_0_U3, U940, U924, U1047, U778, U834, u_system_counter_count_reg_2__3_, U910, U943, U763, U941, U1048, U799, u_system_counter_count_reg_2__5_, U977, U765, U752, U779, U728, U944, U978, HFSBUF_290_55, HFSBUF_116_6, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 16*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 36
+      U892, u_threshold_bank_threshold_reg_2__4_, U1060, U1090, U1112, intadd_1_U4, intadd_1_U5, U735, HFSBUF_490_98, U1086, U1055, U1056, HFSINV_542_97, HFSBUF_515_93, U971, U972, U729, u_threshold_bank_threshold_reg_2__1_, U672, u_system_counter_count_reg_1__5_, HFSBUF_367_51, intadd_0_U11, U629, U1117, U1116, U889, HFSBUF_273_36, U736, U1061, U693, U694, u_threshold_bank_threshold_reg_1__6_, U797, U1058, u_threshold_bank_threshold_reg_3__10_, U1041, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 17*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 36
+      u_threshold_bank_threshold_reg_2__9_, u_system_counter_count_reg_1__7_, HFSBUF_149_24, U789, U788, U786, U738, U1052, U586, U784, HFSBUF_154_54, U787, U1115, u_threshold_bank_threshold_reg_1__8_, u_threshold_bank_threshold_reg_1__7_, intadd_0_U7, U973, U895, U1042, U577, intadd_1_U2, U1053, U894, U1054, u_threshold_bank_threshold_reg_3__14_, U676, U578, U1082, U1083, intadd_0_U9, U782, u_threshold_bank_threshold_reg_1__15_, u_system_counter_count_reg_1__8_, U798, U633, U635, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 18*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 35
+      u_threshold_bank_threshold_reg_0__11_, U689, U655, U885, U883, u_threshold_bank_threshold_reg_2__2_, u_threshold_bank_threshold_reg_0__6_, U966, u_system_counter_count_reg_3__11_, U902, u_threshold_bank_threshold_reg_1__0_, u_threshold_bank_threshold_reg_1__2_, U1006, HFSBUF_240_17, U609, U1022, U1026, U795, U970, U1067, U1028, U884, u_threshold_bank_threshold_reg_0__7_, HFSBUF_220_41, U1066, U1065, u_threshold_bank_threshold_reg_3__6_, u_threshold_bank_threshold_reg_3__7_, U1023, U631, u_threshold_bank_threshold_reg_3__8_, U1005, U873, U809, U732, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 19*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 34
+      U898, U897, u_system_counter_count_reg_0__1_, u_system_counter_count_reg_0__10_, u_threshold_bank_threshold_reg_0__8_, u_system_counter_count_reg_0__7_, u_threshold_bank_threshold_reg_0__4_, U623, u_system_counter_count_reg_0__3_, U624, u_system_counter_count_reg_0__4_, u_system_counter_count_reg_0__6_, HFSBUF_218_60, U1002, U1001, u_threshold_bank_threshold_reg_0__10_, u_system_counter_count_reg_3__2_, U1103, U581, U864, HFSBUF_201_59, u_system_counter_count_reg_3__3_, u_threshold_bank_threshold_reg_0__0_, u_system_counter_count_reg_3__1_, HFSBUF_320_38, U1000, u_threshold_bank_threshold_reg_0__1_, U999, HFSBUF_278_87, HFSBUF_390_49, HFSINV_306_88, U808, HFSBUF_152_1, HFSBUF_128_3, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  *****sub-network 20*****************
+    Number of wires: 2
+    Number of vias: 0
+    Number of terminals: 0
+    Number of std cells: 18
+      U702, U701, U700, U699, intadd_2_U3, U912, intadd_2_U13, U757, intadd_2_U12, U662, U661, U660, U659, intadd_2_U4, U619, U758, intadd_2_U10, U620, 
+    Number of hard macros: 0
+      
+    Number of I/O pads: 0
+      
+    Number of hierarchical blocks: 0
+      
+  *******************************
+
+  Number of floating std cells: 0
+    
+
+  *********************************
+
+  Number of floating hard macros: 0
+    
+
+  *********************************
+
+  Number of floating I/O pads: 0
+    
+
+  *********************************
+
+  Number of floating terminals: 0
+
+
+  *********************************
+
+  Number of floating hierarchical blocks: 0
+    
+
+  *********************************
+
+  Number of std cells with unconnected port: 825
+    u_threshold_bank_threshold_reg_3__0_, u_threshold_bank_threshold_reg_3__1_, u_threshold_bank_threshold_reg_3__2_, u_threshold_bank_threshold_reg_3__3_, u_threshold_bank_threshold_reg_3__4_, u_threshold_bank_threshold_reg_3__5_, u_threshold_bank_threshold_reg_3__6_, u_threshold_bank_threshold_reg_3__7_, u_threshold_bank_threshold_reg_3__8_, u_threshold_bank_threshold_reg_3__9_, u_threshold_bank_threshold_reg_3__10_, u_threshold_bank_threshold_reg_3__11_, u_threshold_bank_threshold_reg_3__12_, u_threshold_bank_threshold_reg_3__13_, u_threshold_bank_threshold_reg_3__14_, u_threshold_bank_threshold_reg_3__15_, u_system_counter_count_reg_3__0_, u_system_counter_count_reg_3__15_, u_system_counter_count_reg_3__14_, u_system_counter_count_reg_3__12_, u_system_counter_count_reg_3__10_, u_system_counter_count_reg_3__8_, u_system_counter_count_reg_3__6_, u_system_counter_count_reg_3__2_, u_system_counter_count_reg_3__1_, u_threshold_bank_threshold_reg_2__0_, u_threshold_bank_threshold_reg_2__1_, u_threshold_bank_threshold_reg_2__2_, u_threshold_bank_threshold_reg_2__3_, u_threshold_bank_threshold_reg_2__4_, u_threshold_bank_threshold_reg_2__5_, u_threshold_bank_threshold_reg_2__6_, u_threshold_bank_threshold_reg_2__7_, u_threshold_bank_threshold_reg_2__8_, u_threshold_bank_threshold_reg_2__9_, u_threshold_bank_threshold_reg_2__10_, u_threshold_bank_threshold_reg_2__11_, u_threshold_bank_threshold_reg_2__12_, u_threshold_bank_threshold_reg_2__13_, u_threshold_bank_threshold_reg_2__14_, u_threshold_bank_threshold_reg_2__15_, u_system_counter_count_reg_2__0_, u_system_counter_count_reg_2__15_, u_system_counter_count_reg_2__14_, u_system_counter_count_reg_2__12_, u_system_counter_count_reg_2__10_, u_system_counter_count_reg_2__8_, u_system_counter_count_reg_2__6_, u_system_counter_count_reg_2__2_, u_system_counter_count_reg_2__1_, u_threshold_bank_threshold_reg_1__0_, u_threshold_bank_threshold_reg_1__1_, u_threshold_bank_threshold_reg_1__2_, u_threshold_bank_threshold_reg_1__3_, u_threshold_bank_threshold_reg_1__4_, u_threshold_bank_threshold_reg_1__5_, u_threshold_bank_threshold_reg_1__6_, u_threshold_bank_threshold_reg_1__7_, u_threshold_bank_threshold_reg_1__8_, u_threshold_bank_threshold_reg_1__9_, u_threshold_bank_threshold_reg_1__10_, u_threshold_bank_threshold_reg_1__11_, u_threshold_bank_threshold_reg_1__12_, u_threshold_bank_threshold_reg_1__13_, u_threshold_bank_threshold_reg_1__14_, u_threshold_bank_threshold_reg_1__15_, u_system_counter_count_reg_1__0_, u_system_counter_count_reg_1__15_, u_system_counter_count_reg_1__14_, u_system_counter_count_reg_1__12_, u_system_counter_count_reg_1__10_, u_system_counter_count_reg_1__8_, u_system_counter_count_reg_1__6_, u_system_counter_count_reg_1__2_, u_system_counter_count_reg_1__1_, u_threshold_bank_threshold_reg_0__0_, u_threshold_bank_threshold_reg_0__1_, u_threshold_bank_threshold_reg_0__2_, u_threshold_bank_threshold_reg_0__3_, u_threshold_bank_threshold_reg_0__4_, u_threshold_bank_threshold_reg_0__5_, u_threshold_bank_threshold_reg_0__6_, u_threshold_bank_threshold_reg_0__7_, u_threshold_bank_threshold_reg_0__8_, u_threshold_bank_threshold_reg_0__9_, u_threshold_bank_threshold_reg_0__10_, u_threshold_bank_threshold_reg_0__11_, u_threshold_bank_threshold_reg_0__12_, u_threshold_bank_threshold_reg_0__13_, u_threshold_bank_threshold_reg_0__14_, u_threshold_bank_threshold_reg_0__15_, u_system_counter_count_reg_0__0_, u_system_counter_count_reg_0__15_, u_system_counter_count_reg_0__14_, u_system_counter_count_reg_0__12_, u_system_counter_count_reg_0__10_, u_system_counter_count_reg_0__8_, u_system_counter_count_reg_0__6_, u_system_counter_count_reg_0__2_, u_system_counter_count_reg_0__1_, u_system_counter_count_reg_3__13_, u_system_counter_count_reg_3__11_, u_system_counter_count_reg_3__9_, u_system_counter_count_reg_3__7_, u_system_counter_count_reg_3__5_, u_system_counter_count_reg_3__4_, u_system_counter_count_reg_3__3_, u_system_counter_count_reg_2__13_, u_system_counter_count_reg_2__11_, u_system_counter_count_reg_2__9_, u_system_counter_count_reg_2__7_, u_system_counter_count_reg_2__5_, u_system_counter_count_reg_2__4_, u_system_counter_count_reg_2__3_, u_system_counter_count_reg_1__13_, u_system_counter_count_reg_1__11_, u_system_counter_count_reg_1__9_, u_system_counter_count_reg_1__7_, u_system_counter_count_reg_1__5_, u_system_counter_count_reg_1__4_, u_system_counter_count_reg_1__3_, u_system_counter_count_reg_0__13_, u_system_counter_count_reg_0__11_, u_system_counter_count_reg_0__9_, u_system_counter_count_reg_0__7_, u_system_counter_count_reg_0__5_, u_system_counter_count_reg_0__4_, u_system_counter_count_reg_0__3_, intadd_1_U2, intadd_1_U3, intadd_3_U2, intadd_3_U3, intadd_0_U2, intadd_0_U3, intadd_2_U2, intadd_2_U3, intadd_1_U4, intadd_1_U5, intadd_1_U6, intadd_1_U7, intadd_3_U4, intadd_3_U5, intadd_3_U6, intadd_3_U7, intadd_0_U4, intadd_0_U5, intadd_0_U6, intadd_0_U7, intadd_2_U4, intadd_2_U5, intadd_2_U6, intadd_2_U7, intadd_1_U8, intadd_1_U9, intadd_1_U10, intadd_1_U11, intadd_3_U8, intadd_3_U9, intadd_3_U10, intadd_3_U11, intadd_0_U8, intadd_0_U9, intadd_0_U10, intadd_0_U11, intadd_2_U8, intadd_2_U9, intadd_2_U10, intadd_2_U11, intadd_1_U12, intadd_1_U13, intadd_1_U14, intadd_3_U12, intadd_3_U13, intadd_3_U14, intadd_0_U12, intadd_0_U13, intadd_0_U14, intadd_2_U12, intadd_2_U13, intadd_2_U14, ctmTdsLR_1_120, ctmTdsLR_1_121, ctmTdsLR_1_111, ctmTdsLR_1_112, ctmTdsLR_1_113, ctmTdsLR_1_114, ctmTdsLR_1_116, ctmTdsLR_1_117, ctmTdsLR_2_115, ctmTdsLR_1_118, U559, U560, U561, U562, U563, U564, U565, U566, ctmTdsLR_1_119, ctmTdsLR_2_122, ctmTdsLR_1_123, ctmTdsLR_2_124, ctmTdsLR_1_125, ctmTdsLR_1_126, ctmTdsLR_1_127, U575, U576, U577, U578, U579, U580, U581, U582, U583, U584, U585, U586, U595, U596, U597, U598, U599, U600, U601, U602, U603, U604, U605, U606, U607, U608, U609, U610, U611, U612, U613, U614, U615, U616, U617, U618, U619, U620, U621, U622, U623, U624, U625, U626, U627, U628, U629, U630, U631, U632, U633, U634, U635, U636, U637, U638, U639, U640, U641, U642, U643, U644, U645, U646, U647, U648, U649, U650, U651, U652, U653, U654, U655, U656, U657, U658, U659, U660, U661, U662, U663, U664, U665, U666, U667, U668, U669, U670, U671, U672, U673, U674, U675, U676, U677, U678, U679, U680, U681, U682, U683, U684, U685, U686, U687, U688, U689, U690, U691, U692, U693, U694, U695, U696, U697, U698, U699, U700, U701, U702, U705, U706, U707, U708, U709, U710, U711, U712, U715, U716, U717, U718, U719, U720, U721, U722, U725, U726, U727, U728, U729, U730, U731, U732, U735, U736, U737, U738, U739, U740, U741, U742, U743, U745, U746, U747, U748, U749, U750, U751, U752, U753, U754, U755, U756, U757, U758, U759, U760, U761, U762, U763, U764, U765, U766, U767, U768, U769, U770, U771, U772, U773, U774, U775, U776, U777, U778, U779, U780, U781, U782, U783, U784, U785, U786, U787, U788, U789, U790, U791, U792, U793, U794, U795, U796, U797, U798, U799, U800, U801, U802, U803, U804, U805, U806, U807, U808, U809, U810, U811, U812, U813, U814, U815, U816, U817, U818, U819, U820, U821, U822, ctmTdsLR_1_103, HFSINV_483_78, HFSBUF_1076_90, U826, U827, U828, U829, U830, U831, U832, U833, U834, U835, U836, U837, U838, U839, HFSBUF_460_74, HFSBUF_975_80, HFSBUF_515_93, U843, U844, U845, U846, U847, U848, U849, U850, U851, U852, U853, U854, U856, HFSBUF_398_76, HFSINV_713_84, HFSBUF_470_96, U860, U861, U862, U863, U864, U865, U866, U867, U868, U869, U870, U871, U873, U874, ctmTdsLR_1_104, HFSBUF_753_99, U877, U878, U879, U880, U881, U882, U883, U884, U885, U886, U887, U888, U889, U890, U891, U892, U893, U894, U895, U896, U897, U898, U899, U900, U901, U902, U903, U904, U905, U906, U907, U908, U909, U910, U911, U912, U913, U914, U915, U916, U917, U918, U919, U920, U921, U922, U923, U924, U925, U926, U927, U928, U929, U930, U931, U932, U933, U934, U935, U936, U937, U938, U939, U940, U941, U942, U943, U944, U945, U946, U947, U948, U949, U950, U951, U952, U953, U954, U955, U956, U957, U958, U959, U960, U961, U962, U963, U964, U965, U966, U967, U968, U969, U970, U971, U972, U973, U974, U975, U976, U977, U978, U979, U980, U981, U982, U983, U984, U985, U986, U987, U988, U989, U990, U991, U992, U993, U994, U995, U996, U997, U998, U999, U1000, U1001, U1002, U1003, U1004, U1005, U1006, U1007, U1008, U1009, U1010, U1011, U1012, U1013, U1014, U1015, U1016, U1017, U1018, U1019, U1020, U1021, U1022, U1023, U1024, U1025, U1026, U1027, U1028, U1029, U1030, U1031, U1032, U1033, U1034, U1035, U1036, U1037, U1038, U1039, U1040, U1041, U1042, U1043, U1044, U1045, U1046, U1047, U1048, U1049, U1050, U1051, U1052, U1053, U1054, U1055, U1056, U1057, U1058, U1059, U1060, U1061, U1062, U1063, U1064, U1065, U1066, U1067, U1068, U1070, U1071, U1072, U1073, U1074, U1075, U1076, U1077, U1078, U1079, U1080, U1081, U1082, U1083, U1084, U1085, U1086, U1087, U1088, U1089, U1090, U1091, U1092, U1093, U1094, U1095, U1096, ctmTdsLR_1_105, U1098, U1099, U1100, U1101, U1102, U1103, U1104, U1105, U1106, U1107, U1108, U1109, U1110, U1111, U1112, U1113, U1114, U1115, U1116, U1117, U1118, U1119, U1120, U1121, U1122, U1123, U1124, U1125, U1126, U1127, U1128, U1129, HFSBUF_144_0, HFSBUF_152_1, HFSBUF_234_2, HFSBUF_128_3, ctmTdsLR_1_106, HFSBUF_82_5, HFSBUF_116_6, HFSBUF_200_7, HFSBUF_80_8, HFSBUF_140_9, HFSBUF_222_10, HFSBUF_176_11, HFSBUF_194_12, HFSBUF_125_13, HFSBUF_247_14, HFSBUF_158_15, HFSBUF_156_16, HFSBUF_240_17, HFSBUF_130_19, HFSBUF_156_20, HFSBUF_129_21, HFSBUF_273_22, HFSBUF_69_23, HFSBUF_149_24, HFSBUF_173_25, HFSBUF_246_26, HFSBUF_238_27, HFSBUF_172_30, HFSBUF_253_31, HFSBUF_292_32, HFSBUF_308_33, HFSBUF_255_34, HFSBUF_47_35, HFSBUF_273_36, HFSBUF_352_37, HFSBUF_320_38, HFSBUF_351_39, HFSBUF_224_40, HFSBUF_220_41, HFSBUF_283_42, HFSBUF_301_43, HFSBUF_268_44, HFSBUF_223_45, ctmTdsLR_1_107, HFSBUF_189_47, HFSBUF_288_48, HFSBUF_390_49, HFSBUF_367_50, HFSBUF_367_51, ctmTdsLR_1_108, ctmTdsLR_1_109, HFSBUF_154_54, HFSBUF_290_55, HFSBUF_390_56, HFSBUF_386_57, HFSBUF_181_58, HFSBUF_201_59, HFSBUF_218_60, HFSBUF_520_61, ctmTdsLR_1_110, HFSBUF_263_63, HFSBUF_211_65, HFSBUF_350_66, HFSBUF_266_67, HFSBUF_436_69, HFSBUF_217_70, HFSBUF_257_71, HFSINV_487_73, HFSINV_567_75, HFSINV_436_77, HFSBUF_428_79, HFSINV_991_81, HFSBUF_1073_82, HFSBUF_664_85, HFSBUF_278_87, HFSINV_306_88, HFSBUF_822_89, HFSINV_1369_91, HFSBUF_1312_92, HFSINV_730_94, HFSBUF_690_95, HFSINV_542_97, HFSBUF_490_98, HFSINV_915_100, HFSBUF_348_101, 
+
+  *********************************
+
+  Number of hard macros with unconnected port: 0
+    
+
+  *********************************
+
+  Number of I/O pads with unconnected port: 0
+    
+
+  *********************************
+
+  Number of std cells with unconnected port: 0
+    
+
+
+***********End of Net VSS***********
+

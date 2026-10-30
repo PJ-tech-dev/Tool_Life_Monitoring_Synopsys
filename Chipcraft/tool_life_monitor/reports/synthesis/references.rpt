@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : reference
+Design : tool_life_monitor_top
+Version: W-2024.09-SP5-3
+Date   : Fri Sep 25 17:56:18 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+and2a3             ssc_core      21.670000     222   4810.740017  
+and2a6             ssc_core      27.090000       1     27.090000  
+and3a3             ssc_core      32.509998       4    130.039993  
+ao1a6              ssc_core      37.930000      27   1024.110008  
+ao1f2              ssc_core      27.090000      47   1273.230007  
+ao1f3              ssc_core      27.090000     148   4009.320023  
+fa1a1              ssc_core      92.110001      52   4789.720032  r
+fac2a1             ssc_core      37.930000      22    834.460007  
+fdef2a3            ssc_core     135.449997     127  17202.149612  n
+fdef2a6            ssc_core     135.449997       1    135.449997  n
+ha1a2              ssc_core      65.019997       6    390.119980  r
+inv1a2             ssc_core      10.840000      34    368.560005  
+inv1a3             ssc_core      10.840000     196   2124.640030  
+inv1a6             ssc_core      16.250000       1     16.250000  
+mx2a3              ssc_core      43.340000      40   1733.600006  
+oa1f2              ssc_core      27.090000       5    135.450001  
+oa1f3              ssc_core      27.090000     120   3250.800018  
+oa1f6              ssc_core      43.340000       2     86.680000  
+or2a3              ssc_core      27.090000      52   1408.680008  
+or2a6              ssc_core      27.090000      36    975.240005  
+or3a2              ssc_core      32.509998      10    325.099983  
+or4a3              ssc_core      48.759998      20    975.199966  
+xor2a2             ssc_core      43.340000       2     86.680000  
+-----------------------------------------------------------------------------
+Total 23 references                                 46113.309700
+1

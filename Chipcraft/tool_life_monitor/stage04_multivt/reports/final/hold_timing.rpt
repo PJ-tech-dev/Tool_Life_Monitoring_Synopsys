@@ -1,0 +1,695 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 20
+Design : tool_life_monitor_top
+Version: W-2024.09-SP5-3
+Date   : Sat Sep 26 00:28:13 2026
+****************************************
+
+Operating Conditions: ff1p16vn40c   Library: saed32rvt_ff1p16vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_system_counter_count_reg_3__4_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__4_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_3__4_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_3__4_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U997/Y (OA22X1_HVT)                                     0.03       0.07 f
+  u_system_counter_count_reg_3__4_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_3__4_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_system_counter_count_reg_2__4_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_2__4_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_2__4_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_2__4_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U983/Y (OA22X1_HVT)                                     0.03       0.07 f
+  u_system_counter_count_reg_2__4_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_2__4_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_system_counter_count_reg_1__4_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__4_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_1__4_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_1__4_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U969/Y (OA22X1_HVT)                                     0.03       0.07 f
+  u_system_counter_count_reg_1__4_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_1__4_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_system_counter_count_reg_0__4_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_0__4_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_0__4_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_0__4_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U955/Y (OA22X1_HVT)                                     0.03       0.07 f
+  u_system_counter_count_reg_0__4_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_0__4_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_system_counter_count_reg_3__11_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__11_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_3__11_/CLK (DFFARX1_HVT)     0.00       0.00 r
+  u_system_counter_count_reg_3__11_/QN (DFFARX1_HVT)      0.04       0.04 f
+  U1005/Y (OA222X1_HVT)                                   0.03       0.07 f
+  u_system_counter_count_reg_3__11_/D (DFFARX1_HVT)       0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_3__11_/CLK (DFFARX1_HVT)     0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_2__11_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_2__11_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_2__11_/CLK (DFFARX1_HVT)     0.00       0.00 r
+  u_system_counter_count_reg_2__11_/QN (DFFARX1_HVT)      0.04       0.04 f
+  U991/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_2__11_/D (DFFARX1_HVT)       0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_2__11_/CLK (DFFARX1_HVT)     0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_1__11_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__11_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_1__11_/CLK (DFFARX1_HVT)     0.00       0.00 r
+  u_system_counter_count_reg_1__11_/QN (DFFARX1_HVT)      0.04       0.04 f
+  U977/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_1__11_/D (DFFARX1_HVT)       0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_1__11_/CLK (DFFARX1_HVT)     0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_0__11_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_0__11_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_0__11_/CLK (DFFARX1_HVT)     0.00       0.00 r
+  u_system_counter_count_reg_0__11_/QN (DFFARX1_HVT)      0.04       0.04 f
+  U963/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_0__11_/D (DFFARX1_HVT)       0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_0__11_/CLK (DFFARX1_HVT)     0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_3__9_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__9_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_3__9_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_3__9_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U1003/Y (OA222X1_HVT)                                   0.03       0.07 f
+  u_system_counter_count_reg_3__9_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_3__9_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_2__9_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_2__9_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_2__9_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_2__9_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U989/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_2__9_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_2__9_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_1__9_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__9_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_1__9_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_1__9_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U975/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_1__9_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_1__9_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_0__9_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_0__9_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_0__9_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_0__9_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U961/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_0__9_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_0__9_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_3__7_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__7_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_3__7_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_3__7_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U1001/Y (OA222X1_HVT)                                   0.03       0.07 f
+  u_system_counter_count_reg_3__7_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_3__7_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_2__7_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_2__7_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_2__7_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_2__7_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U987/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_2__7_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_2__7_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_1__7_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__7_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_1__7_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_1__7_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U973/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_1__7_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_1__7_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_0__7_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_0__7_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_0__7_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_0__7_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U959/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_0__7_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_0__7_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_3__5_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_3__5_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_3__5_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_3__5_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U999/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_3__5_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_3__5_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_2__5_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_2__5_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_2__5_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_2__5_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U985/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_2__5_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_2__5_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_1__5_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_1__5_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_1__5_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_1__5_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U971/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_1__5_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_1__5_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: u_system_counter_count_reg_0__5_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: u_system_counter_count_reg_0__5_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tool_life_monitor_top
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_0__5_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  u_system_counter_count_reg_0__5_/QN (DFFARX1_HVT)       0.04       0.04 f
+  U957/Y (OA222X1_HVT)                                    0.03       0.07 f
+  u_system_counter_count_reg_0__5_/D (DFFARX1_HVT)        0.01       0.08 f
+  data arrival time                                                  0.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_system_counter_count_reg_0__5_/CLK (DFFARX1_HVT)      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+1

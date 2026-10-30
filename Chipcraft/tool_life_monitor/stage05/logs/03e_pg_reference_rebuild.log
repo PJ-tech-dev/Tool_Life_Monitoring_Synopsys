@@ -1,0 +1,486 @@
+
+
+
+                              IC Compiler II (TM)
+
+                Version X-2025.06-SP1 for linux64 - Aug 01, 2025
+                            Base build date 7/7/2025
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+ 
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+set TOP "tool_life_monitor_top"
+tool_life_monitor_top
+set DESIGN_LIB "./stage05/work/tool_life_monitor.nlib"
+./stage05/work/tool_life_monitor.nlib
+puts "============================================================"
+============================================================
+puts " SAED32 REFERENCE PG REBUILD"
+ SAED32 REFERENCE PG REBUILD
+puts "============================================================"
+============================================================
+open_lib $DESIGN_LIB
+Information: Loading library file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/stage05/work/tool_life_monitor.nlib' (FILE-007)
+Information: Loading library file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/CLIBs/saed32_hvt.ndm' (FILE-007)
+{tool_life_monitor.nlib}
+open_block ${TOP}/placed
+Information: User units loaded from library 'saed32_hvt|saed32_hvt_std' (LNK-040)
+Opening block 'tool_life_monitor.nlib:tool_life_monitor_top/placed.design' in edit mode
+{tool_life_monitor.nlib:tool_life_monitor_top/placed.design}
+# ------------------------------------------------------------
+# PVT
+# ------------------------------------------------------------
+set_process_label  -corners [get_corners default] slow
+Using libraries: tool_life_monitor.nlib saed32_hvt
+Warning: In library tool_life_monitor.nlib, no block views exist for block tool_life_monitor_top. (LNK-064)
+Visiting block tool_life_monitor.nlib:tool_life_monitor_top/placed.design
+Design 'tool_life_monitor_top' was successfully linked.
+1
+set_process_number -corners [get_corners default] 0.99
+1
+set_voltage        -corners [get_corners default] 0.95
+1
+set_temperature    -corners [get_corners default] 125
+1
+# ------------------------------------------------------------
+# REMOVE PREVIOUS EXPERIMENTAL PG
+# Placement itself is retained.
+# ------------------------------------------------------------
+remove_pg_strategies -all
+All strategies have been removed.
+remove_pg_patterns -all
+All patterns have been removed.
+remove_pg_regions -all
+No PG region is found.
+remove_pg_via_master_rules -all
+All via def rules have been removed.
+remove_pg_strategy_via_rules -all
+All strategy via rules have been removed.
+remove_routes -net_types {power ground} -ring -stripe -macro_pin_connect -lib_cell_pin_connect
+delete pin (VDD) at (761120,685200) (762720,686800)
+delete pin (VDD) at (0,685200) (1600,686800)
+delete pin (VDD) at (761120,645200) (762720,646800)
+delete pin (VDD) at (0,645200) (1600,646800)
+delete pin (VDD) at (761120,605200) (762720,606800)
+delete pin (VDD) at (0,605200) (1600,606800)
+delete pin (VDD) at (761120,565200) (762720,566800)
+delete pin (VDD) at (0,565200) (1600,566800)
+delete pin (VDD) at (761120,525200) (762720,526800)
+delete pin (VDD) at (0,525200) (1600,526800)
+delete pin (VDD) at (761120,485200) (762720,486800)
+delete pin (VDD) at (0,485200) (1600,486800)
+delete pin (VDD) at (761120,445200) (762720,446800)
+delete pin (VDD) at (0,445200) (1600,446800)
+delete pin (VDD) at (761120,405200) (762720,406800)
+delete pin (VDD) at (0,405200) (1600,406800)
+delete pin (VDD) at (761120,365200) (762720,366800)
+delete pin (VDD) at (0,365200) (1600,366800)
+delete pin (VDD) at (761120,325200) (762720,326800)
+delete pin (VDD) at (0,325200) (1600,326800)
+delete pin (VDD) at (761120,285200) (762720,286800)
+delete pin (VDD) at (0,285200) (1600,286800)
+delete pin (VDD) at (761120,245200) (762720,246800)
+delete pin (VDD) at (0,245200) (1600,246800)
+delete pin (VDD) at (761120,205200) (762720,206800)
+delete pin (VDD) at (0,205200) (1600,206800)
+delete pin (VDD) at (761120,165200) (762720,166800)
+delete pin (VDD) at (0,165200) (1600,166800)
+delete pin (VDD) at (761120,125200) (762720,126800)
+delete pin (VDD) at (0,125200) (1600,126800)
+delete pin (VDD) at (761120,85200) (762720,86800)
+delete pin (VDD) at (0,85200) (1600,86800)
+delete pin (VDD) at (685200,750480) (686800,752080)
+delete pin (VDD) at (685200,0) (686800,1600)
+delete pin (VDD) at (645200,750480) (646800,752080)
+delete pin (VDD) at (645200,0) (646800,1600)
+delete pin (VDD) at (605200,750480) (606800,752080)
+delete pin (VDD) at (605200,0) (606800,1600)
+delete pin (VDD) at (565200,750480) (566800,752080)
+delete pin (VDD) at (565200,0) (566800,1600)
+delete pin (VDD) at (525200,750480) (526800,752080)
+delete pin (VDD) at (525200,0) (526800,1600)
+delete pin (VDD) at (485200,750480) (486800,752080)
+delete pin (VDD) at (485200,0) (486800,1600)
+delete pin (VDD) at (445200,750480) (446800,752080)
+delete pin (VDD) at (445200,0) (446800,1600)
+delete pin (VDD) at (405200,750480) (406800,752080)
+delete pin (VDD) at (405200,0) (406800,1600)
+delete pin (VDD) at (365200,750480) (366800,752080)
+delete pin (VDD) at (365200,0) (366800,1600)
+delete pin (VDD) at (325200,750480) (326800,752080)
+delete pin (VDD) at (325200,0) (326800,1600)
+delete pin (VDD) at (285200,750480) (286800,752080)
+delete pin (VDD) at (285200,0) (286800,1600)
+delete pin (VDD) at (245200,750480) (246800,752080)
+delete pin (VDD) at (245200,0) (246800,1600)
+delete pin (VDD) at (205200,750480) (206800,752080)
+delete pin (VDD) at (205200,0) (206800,1600)
+delete pin (VDD) at (165200,750480) (166800,752080)
+delete pin (VDD) at (165200,0) (166800,1600)
+delete pin (VDD) at (125200,750480) (126800,752080)
+delete pin (VDD) at (125200,0) (126800,1600)
+delete pin (VDD) at (85200,750480) (86800,752080)
+delete pin (VDD) at (85200,0) (86800,1600)
+delete pin (VSS) at (761120,665200) (762720,666800)
+delete pin (VSS) at (0,665200) (1600,666800)
+delete pin (VSS) at (761120,625200) (762720,626800)
+delete pin (VSS) at (0,625200) (1600,626800)
+delete pin (VSS) at (761120,585200) (762720,586800)
+delete pin (VSS) at (0,585200) (1600,586800)
+delete pin (VSS) at (761120,545200) (762720,546800)
+delete pin (VSS) at (0,545200) (1600,546800)
+delete pin (VSS) at (761120,505200) (762720,506800)
+delete pin (VSS) at (0,505200) (1600,506800)
+delete pin (VSS) at (761120,465200) (762720,466800)
+delete pin (VSS) at (0,465200) (1600,466800)
+delete pin (VSS) at (761120,425200) (762720,426800)
+delete pin (VSS) at (0,425200) (1600,426800)
+delete pin (VSS) at (761120,385200) (762720,386800)
+delete pin (VSS) at (0,385200) (1600,386800)
+delete pin (VSS) at (761120,345200) (762720,346800)
+delete pin (VSS) at (0,345200) (1600,346800)
+delete pin (VSS) at (761120,305200) (762720,306800)
+delete pin (VSS) at (0,305200) (1600,306800)
+delete pin (VSS) at (761120,265200) (762720,266800)
+delete pin (VSS) at (0,265200) (1600,266800)
+delete pin (VSS) at (761120,225200) (762720,226800)
+delete pin (VSS) at (0,225200) (1600,226800)
+delete pin (VSS) at (761120,185200) (762720,186800)
+delete pin (VSS) at (0,185200) (1600,186800)
+delete pin (VSS) at (761120,145200) (762720,146800)
+delete pin (VSS) at (0,145200) (1600,146800)
+delete pin (VSS) at (761120,105200) (762720,106800)
+delete pin (VSS) at (0,105200) (1600,106800)
+delete pin (VSS) at (761120,65200) (762720,66800)
+delete pin (VSS) at (0,65200) (1600,66800)
+delete pin (VSS) at (705200,750480) (706800,752080)
+delete pin (VSS) at (705200,0) (706800,1600)
+delete pin (VSS) at (665200,750480) (666800,752080)
+delete pin (VSS) at (665200,0) (666800,1600)
+delete pin (VSS) at (625200,750480) (626800,752080)
+delete pin (VSS) at (625200,0) (626800,1600)
+delete pin (VSS) at (585200,750480) (586800,752080)
+delete pin (VSS) at (585200,0) (586800,1600)
+delete pin (VSS) at (545200,750480) (546800,752080)
+delete pin (VSS) at (545200,0) (546800,1600)
+delete pin (VSS) at (505200,750480) (506800,752080)
+delete pin (VSS) at (505200,0) (506800,1600)
+delete pin (VSS) at (465200,750480) (466800,752080)
+delete pin (VSS) at (465200,0) (466800,1600)
+delete pin (VSS) at (425200,750480) (426800,752080)
+delete pin (VSS) at (425200,0) (426800,1600)
+delete pin (VSS) at (385200,750480) (386800,752080)
+delete pin (VSS) at (385200,0) (386800,1600)
+delete pin (VSS) at (345200,750480) (346800,752080)
+delete pin (VSS) at (345200,0) (346800,1600)
+delete pin (VSS) at (305200,750480) (306800,752080)
+delete pin (VSS) at (305200,0) (306800,1600)
+delete pin (VSS) at (265200,750480) (266800,752080)
+delete pin (VSS) at (265200,0) (266800,1600)
+delete pin (VSS) at (225200,750480) (226800,752080)
+delete pin (VSS) at (225200,0) (226800,1600)
+delete pin (VSS) at (185200,750480) (186800,752080)
+delete pin (VSS) at (185200,0) (186800,1600)
+delete pin (VSS) at (145200,750480) (146800,752080)
+delete pin (VSS) at (145200,0) (146800,1600)
+delete pin (VSS) at (105200,750480) (106800,752080)
+delete pin (VSS) at (105200,0) (106800,1600)
+delete pin (VSS) at (65200,750480) (66800,752080)
+delete pin (VSS) at (65200,0) (66800,1600)
+Successfully removed 9343 route shapes, which 0 are no-net shapes.
+1
+puts "Previous PG structures removed."
+Previous PG structures removed.
+# ------------------------------------------------------------
+# CREATE TOP-LEVEL PG PORTS
+# SAED32 reference powerplan.tcl lines 7-9
+# ------------------------------------------------------------
+if {[sizeof_collection [get_ports -quiet VDD]] == 0} {
+    create_port -direction inout VDD
+} else {
+    puts "VDD port already exists"
+}
+VDD port already exists
+if {[sizeof_collection [get_ports -quiet VSS]] == 0} {
+    create_port -direction inout VSS
+} else {
+    puts "VSS port already exists"
+}
+VSS port already exists
+# ------------------------------------------------------------
+# LOGICAL PG CONNECTIONS
+# SAED32 reference lines 15-30
+# ------------------------------------------------------------
+connect_pg_net -net VDD [get_ports VDD]
+1
+connect_pg_net -net VSS [get_ports VSS]
+1
+connect_pg_net -net VDD [get_pins -physical_context */VDD]
+1
+connect_pg_net -net VSS [get_pins -physical_context */VSS]
+1
+connect_pg_net -automatic
+Information: Connecting to PG and tie pins in automatic mode. (MV-396)
+****************************************
+Report : Power/Ground Connection Summary
+Design : tool_life_monitor_top
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 05:23:27 2026
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 825/825
+Ground net VSS                825/825
+--------------------------------------------------------------------------------
+Information: connections of 0 power/ground pin(s) are created or changed. (MV-382)
+
+1
+puts "VDD physical cell pins:"
+VDD physical cell pins:
+puts [sizeof_collection [get_pins -physical_context */VDD]]
+825
+puts "VSS physical cell pins:"
+VSS physical cell pins:
+puts [sizeof_collection [get_pins -physical_context */VSS]]
+825
+# ------------------------------------------------------------
+# SAED32 REFERENCE TOP PG MESH
+#
+# M9 horizontal
+# M8 vertical
+# width  = 0.16
+# pitch  = 4
+# offset = 1.6
+# ------------------------------------------------------------
+create_pg_mesh_pattern P_top_two \
+    -layers { \
+        { \
+            {horizontal_layer: M9} \
+            {width: 0.16} \
+            {spacing: interleaving} \
+            {pitch: 4} \
+            {offset: 1.6} \
+            {trim: true} \
+        } \
+        { \
+            {vertical_layer: M8} \
+            {width: 0.16} \
+            {spacing: interleaving} \
+            {pitch: 4} \
+            {offset: 1.6} \
+            {trim: true} \
+        } \
+    }
+Information: The command 'create_pg_wire_pattern' cleared the undo history. (UNDO-016)
+Successfully create mesh pattern P_top_two.
+1
+set_pg_strategy S_default_vddvss \
+    -core \
+    -pattern {{name: P_top_two} {nets: {VSS VDD}}} \
+    -extension {{{stop: design_boundary_and_generate_pin}}}
+Successfully set PG strategy S_default_vddvss.
+puts "============================================================"
+============================================================
+puts " COMPILING SAED32 M8/M9 PG MESH"
+ COMPILING SAED32 M8/M9 PG MESH
+puts "============================================================"
+============================================================
+compile_pg -strategies {S_default_vddvss}
+Sanity check for inputs.
+Warning: Strategy via rule is not defined. Add appropriate via rule to get expected results and avoid runtime penalties. (PGR-095)
+Automatic PG net connection through connect_pg_net is disabled.
+Updating PG strategies.
+Updating strategy S_default_vddvss.
+Loading library and design information.
+Number of Standard Cells: 825
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies S_default_vddvss .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies S_default_vddvss .
+Check and fix DRC for 65 wires for strategy S_default_vddvss.
+Number of threads: 1
+Number of partitions: 3
+Direction of partitions: vertical
+Number of wires: 33
+Checking DRC for 33 wires: 0% 100%
+Number of threads: 1
+Number of partitions: 3
+Direction of partitions: horizontal
+Number of wires: 32
+Checking DRC for 32 wires: 0% 100%
+Creating 65 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies S_default_vddvss .
+Working on strategy S_default_vddvss.
+Number of detected intersections: 528
+Total runtime of via shapes creation: 0 seconds
+Check and fix DRC for 528 stacked vias for strategy S_default_vddvss.
+Number of threads: 1
+Number of partitions: 3
+Direction of partitions: horizontal
+Number of vias: 528
+Checking DRC for 528 stacked vias:: 0% 100%
+Runtime of via DRC checking for strategy S_default_vddvss: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias inside strategy S_default_vddvss.
+Checking 528 stacked vias: 0% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committing wires takes 0.00 seconds.
+Committing vias takes 0.00 seconds.
+Committed 195 wires.
+Committed 528 vias.
+Committed 0 wires for via creation.
+Created 130 pins at design boundary.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+# ------------------------------------------------------------
+# SAED32 REFERENCE STANDARD-CELL RAILS
+#
+# Reference rail width = 0.094 um
+# ------------------------------------------------------------
+create_pg_std_cell_conn_pattern std_rail_conn1 \
+    -layers M1
+Successfully create standard cell rail pattern std_rail_conn1.
+set_pg_strategy std_rail_1 \
+    -pattern {{name: std_rail_conn1} {nets: {VDD VSS}}} \
+    -core
+Successfully set PG strategy std_rail_1.
+puts "============================================================"
+============================================================
+puts " COMPILING SAED32 M1 STANDARD-CELL RAILS"
+ COMPILING SAED32 M1 STANDARD-CELL RAILS
+puts "============================================================"
+============================================================
+compile_pg -strategies {std_rail_1}
+Sanity check for inputs.
+Warning: Strategy via rule is not defined. Add appropriate via rule to get expected results and avoid runtime penalties. (PGR-095)
+Automatic PG net connection through connect_pg_net is disabled.
+Updating PG strategies.
+Updating strategy std_rail_1.
+Loading library and design information.
+Number of Standard Cells: 825
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating standard cell rails.
+Creating standard cell rails for strategy std_rail_1.
+DRC checking and fixing for standard cell rail strategy std_rail_1.
+Number of threads: 1
+Number of partitions: 4
+Direction of partitions: horizontal
+Number of wires: 40
+Checking DRC for 40 wires: 0% 100%
+Creating 40 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 660 stacked vias.
+Number of threads: 1
+Number of partitions: 4
+Direction of partitions: horizontal
+Number of vias: 660
+Checking DRC for 660 stacked vias:: 0% 100%
+Via DRC checking runtime 1.00 seconds.
+via connection runtime: 1 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 660 stacked vias: 0% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committing wires takes 0.00 seconds.
+Committing vias takes 0.00 seconds.
+Committed 40 wires.
+Committed 4620 vias.
+Committed 3960 wires for via creation.
+Overall PG creation runtime: 1 seconds.
+Successfully compiled PG.
+Overall runtime: 1 seconds.
+1
+# ------------------------------------------------------------
+# REASSERT LOGICAL PG CONNECTION
+# ------------------------------------------------------------
+connect_pg_net -net VDD [get_ports VDD]
+1
+connect_pg_net -net VSS [get_ports VSS]
+1
+connect_pg_net -net VDD [get_pins -physical_context */VDD]
+1
+connect_pg_net -net VSS [get_pins -physical_context */VSS]
+1
+connect_pg_net -automatic
+Information: Connecting to PG and tie pins in automatic mode. (MV-396)
+****************************************
+Report : Power/Ground Connection Summary
+Design : tool_life_monitor_top
+Version: X-2025.06-SP1
+Date   : Sat Sep 26 05:23:30 2026
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 825/825
+Ground net VSS                825/825
+--------------------------------------------------------------------------------
+Information: connections of 0 power/ground pin(s) are created or changed. (MV-382)
+
+1
+# ------------------------------------------------------------
+# CONNECTIVITY / DRC
+# ------------------------------------------------------------
+redirect -file ./stage05/reports/pg_reference_connectivity.rpt {
+    check_pg_connectivity \
+        -nets {VDD VSS} \
+        -check_std_cell_pins all \
+        -write_connectivity_file \
+        ./stage05/reports/pg_reference_connectivity_detail.txt
+}
+redirect -file ./stage05/reports/pg_reference_drc.rpt {
+    check_pg_drc -nets {VDD VSS}
+}
+# ------------------------------------------------------------
+# SAVE TEST CHECKPOINT
+# ------------------------------------------------------------
+save_block -as ${TOP}/placed_pg_reference
+Information: Overwriting block 'tool_life_monitor_top/placed_pg_reference.design' in library 'tool_life_monitor.nlib'. (DES-025)
+1
+save_lib
+Saving library 'tool_life_monitor.nlib'
+1
+puts ""
+
+puts "============================================================"
+============================================================
+puts " SAED32 REFERENCE PG REBUILD COMPLETE"
+ SAED32 REFERENCE PG REBUILD COMPLETE
+puts "============================================================"
+============================================================
+puts ""
+
+exit
+Maximum memory usage for this session: 437.57 MB
+Maximum memory usage for this session including child processes: 437.57 MB
+CPU usage for this session:      7 seconds (  0.00 hours)
+Elapsed time for this session:     11 seconds (  0.00 hours)
+Thank you for using IC Compiler II.

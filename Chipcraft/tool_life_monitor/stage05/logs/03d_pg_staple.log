@@ -1,0 +1,165 @@
+
+
+
+                              IC Compiler II (TM)
+
+                Version X-2025.06-SP1 for linux64 - Aug 01, 2025
+                            Base build date 7/7/2025
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+ 
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+set TOP "tool_life_monitor_top"
+tool_life_monitor_top
+set DESIGN_LIB "./stage05/work/tool_life_monitor.nlib"
+./stage05/work/tool_life_monitor.nlib
+puts "============================================================"
+============================================================
+puts " POST-PLACEMENT PG STAPLING"
+ POST-PLACEMENT PG STAPLING
+puts "============================================================"
+============================================================
+# Start from the clean successful placement.
+open_lib $DESIGN_LIB
+Information: Loading library file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/stage05/work/tool_life_monitor.nlib' (FILE-007)
+Information: Loading library file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/CLIBs/saed32_hvt.ndm' (FILE-007)
+{tool_life_monitor.nlib}
+open_block ${TOP}/placed
+Information: User units loaded from library 'saed32_hvt|saed32_hvt_std' (LNK-040)
+Opening block 'tool_life_monitor.nlib:tool_life_monitor_top/placed.design' in edit mode
+{tool_life_monitor.nlib:tool_life_monitor_top/placed.design}
+# ------------------------------------------------------------
+# PVT
+# ------------------------------------------------------------
+set_process_label  -corners [get_corners default] slow
+Using libraries: tool_life_monitor.nlib saed32_hvt
+Warning: In library tool_life_monitor.nlib, no block views exist for block tool_life_monitor_top. (LNK-064)
+Visiting block tool_life_monitor.nlib:tool_life_monitor_top/placed.design
+Design 'tool_life_monitor_top' was successfully linked.
+1
+set_process_number -corners [get_corners default] 0.99
+1
+set_voltage        -corners [get_corners default] 0.95
+1
+set_temperature    -corners [get_corners default] 125
+1
+# ------------------------------------------------------------
+# LOGICAL PG CONNECTION
+# ------------------------------------------------------------
+connect_pg_net -net VDD [get_pins -physical_context */VDD]
+1
+connect_pg_net -net VSS [get_pins -physical_context */VSS]
+1
+puts "VDD physical pins = [sizeof_collection [get_pins -physical_context */VDD]]"
+VDD physical pins = 825
+puts "VSS physical pins = [sizeof_collection [get_pins -physical_context */VSS]]"
+VSS physical pins = 825
+# ------------------------------------------------------------
+# EXISTING PG SHAPES
+#
+# M1 : standard-cell follow-pin rails
+# M8 : vertical core mesh/ring shapes
+# ------------------------------------------------------------
+set M1_SHAPES [get_shapes -filter "layer_name == M1"]
+{PATH_11_0 PATH_11_1 PATH_11_2 PATH_11_3 PATH_11_4 PATH_11_5 PATH_11_6 PATH_11_7 PATH_11_8 PATH_11_9 PATH_11_10 PATH_11_11 PATH_11_12 PATH_11_13 PATH_11_14 PATH_11_15 PATH_11_16 PATH_11_17 PATH_11_18 PATH_11_19 PATH_11_20 PATH_11_21 PATH_11_22 PATH_11_23 PATH_11_24 PATH_11_25 PATH_11_26 PATH_11_27 PATH_11_28 PATH_11_29 PATH_11_30 PATH_11_31 PATH_11_32 PATH_11_33 PATH_11_34 PATH_11_35 PATH_11_36 PATH_11_37 PATH_11_38 PATH_11_39 PATH_11_40 PATH_11_41 PATH_11_42 PATH_11_43 PATH_11_44 PATH_11_45 PATH_11_46 PATH_11_47 PATH_11_48 PATH_11_49 PATH_11_50 PATH_11_51 PATH_11_52 PATH_11_53 PATH_11_54 PATH_11_55 PATH_11_56 PATH_11_57 PATH_11_58 PATH_11_59 PATH_11_60 PATH_11_61 PATH_11_62 PATH_11_63 PATH_11_64 PATH_11_65 PATH_11_66 PATH_11_67 PATH_11_68 PATH_11_69 PATH_11_70 PATH_11_71 PATH_11_72 PATH_11_73 PATH_11_74 PATH_11_75 PATH_11_76 PATH_11_77 PATH_11_78 PATH_11_79}
+set M8_SHAPES [get_shapes -filter "layer_name == M8"]
+{PATH_25_0 PATH_25_1 PATH_25_2 PATH_25_3 PATH_25_4 PATH_25_5 PATH_25_6 PATH_25_7 PATH_25_8 PATH_25_9 PATH_25_10 PATH_25_11 PATH_25_12 PATH_25_13 PATH_25_14 PATH_25_15 PATH_25_16 PATH_25_17 PATH_25_18 PATH_25_19 PATH_25_20 PATH_25_21 PATH_25_22 PATH_25_23 PATH_25_24 PATH_25_25 PATH_25_26 PATH_25_27 PATH_25_28 PATH_25_29 PATH_25_30 PATH_25_31 PATH_25_32 PATH_25_33 PATH_25_34 PATH_25_35 PATH_25_36 PATH_25_37 PATH_25_38 PATH_25_39 PATH_25_40 PATH_25_41 PATH_25_42}
+puts "M1 shapes = [sizeof_collection $M1_SHAPES]"
+M1 shapes = 80
+puts "M8 shapes = [sizeof_collection $M8_SHAPES]"
+M8 shapes = 43
+set CORE_BBOX [get_attribute [get_core_area] bbox]
+{5.0000 5.0000} {71.2720 70.2080}
+# ------------------------------------------------------------
+# STAPLE EXISTING M1 RAILS TO EXISTING M8 PG SHAPES
+# ------------------------------------------------------------
+puts "============================================================"
+============================================================
+puts " CREATING M1 <-> M8 STAPLING VIAS"
+ CREATING M1 <-> M8 STAPLING VIAS
+puts "============================================================"
+============================================================
+create_pg_stapling_vias \
+    -nets {VDD VSS} \
+    -from_layer M1 \
+    -to_layer M8 \
+    -from_shapes $M1_SHAPES \
+    -to_shapes $M8_SHAPES \
+    -regions $CORE_BBOX \
+    -tag M1_M8_STAPLE
+Information: The command 'create_pg_stapling_vias' cleared the undo history. (UNDO-016)
+Set tag to M1_M8_STAPLE
+Warning: Multiple vertical tracks on middle metal layer, using: TRACK_13 (PGR-599)
+
+Create stapling vias for net VDD...
+Created 14 stack vias in 98 via objects.
+Runtime: 0.00 seconds.
+
+Create stapling vias for net VSS...
+Created 0 stack vias in 0 via objects.
+Runtime: 0.00 seconds.
+Overall elapsed time: 0.00 seconds.
+Successfully created PG stapling vias.
+puts "============================================================"
+============================================================
+puts " STAPLING VIA COUNT"
+ STAPLING VIA COUNT
+puts "============================================================"
+============================================================
+set STAPLES [get_vias -filter is_via_staple]
+{VIA_S_0 VIA_S_1 VIA_S_2 VIA_S_3 VIA_S_4 VIA_S_5 VIA_S_6 VIA_S_7 VIA_S_8 VIA_S_9 VIA_S_10 VIA_S_11 VIA_S_12 VIA_S_13 VIA_S_14 VIA_S_15 VIA_S_16 VIA_S_17 VIA_S_18 VIA_S_19 VIA_S_20 VIA_S_21 VIA_S_22 VIA_S_23 VIA_S_24 VIA_S_25 VIA_S_26 VIA_S_27 VIA_S_28 VIA_S_29 VIA_S_30 VIA_S_31 VIA_S_32 VIA_S_33 VIA_S_34 VIA_S_35 VIA_S_36 VIA_S_37 VIA_S_38 VIA_S_39 VIA_S_40 VIA_S_41 VIA_S_42 VIA_S_43 VIA_S_44 VIA_S_45 VIA_S_46 VIA_S_47 VIA_S_48 VIA_S_49 VIA_S_50 VIA_S_51 VIA_S_52 VIA_S_53 VIA_S_54 VIA_S_55 VIA_S_56 VIA_S_57 VIA_S_58 VIA_S_59 VIA_S_60 VIA_S_61 VIA_S_62 VIA_S_63 VIA_S_64 VIA_S_65 VIA_S_66 VIA_S_67 VIA_S_68 VIA_S_69 VIA_S_70 VIA_S_71 VIA_S_72 VIA_S_73 VIA_S_74 VIA_S_75 VIA_S_76 VIA_S_77 VIA_S_78 VIA_S_79 VIA_S_80 VIA_S_81 VIA_S_82 VIA_S_83 VIA_S_84 VIA_S_85 VIA_S_86 VIA_S_87 VIA_S_88 VIA_S_89 VIA_S_90 VIA_S_91 VIA_S_92 VIA_S_93 VIA_S_94 VIA_S_95 VIA_S_96 VIA_S_97}
+puts "Number of stapling vias:"
+Number of stapling vias:
+puts [sizeof_collection $STAPLES]
+98
+# ------------------------------------------------------------
+# CHECK CONNECTIVITY
+# ------------------------------------------------------------
+redirect -file ./stage05/reports/pg_connectivity_stapled.rpt {
+    check_pg_connectivity \
+        -nets {VDD VSS} \
+        -check_std_cell_pins all \
+        -write_connectivity_file ./stage05/reports/pg_connectivity_stapled_detail.txt
+}
+redirect -file ./stage05/reports/pg_drc_stapled.rpt {
+    check_pg_drc -nets {VDD VSS}
+}
+# ------------------------------------------------------------
+# SAVE
+# ------------------------------------------------------------
+save_block -as ${TOP}/placed_pg_stapled
+Information: Saving 'tool_life_monitor.nlib:tool_life_monitor_top/placed.design' to 'tool_life_monitor.nlib:tool_life_monitor_top/placed_pg_stapled.design'. (DES-028)
+1
+save_lib
+Saving library 'tool_life_monitor.nlib'
+1
+puts ""
+
+puts "============================================================"
+============================================================
+puts " PG STAPLING COMPLETE"
+ PG STAPLING COMPLETE
+puts "============================================================"
+============================================================
+puts ""
+
+exit
+Maximum memory usage for this session: 423.92 MB
+Maximum memory usage for this session including child processes: 423.92 MB
+CPU usage for this session:      6 seconds (  0.00 hours)
+Elapsed time for this session:     10 seconds (  0.00 hours)
+Thank you for using IC Compiler II.

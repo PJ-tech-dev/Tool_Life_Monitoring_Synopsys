@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : tool_life_monitor_top
+Version: W-2024.09-SP5-3
+Date   : Sat Sep 26 00:28:13 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32hvt_ss0p95v125c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+tool_life_monitor_top  8000              saed32rvt_ss0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  82.1652 uW   (97%)
+  Net Switching Power  =   2.6987 uW    (3%)
+                         ---------
+Total Dynamic Power    =  84.8639 uW  (100%)
+
+Cell Leakage Power     =  37.0179 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     72.8783            0.0000            0.0000           72.8783  (  59.79%)  i
+register           5.1001            0.6936        1.7617e+07           23.4110  (  19.21%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      4.1869            2.0051        1.9401e+07           25.5925  (  21.00%)
+--------------------------------------------------------------------------------------------------
+Total             82.1652 uW         2.6987 uW     3.7018e+07 pW       121.8818 uW
+1

@@ -1,0 +1,291 @@
+
+                                 Formality (R)
+
+               Version W-2024.09-SP5 for linux64 - Apr 09, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Build: 9717777
+Hostname: sd26.ece.kalasalingam.ac.in
+Current time: Fri Sep 25 22:54:01 2026
+
+Loading db file '/home/prem5111/synopsys/fm/W-2024.09-SP5/libraries/syn/gtech.db'
+
+Script: stage04_final/scripts/formal_equiv.tcl
+
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+# =====================================================================
+# STAGE 04 - FORMAL EQUIVALENCE VERIFICATION
+#
+# Reference      : Frozen Stage-03 synthesized DDC
+# Implementation : Stage-04 PPA optimized DDC
+#
+# Goal:
+# Prove that post-synthesis PPA optimization did not change functionality.
+# =====================================================================
+set TOP "tool_life_monitor_top"
+tool_life_monitor_top
+set REF_DDC \
+"./netlist/saed32/tool_life_monitor_saed32_baseline.ddc"
+./netlist/saed32/tool_life_monitor_saed32_baseline.ddc
+set IMP_DDC \
+"./stage04_final/netlist/tool_life_monitor_ppa_opt.ddc"
+./stage04_final/netlist/tool_life_monitor_ppa_opt.ddc
+set TECH_LIB \
+"/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db"
+/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db
+# =====================================================================
+# 1. CHECK FILES
+# =====================================================================
+if {![file exists $REF_DDC]} {
+    puts "ERROR: Reference DDC not found:"
+    puts "$REF_DDC"
+    exit 1
+}
+if {![file exists $IMP_DDC]} {
+    puts "ERROR: Implementation DDC not found:"
+    puts "$IMP_DDC"
+    exit 1
+}
+if {![file exists $TECH_LIB]} {
+    puts "ERROR: Technology library not found:"
+    puts "$TECH_LIB"
+    exit 1
+}
+# =====================================================================
+# 2. LOAD SHARED SAED32 TECHNOLOGY LIBRARY
+# =====================================================================
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " LOADING SAED32 TECHNOLOGY LIBRARY"
+ LOADING SAED32 TECHNOLOGY LIBRARY
+puts "================================================================="
+=================================================================
+puts ""
+
+read_db -technology_library $TECH_LIB
+Loading db file '/home/prem5111/Downloads/pd_scripts-20250304T122158Z-001_modified/pd_scripts-20250304T122158Z-001/pd_scripts/ref/DBs/saed32rvt_ss0p95v125c.db'
+1
+# =====================================================================
+# 3. READ REFERENCE DESIGN
+# =====================================================================
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " REFERENCE : STAGE-03 BASELINE"
+ REFERENCE : STAGE-03 BASELINE
+puts "================================================================="
+=================================================================
+puts ""
+
+read_ddc -r $REF_DDC
+Loading ddc file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/netlist/saed32/tool_life_monitor_saed32_baseline.ddc'
+No target library specified, default is WORK
+Current container set to 'r'
+1
+set_top -auto
+Setting top design to 'r:/WORK/tool_life_monitor_top'
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  8 unlinked power cell(s) with unread pg pins.
+Warning:  1 unlinked power cell(s) with unread save/restore retention signals.
+Warning:  72 unlinked power cell(s) with no power down function on an ff or latch.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'r:/WORK/tool_life_monitor_top'
+Reference design set to 'r:/WORK/tool_life_monitor_top'
+1
+# =====================================================================
+# 4. READ IMPLEMENTATION DESIGN
+# =====================================================================
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " IMPLEMENTATION : STAGE-04 PPA OPTIMIZED"
+ IMPLEMENTATION : STAGE-04 PPA OPTIMIZED
+puts "================================================================="
+=================================================================
+puts ""
+
+read_ddc -i $IMP_DDC
+Loading ddc file '/home/prem5111/Downloads/Chipcraft/tool_life_monitor/stage04_final/netlist/tool_life_monitor_ppa_opt.ddc'
+No target library specified, default is WORK
+Current container set to 'i'
+1
+set_top -auto
+Setting top design to 'i:/WORK/tool_life_monitor_top'
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  8 unlinked power cell(s) with unread pg pins.
+Warning:  1 unlinked power cell(s) with unread save/restore retention signals.
+Warning:  72 unlinked power cell(s) with no power down function on an ff or latch.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'i:/WORK/tool_life_monitor_top'
+Implementation design set to 'i:/WORK/tool_life_monitor_top'
+1
+# =====================================================================
+# 5. MATCH COMPARE POINTS
+# =====================================================================
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " MATCHING REFERENCE AND IMPLEMENTATION"
+ MATCHING REFERENCE AND IMPLEMENTATION
+puts "================================================================="
+=================================================================
+puts ""
+
+match
+Reference design is 'r:/WORK/tool_life_monitor_top'
+Implementation design is 'i:/WORK/tool_life_monitor_top'
+    Info:  Detected netlists in reference and implementation designs.
+           Starting fast netlist verification mode.
+Status:  Checking designs...
+Status:  Building verification models...
+Status:  Matching...
+    Info:  Matching results from fast netlist verification mode may
+           change during the verification step.
+    
+*********************************** Matching Results ***********************************    
+ 178 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 29 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+****************************************************************************************
+
+1
+# =====================================================================
+# 6. FORMAL VERIFICATION
+# =====================================================================
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " RUNNING FORMAL EQUIVALENCE VERIFICATION"
+ RUNNING FORMAL EQUIVALENCE VERIFICATION
+puts "================================================================="
+=================================================================
+puts ""
+
+verify
+Reference design is 'r:/WORK/tool_life_monitor_top'
+Implementation design is 'i:/WORK/tool_life_monitor_top'
+Status:  Verifying...
+    
+*********************************** Matching Results ***********************************    
+ 178 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 29 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+****************************************************************************************
+
+
+
+********************************* Verification Results *********************************
+Verification SUCCEEDED
+----------------------
+ Reference design: r:/WORK/tool_life_monitor_top
+ Implementation design: i:/WORK/tool_life_monitor_top
+ 178 Passing compare points
+----------------------------------------------------------------------------------------
+Matched Compare Points     BBPin    Loop   BBNet     Cut    Port     DFF     LAT   TOTAL
+----------------------------------------------------------------------------------------
+Passing (equivalent)           0       0       0       0      50     128       0     178
+Failing (not equivalent)       0       0       0       0       0       0       0       0
+****************************************************************************************
+1
+# =====================================================================
+# 7. DIAGNOSTIC REPORTS
+# =====================================================================
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " UNMATCHED POINTS"
+ UNMATCHED POINTS
+puts "================================================================="
+=================================================================
+puts ""
+
+report_unmatched_points
+**************************************************
+Report         : unmatched_points
+
+Reference      : r:/WORK/tool_life_monitor_top
+Implementation : i:/WORK/tool_life_monitor_top
+Version        : W-2024.09-SP5
+Date           : Fri Sep 25 22:54:02 2026
+**************************************************
+
+No unmatched points.
+
+1
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " FAILING POINTS"
+ FAILING POINTS
+puts "================================================================="
+=================================================================
+puts ""
+
+report_failing_points
+**************************************************
+Report         : failing_points
+
+Reference      : r:/WORK/tool_life_monitor_top
+Implementation : i:/WORK/tool_life_monitor_top
+Version        : W-2024.09-SP5
+Date           : Fri Sep 25 22:54:02 2026
+**************************************************
+
+No failing compare points.
+
+1
+puts ""
+
+puts "================================================================="
+=================================================================
+puts " STAGE-04 FORMAL EQUIVALENCE CHECK FINISHED"
+ STAGE-04 FORMAL EQUIVALENCE CHECK FINISHED
+puts "================================================================="
+=================================================================
+puts ""
+
+exit
+
+Maximum memory usage for this session: 971 MB
+CPU usage for this session: 1.46 seconds ( 0.00 hours )
+Current time: Fri Sep 25 22:54:02 2026
+Elapsed time: 3 seconds ( 0.00 hours )
+
+Thank you for using Formality (R)!
